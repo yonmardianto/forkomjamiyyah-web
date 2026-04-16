@@ -1,0 +1,4380 @@
+# Copyright (C) 2026 productiveminds
+# This file is distributed under the GNU General Public License v2 or later.
+msgid ""
+msgstr ""
+"Project-Id-Version: Pass Max 1.0.1\n"
+"Report-Msgid-Bugs-To: https://wordpress.org/support/theme/pass-max\n"
+"POT-Creation-Date: 2026-04-13 10:17:28+00:00\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"PO-Revision-Date: 2026-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+
+#: admin/common/options/global/customiser/productive-global-customiser-cc-palette-overrides.php:47
+msgid "Colour Palette OVERRIDES"
+msgstr ""
+
+#: admin/common/options/global/customiser/productive-global-customiser-cc-palette-overrides.php:48
+msgid ""
+"Override specific colors already set as part of the active global color "
+"palette."
+msgstr ""
+
+#: admin/common/options/global/customiser/productive-global-customiser-cc-palette-overrides.php:73
+msgid "Site Background"
+msgstr ""
+
+#: admin/common/options/global/customiser/productive-global-customiser-cc-palette-overrides.php:97
+msgid "Header Menu & Icons"
+msgstr ""
+
+#: admin/common/options/global/customiser/productive-global-customiser-cc-palette-overrides.php:98
+msgid "Header menu, hyperlinks, and icons"
+msgstr ""
+
+#: admin/common/options/global/customiser/productive-global-customiser-cc-palette-overrides.php:122
+msgid "Header Menu & Icons (on Hover)"
+msgstr ""
+
+#: admin/common/options/global/customiser/productive-global-customiser-cc-palette-overrides.php:146
+msgid "Hyperlinks"
+msgstr ""
+
+#: admin/common/options/global/customiser/productive-global-customiser-cc-palette-overrides.php:147
+msgid "Sitewide hyperlinks"
+msgstr ""
+
+#: admin/common/options/global/customiser/productive-global-customiser-cc-palette-overrides.php:171
+msgid "Hyperlinks (on Hover)"
+msgstr ""
+
+#: admin/common/options/global/customiser/productive-global-customiser-common.php:39
+msgid "Typography Options"
+msgstr ""
+
+#: admin/common/options/global/customiser/productive-global-customiser-custom-color-palette.php:47
+msgid "Set Custom Colour Palette"
+msgstr ""
+
+#: admin/common/options/global/customiser/productive-global-customiser-custom-color-palette.php:48
+msgid "Set productiveminds colour palette to control site-wide colour scheme."
+msgstr ""
+
+#: admin/common/options/global/customiser/productive-global-customiser-custom-color-palette.php:73
+msgid "Dominant Colour (--dom)"
+msgstr ""
+
+#: admin/common/options/global/customiser/productive-global-customiser-custom-color-palette.php:74
+msgid ""
+"The dominant colour used in header navbar, hyperlinks, buttons background etc"
+msgstr ""
+
+#: admin/common/options/global/customiser/productive-global-customiser-custom-color-palette.php:98
+msgid "Dark dominant colour (--dom-plus)"
+msgstr ""
+
+#: admin/common/options/global/customiser/productive-global-customiser-custom-color-palette.php:99
+msgid "Darker shade of dominant colour"
+msgstr ""
+
+#: admin/common/options/global/customiser/productive-global-customiser-custom-color-palette.php:123
+msgid "Light dominant colour (--minus)"
+msgstr ""
+
+#: admin/common/options/global/customiser/productive-global-customiser-custom-color-palette.php:124
+msgid "A very light shade of dominant colour"
+msgstr ""
+
+#: admin/common/options/global/customiser/productive-global-customiser-custom-color-palette.php:148
+msgid "Dark Accent Colour (--accent-1)"
+msgstr ""
+
+#: admin/common/options/global/customiser/productive-global-customiser-custom-color-palette.php:149
+msgid ""
+"Dark colour, which contrasts the dominant colour. Used for footer background."
+msgstr ""
+
+#: admin/common/options/global/customiser/productive-global-customiser-custom-color-palette.php:173
+msgid "Light Accent Colour (--accent-2)"
+msgstr ""
+
+#: admin/common/options/global/customiser/productive-global-customiser-custom-color-palette.php:174
+msgid ""
+"A \"very\" light shade of accent 1, which equally contrasts text colour 1"
+msgstr ""
+
+#: admin/common/options/global/customiser/productive-global-customiser-custom-color-palette.php:198
+msgid "Text Colour 1 (--txt-1)"
+msgstr ""
+
+#: admin/common/options/global/customiser/productive-global-customiser-custom-color-palette.php:199
+msgid "Used for all content site-wide"
+msgstr ""
+
+#: admin/common/options/global/customiser/productive-global-customiser-custom-color-palette.php:223
+msgid "Text Colour 2 (--txt-2)"
+msgstr ""
+
+#: admin/common/options/global/customiser/productive-global-customiser-custom-color-palette.php:224
+msgid "Ideally, a darker shade of text colour 1"
+msgstr ""
+
+#: admin/common/options/global/customiser/productive-global-customiser-custom-color-palette.php:248
+msgid "Neutral"
+msgstr ""
+
+#: admin/common/options/global/customiser/productive-global-customiser-custom-color-palette.php:249
+msgid "A light neutral colour - used for forms border etc"
+msgstr ""
+
+#: admin/common/options/global/customiser/productive-global-customiser-custom-color-palette.php:273
+msgid "Light neutral (--neutral-light)"
+msgstr ""
+
+#: admin/common/options/global/customiser/productive-global-customiser-custom-color-palette.php:274
+msgid "A \"very\" light shade of neutral colour"
+msgstr ""
+
+#: admin/common/options/global/customiser/productive-global-customiser-custom-color-palette.php:298
+msgid "White (--dom-white)"
+msgstr ""
+
+#: admin/common/options/global/customiser/productive-global-customiser-custom-color-palette.php:299
+msgid "A shade of white"
+msgstr ""
+
+#: admin/common/options/global/customiser/productive-global-customiser-custom-color-palette.php:323
+msgid "Black (--dom-black)"
+msgstr ""
+
+#: admin/common/options/global/customiser/productive-global-customiser-custom-color-palette.php:324
+msgid "A shade of black"
+msgstr ""
+
+#: admin/common/options/global/customiser/productive-global-customiser-custom-color-palette.php:348
+msgid "Product Rating Stars (productRating_Yes_Color)"
+msgstr ""
+
+#: admin/common/options/global/customiser/productive-global-customiser-custom-color-palette.php:349
+msgid "Used for product ratings stars etc"
+msgstr ""
+
+#: admin/common/options/global/db-admin/global-transactions.php:27
+#: admin/common/options/global/db-admin/global-transactions.php:95
+msgid "Error activating plugin."
+msgstr ""
+
+#: admin/common/options/global/db-admin/global-transactions.php:67
+#: admin/common/options/global/db-admin/global-transactions.php:129
+msgid "Successfully activated."
+msgstr ""
+
+#: admin/common/options/global/global-settings-admin.php:145
+msgid "ProductiveMinds"
+msgstr ""
+
+#: admin/common/options/global/global-settings-admin.php:146
+msgid "ProductiveMinds Patterns."
+msgstr ""
+
+#: admin/common/options/global/global-settings-admin.php:595
+#: admin/common/options/global/global-settings-admin.php:614
+msgid "pass, A Required Plugin for This Pattern, Is Missing"
+msgstr ""
+
+#: admin/common/options/global/global-settings-admin.php:598
+msgid "To access this pattern, first activate the PASS Addons plugin: "
+msgstr ""
+
+#: admin/common/options/global/global-settings-admin.php:601
+#: admin/common/options/global/global-settings-admin.php:620
+#: admin/common/options/global/global-settings-admin.php:639
+#: admin/common/options/global/global-settings-admin.php:658
+#: admin/common/options/global/global-settings-admin.php:677
+msgid "Pattern: "
+msgstr ""
+
+#: admin/common/options/global/global-settings-admin.php:605
+#: admin/common/options/global/global-settings-admin.php:624
+#: admin/common/options/global/global-settings-admin.php:643
+#: admin/common/options/global/global-settings-admin.php:662
+#: admin/common/options/global/global-settings-admin.php:681
+msgid "Pattern Demo: "
+msgstr ""
+
+#: admin/common/options/global/global-settings-admin.php:617
+msgid "To access this pattern, first activate the Ravolat Addons plugin: "
+msgstr ""
+
+#: admin/common/options/global/global-settings-admin.php:633
+msgid "Productive Commerce, A Required Plugin for This Pattern, Is Missing"
+msgstr ""
+
+#: admin/common/options/global/global-settings-admin.php:636
+msgid "To access this pattern, first activate the Productive Commerce plugin: "
+msgstr ""
+
+#: admin/common/options/global/global-settings-admin.php:652
+msgid "Productive Forms, A Required Plugin for This Pattern, Is Missing"
+msgstr ""
+
+#: admin/common/options/global/global-settings-admin.php:655
+msgid "To access this pattern, first activate the Productive Forms plugin: "
+msgstr ""
+
+#: admin/common/options/global/global-settings-admin.php:671
+msgid "Productive Style, A Required Plugin for This Pattern, Is Missing"
+msgstr ""
+
+#: admin/common/options/global/global-settings-admin.php:674
+msgid "To access this pattern, first activate the Productive Style plugin: "
+msgstr ""
+
+#: admin/common/options/global/global-settings-admin.php:720
+#: admin/common/options/global/global-settings-admin.php:759
+msgid "Productive Global Settings"
+msgstr ""
+
+#: admin/common/options/global/global-settings-admin.php:721
+msgid "Global Settings"
+msgstr ""
+
+#: admin/common/options/global/global-settings-admin.php:734
+#: extra/options/theme-settings.php:48
+msgid "You do not have permission to access this resource."
+msgstr ""
+
+#: admin/common/options/global/global-settings-admin.php:746
+#: extra/options/theme-settings.php:56 standard/options/theme-settings.php:56
+msgid "Settings Saved"
+msgstr ""
+
+#: admin/common/options/global/global-settings-admin.php:803
+msgid "Grids and Breakpoints"
+msgstr ""
+
+#: admin/common/options/global/global-settings-admin.php:804
+msgid "PopUps"
+msgstr ""
+
+#: admin/common/options/global/global-settings-admin.php:805
+msgid "Sliders"
+msgstr ""
+
+#: admin/common/options/global/global-settings-admin.php:806
+msgid "Sharing"
+msgstr ""
+
+#: admin/common/options/global/global-settings-admin.php:807
+msgid "Follow & Contact"
+msgstr ""
+
+#: admin/common/options/global/global-settings-admin.php:808
+msgid "Other Settings"
+msgstr ""
+
+#: admin/common/options/global/global-settings-admin.php:1105
+#: admin/common/options/global/global-settings-admin.php:1262
+#: admin/common/options/global/global-settings-admin.php:1648
+msgid "None"
+msgstr ""
+
+#: admin/common/options/global/global-settings-admin.php:1152
+#: admin/common/options/global/global-settings-admin.php:1160
+#: admin/common/options/global/global-settings-admin.php:1178
+#: admin/common/options/global/global-settings-admin.php:1188
+msgid "Select an Option"
+msgstr ""
+
+#: admin/common/options/global/global-settings-admin.php:1153
+#: admin/common/options/global/global-settings-admin.php:1165
+msgid "Latest Posts"
+msgstr ""
+
+#: admin/common/options/global/global-settings-admin.php:1154
+#: admin/common/options/global/global-settings-admin.php:1166
+msgid "Featured Posts"
+msgstr ""
+
+#: admin/common/options/global/global-settings-admin.php:1155
+#: admin/common/options/global/global-settings-admin.php:1167
+#: extra/includes/customiser/productive-theme-customiser-blog-related-posts.php:70
+#: extra/includes/customiser/productive-theme-customiser-blog-related-posts.php:269
+msgid "Related Posts"
+msgstr ""
+
+#: admin/common/options/global/global-settings-admin.php:1156
+#: admin/common/options/global/global-settings-admin.php:1168
+#: admin/common/options/global/global-settings-admin.php:1184
+#: admin/common/options/global/global-settings-admin.php:1198
+msgid "Specific Category"
+msgstr ""
+
+#: admin/common/options/global/global-settings-admin.php:1161
+msgid "All Post Archives"
+msgstr ""
+
+#: admin/common/options/global/global-settings-admin.php:1162
+msgid "Post Category - Archive"
+msgstr ""
+
+#: admin/common/options/global/global-settings-admin.php:1163
+msgid "Post Author - Archive"
+msgstr ""
+
+#: admin/common/options/global/global-settings-admin.php:1164
+msgid "Post Tag - Archive"
+msgstr ""
+
+#: admin/common/options/global/global-settings-admin.php:1179
+#: admin/common/options/global/global-settings-admin.php:1190
+#: includes/customiser/productive-theme-customiser-homepage-products-latest.php:41
+#: includes/customiser/productive-theme-customiser-homepage-products-latest.php:78
+#: includes/customiser/productive-theme-customiser-homepage-products-latest.php:249
+msgid "Latest Products"
+msgstr ""
+
+#: admin/common/options/global/global-settings-admin.php:1180
+#: admin/common/options/global/global-settings-admin.php:1191
+#: includes/customiser/productive-theme-customiser-homepage-products-featured.php:41
+#: includes/customiser/productive-theme-customiser-homepage-products-featured.php:78
+#: includes/customiser/productive-theme-customiser-homepage-products-featured.php:249
+msgid "Featured Products"
+msgstr ""
+
+#: admin/common/options/global/global-settings-admin.php:1181
+#: admin/common/options/global/global-settings-admin.php:1194
+msgid "On Sale Products"
+msgstr ""
+
+#: admin/common/options/global/global-settings-admin.php:1182
+#: admin/common/options/global/global-settings-admin.php:1192
+#: includes/customiser/productive-theme-customiser-homepage-products-bestsellers.php:41
+msgid "Best Selling Products"
+msgstr ""
+
+#: admin/common/options/global/global-settings-admin.php:1183
+#: admin/common/options/global/global-settings-admin.php:1193
+msgid "Top Rated"
+msgstr ""
+
+#: admin/common/options/global/global-settings-admin.php:1189
+msgid "Product Archive"
+msgstr ""
+
+#: admin/common/options/global/global-settings-admin.php:1195
+msgid "Related Products"
+msgstr ""
+
+#: admin/common/options/global/global-settings-admin.php:1196
+msgid "Upsells"
+msgstr ""
+
+#: admin/common/options/global/global-settings-admin.php:1197
+msgid "Cross Sells"
+msgstr ""
+
+#: admin/common/options/global/global-settings-admin.php:1206
+msgid "YouTube"
+msgstr ""
+
+#: admin/common/options/global/global-settings-admin.php:1212
+#: admin/common/options/global/global-settings-admin.php:3651
+#: admin/common/options/global/global-settings-admin.php:3711
+#: admin/common/options/global/global-settings-admin.php:3771
+#: admin/common/options/global/global-settings-admin.php:3831
+msgid "Activate"
+msgstr ""
+
+#: admin/common/options/global/global-settings-admin.php:1213
+msgid "De-Activate"
+msgstr ""
+
+#: admin/common/options/global/global-settings-admin.php:1219
+msgid "Enable"
+msgstr ""
+
+#: admin/common/options/global/global-settings-admin.php:1220
+#: admin/common/options/global/global-settings-admin.php:1681
+msgid "Disable"
+msgstr ""
+
+#: admin/common/options/global/global-settings-admin.php:1226
+msgid "Show"
+msgstr ""
+
+#: admin/common/options/global/global-settings-admin.php:1227
+#: admin/common/options/global/global-settings-admin.php:1254
+#: admin/common/options/global/global-settings-admin.php:1277
+#: admin/common/options/global/global-settings-admin.php:1286
+msgid "Hide"
+msgstr ""
+
+#: admin/common/options/global/global-settings-admin.php:1233
+msgid "Yes"
+msgstr ""
+
+#: admin/common/options/global/global-settings-admin.php:1234
+#: admin/common/options/global/global-settings-admin.php:1294
+#: includes/customiser/productive-theme-customiser-header.php:95
+msgid "No"
+msgstr ""
+
+#: admin/common/options/global/global-settings-admin.php:1240
+msgid "True"
+msgstr ""
+
+#: admin/common/options/global/global-settings-admin.php:1241
+msgid "False"
+msgstr ""
+
+#: admin/common/options/global/global-settings-admin.php:1247
+msgid "Start"
+msgstr ""
+
+#: admin/common/options/global/global-settings-admin.php:1248
+msgid "Stop"
+msgstr ""
+
+#: admin/common/options/global/global-settings-admin.php:1255
+#: admin/common/options/global/global-settings-admin.php:1307
+#: admin/common/options/global/global-settings-admin.php:1545
+#: admin/common/options/global/global-settings-admin.php:1566
+#: admin/common/options/global/global-settings-admin.php:1575
+#: includes/customiser/productive-theme-customiser-announcement.php:190
+#: includes/customiser/productive-theme-customiser-blog-single.php:164
+msgid "Left"
+msgstr ""
+
+#: admin/common/options/global/global-settings-admin.php:1256
+#: admin/common/options/global/global-settings-admin.php:1308
+#: admin/common/options/global/global-settings-admin.php:1546
+#: admin/common/options/global/global-settings-admin.php:1567
+#: admin/common/options/global/global-settings-admin.php:1576
+#: includes/customiser/productive-theme-customiser-announcement.php:191
+msgid "Right"
+msgstr ""
+
+#: admin/common/options/global/global-settings-admin.php:1263
+msgid "Icon"
+msgstr ""
+
+#: admin/common/options/global/global-settings-admin.php:1264
+#: admin/common/options/global/global-settings-admin.php:2031
+msgid "Image"
+msgstr ""
+
+#: admin/common/options/global/global-settings-admin.php:1267
+msgid "Image with Video Options (Pro feature)"
+msgstr ""
+
+#: admin/common/options/global/global-settings-admin.php:1269
+msgid "Image with Video Options"
+msgstr ""
+
+#: admin/common/options/global/global-settings-admin.php:1278
+msgid "Text"
+msgstr ""
+
+#: admin/common/options/global/global-settings-admin.php:1279
+msgid "Link, Open In The Same Window"
+msgstr ""
+
+#: admin/common/options/global/global-settings-admin.php:1280
+msgid "Link, Open In New Window"
+msgstr ""
+
+#: admin/common/options/global/global-settings-admin.php:1287
+#: admin/common/options/global/global-settings-admin.php:1295
+msgid "Yes, Open In The Same Window"
+msgstr ""
+
+#: admin/common/options/global/global-settings-admin.php:1288
+#: admin/common/options/global/global-settings-admin.php:1296
+msgid "Yes, Open In New Window"
+msgstr ""
+
+#: admin/common/options/global/global-settings-admin.php:1306
+#: admin/common/options/global/global-settings-admin.php:1356
+#: admin/common/options/global/global-settings-admin.php:1376
+#: admin/common/options/global/global-settings-admin.php:1411
+#: admin/common/options/global/global-settings-admin.php:1422
+#: includes/customiser/productive-theme-customiser-blog-single.php:166
+msgid "Center"
+msgstr ""
+
+#: admin/common/options/global/global-settings-admin.php:1314
+#: includes/customiser/productive-theme-customiser-layout-and-design.php:66
+msgid "One Column"
+msgstr ""
+
+#. #-#-#-#-#  pass-max.pot (Pass Max 1.0.1)  #-#-#-#-#
+#. Template Name of the plugin/theme
+#: admin/common/options/global/global-settings-admin.php:1315
+#: includes/customiser/productive-theme-customiser-layout-and-design.php:67
+#: includes/start.php:218
+msgid "Left Sidebar"
+msgstr ""
+
+#. #-#-#-#-#  pass-max.pot (Pass Max 1.0.1)  #-#-#-#-#
+#. Template Name of the plugin/theme
+#: admin/common/options/global/global-settings-admin.php:1316
+#: includes/customiser/productive-theme-customiser-layout-and-design.php:68
+#: includes/start.php:229
+msgid "Right Sidebar"
+msgstr ""
+
+#: admin/common/options/global/global-settings-admin.php:1317
+msgid "Three Columns"
+msgstr ""
+
+#: admin/common/options/global/global-settings-admin.php:1324
+#: admin/common/options/global/global-settings-admin.php:1334
+#: admin/common/options/global/global-settings-admin.php:1355
+#: admin/common/options/global/global-settings-admin.php:1454
+#: admin/common/options/global/global-settings-admin.php:1476
+#: admin/common/options/global/global-settings-admin.php:1486
+#: admin/common/options/global/global-settings-admin.php:1494
+#: admin/common/options/global/global-settings-admin.php:1504
+#: includes/customiser/productive-theme-customiser-footer.php:90
+msgid "Default"
+msgstr ""
+
+#: admin/common/options/global/global-settings-admin.php:1325
+msgid "Default, with Background"
+msgstr ""
+
+#: admin/common/options/global/global-settings-admin.php:1326
+msgid "Default, with Border"
+msgstr ""
+
+#: admin/common/options/global/global-settings-admin.php:1327
+msgid "Rounded Corner, with Background"
+msgstr ""
+
+#: admin/common/options/global/global-settings-admin.php:1328
+msgid "Rounded Corner, with Border"
+msgstr ""
+
+#: admin/common/options/global/global-settings-admin.php:1329
+msgid "Ellipse, with Background"
+msgstr ""
+
+#: admin/common/options/global/global-settings-admin.php:1330
+msgid "Ellipse, with Border"
+msgstr ""
+
+#: admin/common/options/global/global-settings-admin.php:1335
+msgid "Default, with Background (Box)"
+msgstr ""
+
+#: admin/common/options/global/global-settings-admin.php:1336
+msgid "Default, with Border (Box)"
+msgstr ""
+
+#: admin/common/options/global/global-settings-admin.php:1337
+msgid "Rounded Corner, with Background (Box)"
+msgstr ""
+
+#: admin/common/options/global/global-settings-admin.php:1338
+msgid "Rounded Corner, with Border (Box)"
+msgstr ""
+
+#: admin/common/options/global/global-settings-admin.php:1339
+msgid "Ellipse, with Background (Box)"
+msgstr ""
+
+#: admin/common/options/global/global-settings-admin.php:1340
+msgid "Ellipse, with Border (Box)"
+msgstr ""
+
+#: admin/common/options/global/global-settings-admin.php:1357
+#: admin/common/options/global/global-settings-admin.php:1377
+msgid "Start (Left)"
+msgstr ""
+
+#: admin/common/options/global/global-settings-admin.php:1358
+#: admin/common/options/global/global-settings-admin.php:1378
+msgid "End (Right)"
+msgstr ""
+
+#: admin/common/options/global/global-settings-admin.php:1359
+#: includes/customiser/productive-theme-customiser-blog-single.php:167
+msgid "Justify"
+msgstr ""
+
+#: admin/common/options/global/global-settings-admin.php:1365
+#: admin/common/options/global/global-settings-admin.php:1388
+#: admin/common/options/global/global-settings-admin.php:1399
+#: admin/common/options/global/global-settings-admin.php:1564
+#: admin/common/options/global/global-settings-admin.php:1573
+msgid "Top"
+msgstr ""
+
+#: admin/common/options/global/global-settings-admin.php:1366
+#: admin/common/options/global/global-settings-admin.php:1387
+#: admin/common/options/global/global-settings-admin.php:1398
+msgid "Middle"
+msgstr ""
+
+#: admin/common/options/global/global-settings-admin.php:1367
+#: admin/common/options/global/global-settings-admin.php:1389
+#: admin/common/options/global/global-settings-admin.php:1400
+#: admin/common/options/global/global-settings-admin.php:1565
+#: admin/common/options/global/global-settings-admin.php:1574
+msgid "Bottom"
+msgstr ""
+
+#: admin/common/options/global/global-settings-admin.php:1368
+#: admin/common/options/global/global-settings-admin.php:1390
+#: admin/common/options/global/global-settings-admin.php:1401
+#: admin/common/options/global/global-settings-admin.php:1414
+msgid "Stretch"
+msgstr ""
+
+#: admin/common/options/global/global-settings-admin.php:1369
+#: admin/common/options/global/global-settings-admin.php:1380
+#: admin/common/options/global/global-settings-admin.php:1404
+#: admin/common/options/global/global-settings-admin.php:1427
+msgid "Space Evenly"
+msgstr ""
+
+#: admin/common/options/global/global-settings-admin.php:1370
+#: admin/common/options/global/global-settings-admin.php:1381
+#: admin/common/options/global/global-settings-admin.php:1402
+#: admin/common/options/global/global-settings-admin.php:1425
+msgid "Space Between"
+msgstr ""
+
+#: admin/common/options/global/global-settings-admin.php:1379
+#: admin/common/options/global/global-settings-admin.php:1403
+#: admin/common/options/global/global-settings-admin.php:1426
+msgid "Space Around"
+msgstr ""
+
+#: admin/common/options/global/global-settings-admin.php:1391
+msgid "Baseline"
+msgstr ""
+
+#: admin/common/options/global/global-settings-admin.php:1392
+#: admin/common/options/global/global-settings-admin.php:1405
+#: admin/common/options/global/global-settings-admin.php:1416
+#: admin/common/options/global/global-settings-admin.php:1428
+msgid "Initial"
+msgstr ""
+
+#: admin/common/options/global/global-settings-admin.php:1412
+#: admin/common/options/global/global-settings-admin.php:1423
+msgid "Left (Start)"
+msgstr ""
+
+#: admin/common/options/global/global-settings-admin.php:1413
+#: admin/common/options/global/global-settings-admin.php:1424
+msgid "Right (End)"
+msgstr ""
+
+#: admin/common/options/global/global-settings-admin.php:1415
+#: includes/customiser/productive-theme-customiser-404.php:219
+msgid "Normal"
+msgstr ""
+
+#: admin/common/options/global/global-settings-admin.php:1434
+msgid "None (no color scheme)"
+msgstr ""
+
+#: admin/common/options/global/global-settings-admin.php:1435
+msgid "Light Color Scheme"
+msgstr ""
+
+#: admin/common/options/global/global-settings-admin.php:1436
+msgid "Dark Color Scheme"
+msgstr ""
+
+#: admin/common/options/global/global-settings-admin.php:1437
+#: admin/common/options/global/global-settings-admin.php:1448
+msgid "Theme&#39;s Color Scheme"
+msgstr ""
+
+#: admin/common/options/global/global-settings-admin.php:1443
+msgid "No (no color scheme)"
+msgstr ""
+
+#: admin/common/options/global/global-settings-admin.php:1444
+msgid "Light Background"
+msgstr ""
+
+#: admin/common/options/global/global-settings-admin.php:1445
+msgid "Dark Background"
+msgstr ""
+
+#: admin/common/options/global/global-settings-admin.php:1446
+msgid "Light Background, Dark Content"
+msgstr ""
+
+#: admin/common/options/global/global-settings-admin.php:1447
+msgid "Dark Background, Light Content"
+msgstr ""
+
+#: admin/common/options/global/global-settings-admin.php:1455
+msgid "Narrow"
+msgstr ""
+
+#: admin/common/options/global/global-settings-admin.php:1456
+msgid "Narrow, Align Left"
+msgstr ""
+
+#: admin/common/options/global/global-settings-admin.php:1457
+msgid "Narrow, Align Right"
+msgstr ""
+
+#: admin/common/options/global/global-settings-admin.php:1458
+msgid "Thin"
+msgstr ""
+
+#: admin/common/options/global/global-settings-admin.php:1459
+msgid "Thin, Align Left"
+msgstr ""
+
+#: admin/common/options/global/global-settings-admin.php:1460
+msgid "Thin, Align Right"
+msgstr ""
+
+#: admin/common/options/global/global-settings-admin.php:1461
+msgid "Extra Thin"
+msgstr ""
+
+#: admin/common/options/global/global-settings-admin.php:1462
+msgid "Extra Thin, Align Left"
+msgstr ""
+
+#: admin/common/options/global/global-settings-admin.php:1463
+msgid "Extra Thin, Align Right"
+msgstr ""
+
+#: admin/common/options/global/global-settings-admin.php:1464
+msgid "Micro Thin"
+msgstr ""
+
+#: admin/common/options/global/global-settings-admin.php:1465
+msgid "Micro Thin, Align Left"
+msgstr ""
+
+#: admin/common/options/global/global-settings-admin.php:1466
+msgid "Micro Thin, Align Right"
+msgstr ""
+
+#: admin/common/options/global/global-settings-admin.php:1467
+msgid "Wide"
+msgstr ""
+
+#: admin/common/options/global/global-settings-admin.php:1468
+msgid "Full Width (with padding)"
+msgstr ""
+
+#: admin/common/options/global/global-settings-admin.php:1469
+msgid "Full Width (100%)"
+msgstr ""
+
+#: admin/common/options/global/global-settings-admin.php:1475
+msgid "No Spacing"
+msgstr ""
+
+#: admin/common/options/global/global-settings-admin.php:1477
+msgid "Extra Small"
+msgstr ""
+
+#: admin/common/options/global/global-settings-admin.php:1478
+msgid "Small"
+msgstr ""
+
+#: admin/common/options/global/global-settings-admin.php:1479
+msgid "Large"
+msgstr ""
+
+#: admin/common/options/global/global-settings-admin.php:1480
+msgid "Extra Large"
+msgstr ""
+
+#: admin/common/options/global/global-settings-admin.php:1487
+msgid "Wide Page Width"
+msgstr ""
+
+#: admin/common/options/global/global-settings-admin.php:1488
+msgid "Full Page Width"
+msgstr ""
+
+#: admin/common/options/global/global-settings-admin.php:1495
+#: admin/common/options/global/global-settings-admin.php:1505
+msgid "Sharp Corner"
+msgstr ""
+
+#: admin/common/options/global/global-settings-admin.php:1496
+#: admin/common/options/global/global-settings-admin.php:1506
+msgid "Rounded Corner"
+msgstr ""
+
+#: admin/common/options/global/global-settings-admin.php:1497
+#: admin/common/options/global/global-settings-admin.php:1507
+#: admin/common/options/global/global-settings-admin.php:1971
+msgid "Ellipse"
+msgstr ""
+
+#: admin/common/options/global/global-settings-admin.php:1498
+#: admin/common/options/global/global-settings-admin.php:1508
+msgid "Oval"
+msgstr ""
+
+#: admin/common/options/global/global-settings-admin.php:1514
+msgid "90 : 10"
+msgstr ""
+
+#: admin/common/options/global/global-settings-admin.php:1515
+msgid "85 : 15"
+msgstr ""
+
+#: admin/common/options/global/global-settings-admin.php:1516
+msgid "80 : 20"
+msgstr ""
+
+#: admin/common/options/global/global-settings-admin.php:1517
+msgid "75 : 25"
+msgstr ""
+
+#: admin/common/options/global/global-settings-admin.php:1518
+msgid "70 : 30"
+msgstr ""
+
+#: admin/common/options/global/global-settings-admin.php:1519
+msgid "65 : 35"
+msgstr ""
+
+#: admin/common/options/global/global-settings-admin.php:1520
+msgid "60 : 40"
+msgstr ""
+
+#: admin/common/options/global/global-settings-admin.php:1521
+msgid "55 : 45"
+msgstr ""
+
+#: admin/common/options/global/global-settings-admin.php:1522
+msgid "50 : 50"
+msgstr ""
+
+#: admin/common/options/global/global-settings-admin.php:1523
+msgid "45 : 55"
+msgstr ""
+
+#: admin/common/options/global/global-settings-admin.php:1524
+msgid "40 : 60"
+msgstr ""
+
+#: admin/common/options/global/global-settings-admin.php:1525
+msgid "35 : 65"
+msgstr ""
+
+#: admin/common/options/global/global-settings-admin.php:1526
+msgid "30 : 70"
+msgstr ""
+
+#: admin/common/options/global/global-settings-admin.php:1527
+msgid "25 : 75"
+msgstr ""
+
+#: admin/common/options/global/global-settings-admin.php:1528
+msgid "20 : 80"
+msgstr ""
+
+#: admin/common/options/global/global-settings-admin.php:1529
+msgid "15 : 85"
+msgstr ""
+
+#: admin/common/options/global/global-settings-admin.php:1530
+msgid "10 : 90"
+msgstr ""
+
+#: admin/common/options/global/global-settings-admin.php:1533
+#: includes/customiser/productive-theme-customiser-top-banner.php:94
+msgid "Full Width"
+msgstr ""
+
+#: admin/common/options/global/global-settings-admin.php:1540
+msgid "Top Right"
+msgstr ""
+
+#: admin/common/options/global/global-settings-admin.php:1541
+msgid "Top Left"
+msgstr ""
+
+#: admin/common/options/global/global-settings-admin.php:1542
+msgid "Bottom Right"
+msgstr ""
+
+#: admin/common/options/global/global-settings-admin.php:1543
+msgid "Bottom Left"
+msgstr ""
+
+#: admin/common/options/global/global-settings-admin.php:1544
+msgid "Central"
+msgstr ""
+
+#: admin/common/options/global/global-settings-admin.php:1552
+msgid "Ease"
+msgstr ""
+
+#: admin/common/options/global/global-settings-admin.php:1553
+msgid "Ease In"
+msgstr ""
+
+#: admin/common/options/global/global-settings-admin.php:1554
+msgid "Ease Out"
+msgstr ""
+
+#: admin/common/options/global/global-settings-admin.php:1555
+msgid "Ease In/Out"
+msgstr ""
+
+#: admin/common/options/global/global-settings-admin.php:1556
+msgid "Linear"
+msgstr ""
+
+#: admin/common/options/global/global-settings-admin.php:1557
+msgid "Cubic Bezier Style 1"
+msgstr ""
+
+#: admin/common/options/global/global-settings-admin.php:1558
+msgid "Cubic Bezier Style 2"
+msgstr ""
+
+#: admin/common/options/global/global-settings-admin.php:1582
+msgid "Default Design"
+msgstr ""
+
+#: admin/common/options/global/global-settings-admin.php:1583
+#: admin/common/options/global/global-settings-admin.php:1596
+msgid "Design 01"
+msgstr ""
+
+#: admin/common/options/global/global-settings-admin.php:1584
+#: admin/common/options/global/global-settings-admin.php:1597
+msgid "Design 02"
+msgstr ""
+
+#: admin/common/options/global/global-settings-admin.php:1585
+#: admin/common/options/global/global-settings-admin.php:1598
+msgid "Design 03"
+msgstr ""
+
+#: admin/common/options/global/global-settings-admin.php:1586
+#: admin/common/options/global/global-settings-admin.php:1599
+msgid "Design 04"
+msgstr ""
+
+#: admin/common/options/global/global-settings-admin.php:1587
+msgid "Design 05"
+msgstr ""
+
+#: admin/common/options/global/global-settings-admin.php:1588
+msgid "Design 06"
+msgstr ""
+
+#: admin/common/options/global/global-settings-admin.php:1589
+msgid "Design 07"
+msgstr ""
+
+#: admin/common/options/global/global-settings-admin.php:1590
+msgid "Design 08"
+msgstr ""
+
+#: admin/common/options/global/global-settings-admin.php:1605
+#: admin/common/options/global/global-settings-admin.php:1661
+msgid "1 - Default"
+msgstr ""
+
+#: admin/common/options/global/global-settings-admin.php:1606
+#: admin/common/options/global/global-settings-admin.php:1663
+msgid "2"
+msgstr ""
+
+#: admin/common/options/global/global-settings-admin.php:1607
+#: admin/common/options/global/global-settings-admin.php:1665
+msgid "3"
+msgstr ""
+
+#: admin/common/options/global/global-settings-admin.php:1608
+#: admin/common/options/global/global-settings-admin.php:1667
+msgid "4"
+msgstr ""
+
+#: admin/common/options/global/global-settings-admin.php:1609
+#: admin/common/options/global/global-settings-admin.php:1669
+msgid "5"
+msgstr ""
+
+#: admin/common/options/global/global-settings-admin.php:1610
+#: admin/common/options/global/global-settings-admin.php:1671
+msgid "6"
+msgstr ""
+
+#: admin/common/options/global/global-settings-admin.php:1611
+#: admin/common/options/global/global-settings-admin.php:1673
+msgid "7"
+msgstr ""
+
+#: admin/common/options/global/global-settings-admin.php:1612
+#: admin/common/options/global/global-settings-admin.php:1675
+msgid "8"
+msgstr ""
+
+#: admin/common/options/global/global-settings-admin.php:1618
+msgid "Slide"
+msgstr ""
+
+#: admin/common/options/global/global-settings-admin.php:1619
+msgid "Fade"
+msgstr ""
+
+#: admin/common/options/global/global-settings-admin.php:1620
+msgid "Flip"
+msgstr ""
+
+#: admin/common/options/global/global-settings-admin.php:1621
+msgid "Cards"
+msgstr ""
+
+#: admin/common/options/global/global-settings-admin.php:1627
+msgid "1 second"
+msgstr ""
+
+#: admin/common/options/global/global-settings-admin.php:1628
+msgid "2 seconds"
+msgstr ""
+
+#: admin/common/options/global/global-settings-admin.php:1629
+msgid "3 seconds"
+msgstr ""
+
+#: admin/common/options/global/global-settings-admin.php:1630
+msgid "4 seconds"
+msgstr ""
+
+#: admin/common/options/global/global-settings-admin.php:1631
+msgid "5 seconds"
+msgstr ""
+
+#: admin/common/options/global/global-settings-admin.php:1632
+msgid "7.5 seconds"
+msgstr ""
+
+#: admin/common/options/global/global-settings-admin.php:1633
+msgid "10 seconds"
+msgstr ""
+
+#: admin/common/options/global/global-settings-admin.php:1634
+msgid "15 seconds"
+msgstr ""
+
+#: admin/common/options/global/global-settings-admin.php:1635
+msgid "20 seconds"
+msgstr ""
+
+#: admin/common/options/global/global-settings-admin.php:1641
+#: extra/includes/customiser/productive-theme-customiser-countdown-global.php:442
+#: extra/includes/customiser/productive-theme-customiser-countdown-product-page.php:442
+msgid "Horizontal"
+msgstr ""
+
+#: admin/common/options/global/global-settings-admin.php:1649
+msgid "Touch Swipe Only"
+msgstr ""
+
+#: admin/common/options/global/global-settings-admin.php:1650
+msgid "Pagination Dots Only"
+msgstr ""
+
+#: admin/common/options/global/global-settings-admin.php:1651
+msgid "Prev/Next Arrows Only"
+msgstr ""
+
+#: admin/common/options/global/global-settings-admin.php:1652
+msgid "Dots &#38; Arrows"
+msgstr ""
+
+#: admin/common/options/global/global-settings-admin.php:1653
+msgid "Touch Swipe &#38; Arrows"
+msgstr ""
+
+#: admin/common/options/global/global-settings-admin.php:1654
+msgid "Touch Swipe &#38; Dots"
+msgstr ""
+
+#: admin/common/options/global/global-settings-admin.php:1655
+msgid "Allow All Three Actions"
+msgstr ""
+
+#: admin/common/options/global/global-settings-admin.php:1662
+msgid "1.5"
+msgstr ""
+
+#: admin/common/options/global/global-settings-admin.php:1664
+msgid "2.5"
+msgstr ""
+
+#: admin/common/options/global/global-settings-admin.php:1666
+msgid "3.5"
+msgstr ""
+
+#: admin/common/options/global/global-settings-admin.php:1668
+msgid "4.5"
+msgstr ""
+
+#: admin/common/options/global/global-settings-admin.php:1670
+msgid "5.5"
+msgstr ""
+
+#: admin/common/options/global/global-settings-admin.php:1672
+msgid "6.5"
+msgstr ""
+
+#: admin/common/options/global/global-settings-admin.php:1674
+msgid "7.5"
+msgstr ""
+
+#: admin/common/options/global/global-settings-admin.php:1682
+msgid "Mobile (portrait)"
+msgstr ""
+
+#: admin/common/options/global/global-settings-admin.php:1683
+msgid "Mobile (Landscape)"
+msgstr ""
+
+#: admin/common/options/global/global-settings-admin.php:1684
+msgid "Tablet (portrait)"
+msgstr ""
+
+#: admin/common/options/global/global-settings-admin.php:1685
+msgid "Tablet (Landscape)"
+msgstr ""
+
+#: admin/common/options/global/global-settings-admin.php:1686
+msgid "Desktop"
+msgstr ""
+
+#: admin/common/options/global/global-settings-admin.php:1687
+msgid "Widescreen"
+msgstr ""
+
+#: admin/common/options/global/global-settings-admin.php:1693
+msgid "0.1 (transparent)"
+msgstr ""
+
+#: admin/common/options/global/global-settings-admin.php:1694
+msgid "0.2"
+msgstr ""
+
+#: admin/common/options/global/global-settings-admin.php:1695
+msgid "0.3"
+msgstr ""
+
+#: admin/common/options/global/global-settings-admin.php:1696
+msgid "0.4"
+msgstr ""
+
+#: admin/common/options/global/global-settings-admin.php:1697
+msgid "0.5"
+msgstr ""
+
+#: admin/common/options/global/global-settings-admin.php:1698
+msgid "0.6"
+msgstr ""
+
+#: admin/common/options/global/global-settings-admin.php:1699
+msgid "0.7"
+msgstr ""
+
+#: admin/common/options/global/global-settings-admin.php:1700
+msgid "0.8"
+msgstr ""
+
+#: admin/common/options/global/global-settings-admin.php:1701
+msgid "0.9"
+msgstr ""
+
+#: admin/common/options/global/global-settings-admin.php:1702
+msgid "1.0 (opaque)"
+msgstr ""
+
+#: admin/common/options/global/global-settings-admin.php:1708
+msgid "h1 css style"
+msgstr ""
+
+#: admin/common/options/global/global-settings-admin.php:1709
+msgid "h2 css style"
+msgstr ""
+
+#: admin/common/options/global/global-settings-admin.php:1710
+msgid "h3 css style"
+msgstr ""
+
+#: admin/common/options/global/global-settings-admin.php:1711
+msgid "h4 css style"
+msgstr ""
+
+#: admin/common/options/global/global-settings-admin.php:1712
+msgid "h5 css style"
+msgstr ""
+
+#: admin/common/options/global/global-settings-admin.php:1713
+msgid "h6 css style"
+msgstr ""
+
+#: admin/common/options/global/global-settings-admin.php:1719
+msgid "h1 html tag"
+msgstr ""
+
+#: admin/common/options/global/global-settings-admin.php:1720
+msgid "h2 html tag"
+msgstr ""
+
+#: admin/common/options/global/global-settings-admin.php:1721
+msgid "h3 html tag"
+msgstr ""
+
+#: admin/common/options/global/global-settings-admin.php:1722
+msgid "h4 html tag"
+msgstr ""
+
+#: admin/common/options/global/global-settings-admin.php:1723
+msgid "h5 html tag"
+msgstr ""
+
+#: admin/common/options/global/global-settings-admin.php:1724
+msgid "h6 html tag"
+msgstr ""
+
+#: admin/common/options/global/global-settings-admin.php:1725
+msgid "div html tag"
+msgstr ""
+
+#: admin/common/options/global/global-settings-admin.php:1726
+msgid "span html tag"
+msgstr ""
+
+#: admin/common/options/global/global-settings-admin.php:1838
+#: admin/common/options/global/global-settings-admin.php:1862
+msgid "All"
+msgstr ""
+
+#: admin/common/options/global/global-settings-admin.php:1886
+msgid "Newest First"
+msgstr ""
+
+#: admin/common/options/global/global-settings-admin.php:1887
+msgid "Oldest First"
+msgstr ""
+
+#: admin/common/options/global/global-settings-admin.php:1888
+msgid "My Order"
+msgstr ""
+
+#: admin/common/options/global/global-settings-admin.php:1889
+msgid "Title (a-z)"
+msgstr ""
+
+#: admin/common/options/global/global-settings-admin.php:1890
+msgid "Title (z-a)"
+msgstr ""
+
+#: admin/common/options/global/global-settings-admin.php:1969
+msgid "Sharp Corners"
+msgstr ""
+
+#: admin/common/options/global/global-settings-admin.php:1970
+msgid "Round Corners"
+msgstr ""
+
+#: admin/common/options/global/global-settings-admin.php:1977
+#: admin/common/options/global/global-settings-admin.php:1990
+msgid "Circle"
+msgstr ""
+
+#: admin/common/options/global/global-settings-admin.php:1978
+#: admin/common/options/global/global-settings-admin.php:1991
+msgid "Square"
+msgstr ""
+
+#: admin/common/options/global/global-settings-admin.php:1979
+msgid "Rectangle"
+msgstr ""
+
+#: admin/common/options/global/global-settings-admin.php:1980
+msgid "Hybrid"
+msgstr ""
+
+#: admin/common/options/global/global-settings-admin.php:1983
+msgid "None (hide pagination controls)"
+msgstr ""
+
+#: admin/common/options/global/global-settings-admin.php:1992
+msgid "Transparent background"
+msgstr ""
+
+#: admin/common/options/global/global-settings-admin.php:1995
+msgid "None (hide nav controls)"
+msgstr ""
+
+#: admin/common/options/global/global-settings-admin.php:2034
+msgid "Video"
+msgstr ""
+
+#: admin/common/options/global/global-settings-admin.php:2036
+msgid "Video (Pro feature)"
+msgstr ""
+
+#: admin/common/options/global/global-settings-admin.php:2054
+msgid "Full"
+msgstr ""
+
+#: admin/common/options/global/global-settings-admin.php:2071
+msgid "Official background with white icon"
+msgstr ""
+
+#: admin/common/options/global/global-settings-admin.php:2072
+msgid "Themed background and icon"
+msgstr ""
+
+#: admin/common/options/global/global-settings-admin.php:2073
+msgid "Selected colors (in admin)"
+msgstr ""
+
+#: admin/common/options/global/global-settings-admin.php:2074
+msgid "Official icon colour"
+msgstr ""
+
+#: admin/common/options/global/global-settings-admin.php:2077
+msgid "Custom"
+msgstr ""
+
+#: admin/common/options/global/global-settings-admin.php:2159
+msgid "Post"
+msgstr ""
+
+#: admin/common/options/global/global-settings-admin.php:2160
+#: template-parts/part-page.php:41
+msgid "Page"
+msgstr ""
+
+#: admin/common/options/global/global-settings-admin.php:2163
+msgid "Product"
+msgstr ""
+
+#: admin/common/options/global/global-settings-admin.php:2415
+#: admin/common/options/global/global-settings-admin.php:2429
+#: includes/start.php:1403
+msgid "Read more "
+msgstr ""
+
+#: admin/common/options/global/global-settings-admin.php:2488
+#: admin/common/options/global/global-settings-admin.php:3376
+#: admin/common/options/global/global-settings-admin.php:3456
+#: admin/common/options/global/global-settings-admin.php:3886
+#: extra/includes/countdown-global.php:60
+#: extra/includes/countdown-product-page.php:61
+#: extra/includes/module/productive-language-currency.php:82
+#: includes/site-announcement.php:48 includes/theme-global-popup.php:73
+#: includes/theme-search-popup.php:23
+msgid "Close Overlay"
+msgstr ""
+
+#: admin/common/options/global/global-settings-admin.php:2521
+#: admin/common/options/global/global-settings-admin.php:2536
+msgid "Close"
+msgstr ""
+
+#: admin/common/options/global/global-settings-admin.php:2623
+#: admin/common/options/global/global-settings-admin.php:2642
+msgid "Please ensure you are using a \"Single Post\" template."
+msgstr ""
+
+#: admin/common/options/global/global-settings-admin.php:2661
+msgid "Please ensure you are using a \"Single Product\" template."
+msgstr ""
+
+#. translators: Hidden accessibility text.
+#: admin/common/options/global/global-settings-admin.php:3004
+#: admin/common/options/global/global-settings-admin.php:3033
+#: admin/common/options/global/global-settings-admin.php:3125 comments.php:50
+msgid "Previous"
+msgstr ""
+
+#: admin/common/options/global/global-settings-admin.php:3111
+msgid "Page Content Navigation "
+msgstr ""
+
+#. translators: Hidden accessibility text.
+#: admin/common/options/global/global-settings-admin.php:3130 comments.php:52
+msgid "Next"
+msgstr ""
+
+#: admin/common/options/global/global-settings-admin.php:3144
+msgid "Page "
+msgstr ""
+
+#: admin/common/options/global/global-settings-admin.php:3312
+#: admin/common/options/global/global-settings-admin.php:3395
+msgid "Username or Email Address"
+msgstr ""
+
+#: admin/common/options/global/global-settings-admin.php:3317
+#: admin/common/options/global/global-settings-admin.php:3400
+msgid "Password"
+msgstr ""
+
+#: admin/common/options/global/global-settings-admin.php:3320
+#: admin/common/options/global/global-settings-admin.php:3403
+msgid "Show password"
+msgstr ""
+
+#: admin/common/options/global/global-settings-admin.php:3340
+#: admin/common/options/global/global-settings-admin.php:3420
+msgid "Remember Me"
+msgstr ""
+
+#: admin/common/options/global/global-settings-admin.php:3343
+#: admin/common/options/global/global-settings-admin.php:3423
+msgid "Log In"
+msgstr ""
+
+#: admin/common/options/global/global-settings-admin.php:3351
+#: admin/common/options/global/global-settings-admin.php:3431
+msgid "Register"
+msgstr ""
+
+#: admin/common/options/global/global-settings-admin.php:3356
+#: admin/common/options/global/global-settings-admin.php:3436
+msgid "Lost your password?"
+msgstr ""
+
+#: admin/common/options/global/global-settings-admin.php:3548
+msgid "Leave a Review"
+msgstr ""
+
+#: admin/common/options/global/global-settings-admin.php:3550
+msgid "Share Your Insights! Help enhance our effort."
+msgstr ""
+
+#: admin/common/options/global/global-settings-admin.php:3561
+#: extra/options/theme-settings.php:147 standard/options/theme-settings.php:138
+msgid "Kindly submit a review"
+msgstr ""
+
+#: admin/common/options/global/global-settings-admin.php:3573
+msgid "Premium Support"
+msgstr ""
+
+#: admin/common/options/global/global-settings-admin.php:3575
+msgid ""
+"Submit a support ticket with ease to receive prompt premium assistance with "
+"Pro"
+msgstr ""
+
+#: admin/common/options/global/global-settings-admin.php:3579
+msgid "Access Support"
+msgstr ""
+
+#: admin/common/options/global/global-settings-admin.php:3591
+msgid "Documentation"
+msgstr ""
+
+#: admin/common/options/global/global-settings-admin.php:3593
+msgid "Seeking user guides for configuring this plugin on your website?"
+msgstr ""
+
+#: admin/common/options/global/global-settings-admin.php:3597
+msgid "Access documentation"
+msgstr ""
+
+#: admin/common/options/global/global-settings-admin.php:3613
+msgid "Install"
+msgstr ""
+
+#: admin/common/options/global/global-settings-admin.php:3614
+msgid "Installing..."
+msgstr ""
+
+#: admin/common/options/global/global-settings-admin.php:3615
+msgid "Installed"
+msgstr ""
+
+#: admin/common/options/global/global-settings-admin.php:3638
+#: admin/common/options/global/global-settings-admin.php:3698
+msgid "Website templates and content..."
+msgstr ""
+
+#: admin/common/options/global/global-settings-admin.php:3645
+#: includes/start.php:493 includes/start.php:495
+msgid "PASS Addons"
+msgstr ""
+
+#: admin/common/options/global/global-settings-admin.php:3652
+#: admin/common/options/global/global-settings-admin.php:3712
+#: admin/common/options/global/global-settings-admin.php:3772
+#: admin/common/options/global/global-settings-admin.php:3832
+msgid "Activating..."
+msgstr ""
+
+#: admin/common/options/global/global-settings-admin.php:3653
+#: admin/common/options/global/global-settings-admin.php:3713
+#: admin/common/options/global/global-settings-admin.php:3773
+#: admin/common/options/global/global-settings-admin.php:3833
+msgid "Activated"
+msgstr ""
+
+#: admin/common/options/global/global-settings-admin.php:3673
+#: admin/common/options/global/global-settings-admin.php:3733
+#: admin/common/options/global/global-settings-admin.php:3793
+#: admin/common/options/global/global-settings-admin.php:3853
+msgid "Learn more"
+msgstr ""
+
+#: admin/common/options/global/global-settings-admin.php:3677
+#: admin/common/options/global/global-settings-admin.php:3737
+#: admin/common/options/global/global-settings-admin.php:3797
+#: admin/common/options/global/global-settings-admin.php:3857
+msgid "Customize plugin"
+msgstr ""
+
+#: admin/common/options/global/global-settings-admin.php:3705
+msgid "Ravolat Addons"
+msgstr ""
+
+#: admin/common/options/global/global-settings-admin.php:3758
+msgid "Wishlist, Compare, Quick View, MiniCart..."
+msgstr ""
+
+#: admin/common/options/global/global-settings-admin.php:3765
+msgid "Productive Commerce"
+msgstr ""
+
+#: admin/common/options/global/global-settings-admin.php:3818
+msgid "Contact forms, Newsletter opt-ins..."
+msgstr ""
+
+#: admin/common/options/global/global-settings-admin.php:3825
+msgid "Productive Forms"
+msgstr ""
+
+#: admin/common/options/global/global-settings-admin.php:3880
+#: extra/template-parts/header/part-header-base-design-02.php:53
+#: extra/template-parts/header/part-header-design-16.php:53
+#: extra/template-parts/header/part-header-design-17.php:60
+#: extra/template-parts/header/part-header-design-18.php:47
+#: includes/theme-global-popup.php:51 includes/theme-search-popup.php:17
+#: standard/template-parts/header/part-header-base-design-02.php:51
+msgid "Search..."
+msgstr ""
+
+#: admin/common/options/partials/theme-dashboard.php:14
+msgid "Customize "
+msgstr ""
+
+#: admin/common/options/partials/theme-dashboard.php:30
+msgid "Instant Customizers for Your Website"
+msgstr ""
+
+#: admin/common/options/partials/theme-dashboard.php:57
+msgid "Install Plugin"
+msgstr ""
+
+#: admin/common/options/partials/theme-dashboard.php:62
+msgid "customize"
+msgstr ""
+
+#: admin/common/options/partials/theme-dashboard.php:66
+msgid "Pro feature, Upgrade"
+msgstr ""
+
+#: comments.php:23
+msgctxt "comments title"
+msgid "One Reply to &ldquo;%s&rdquo;"
+msgstr ""
+
+#: comments.php:26
+msgctxt "comments title"
+msgid "%1$s Reply to &ldquo;%2$s&rdquo;"
+msgid_plural "%1$s Replies to &ldquo;%2$s&rdquo;"
+msgstr[0] ""
+msgstr[1] ""
+
+#: comments.php:41
+msgid "Reply"
+msgstr ""
+
+#: comments.php:58
+msgid "Comments are closed."
+msgstr ""
+
+#: extra/functions-extra.php:293 standard/functions-standard.php:60
+msgid "Account Login"
+msgstr ""
+
+#: extra/functions-extra.php:301 standard/functions-standard.php:68
+msgid "Log Out"
+msgstr ""
+
+#: extra/includes/countdown-global.php:92
+#: extra/includes/countdown-product-page.php:92
+msgid "days"
+msgstr ""
+
+#: extra/includes/countdown-global.php:96
+#: extra/includes/countdown-product-page.php:96
+msgid "hrs"
+msgstr ""
+
+#: extra/includes/countdown-global.php:100
+#: extra/includes/countdown-product-page.php:100
+msgid "mins"
+msgstr ""
+
+#: extra/includes/countdown-global.php:104
+#: extra/includes/countdown-product-page.php:104
+msgid "secs"
+msgstr ""
+
+#: extra/includes/customiser/productive-theme-customiser-blog-related-posts.php:33
+msgid "Blog Related Posts"
+msgstr ""
+
+#: extra/includes/customiser/productive-theme-customiser-blog-related-posts.php:34
+msgid "Home Related Posts Section"
+msgstr ""
+
+#: extra/includes/customiser/productive-theme-customiser-blog-related-posts.php:59
+msgid "Enable Blog Related Posts Section?"
+msgstr ""
+
+#: extra/includes/customiser/productive-theme-customiser-blog-related-posts.php:83
+#: includes/customiser/productive-theme-customiser-homepage-products-bestsellers.php:91
+#: includes/customiser/productive-theme-customiser-homepage-products-featured.php:91
+#: includes/customiser/productive-theme-customiser-homepage-products-latest.php:91
+#: includes/customiser/productive-theme-customiser-homepage-products-on-sale.php:91
+msgid "Section Title"
+msgstr ""
+
+#: extra/includes/customiser/productive-theme-customiser-blog-related-posts.php:84
+#: extra/includes/customiser/productive-theme-customiser-blog-related-posts.php:108
+#: includes/customiser/productive-theme-customiser-homepage-products-bestsellers.php:116
+#: includes/customiser/productive-theme-customiser-homepage-products-featured.php:116
+#: includes/customiser/productive-theme-customiser-homepage-products-latest.php:116
+#: includes/customiser/productive-theme-customiser-homepage-products-on-sale.php:116
+msgid "Leave empty to hide"
+msgstr ""
+
+#: extra/includes/customiser/productive-theme-customiser-blog-related-posts.php:94
+#: extra/includes/customiser/productive-theme-customiser-blog-related-posts.php:278
+msgid "Discover additional articles from our blog."
+msgstr ""
+
+#: extra/includes/customiser/productive-theme-customiser-blog-related-posts.php:107
+msgid "Section Description"
+msgstr ""
+
+#: extra/includes/customiser/productive-theme-customiser-blog-related-posts.php:130
+#: includes/customiser/productive-theme-customiser-homepage-products-bestsellers.php:138
+#: includes/customiser/productive-theme-customiser-homepage-products-featured.php:138
+#: includes/customiser/productive-theme-customiser-homepage-products-latest.php:138
+#: includes/customiser/productive-theme-customiser-homepage-products-on-sale.php:138
+msgid "Number of columns per row"
+msgstr ""
+
+#: extra/includes/customiser/productive-theme-customiser-blog-related-posts.php:131
+#: includes/customiser/productive-theme-customiser-homepage-products-bestsellers.php:139
+#: includes/customiser/productive-theme-customiser-homepage-products-featured.php:139
+#: includes/customiser/productive-theme-customiser-homepage-products-latest.php:139
+#: includes/customiser/productive-theme-customiser-homepage-products-on-sale.php:139
+msgid "The number of products to show in a row."
+msgstr ""
+
+#: extra/includes/customiser/productive-theme-customiser-blog-related-posts.php:158
+#: includes/customiser/productive-theme-customiser-homepage-products-bestsellers.php:166
+#: includes/customiser/productive-theme-customiser-homepage-products-featured.php:166
+#: includes/customiser/productive-theme-customiser-homepage-products-latest.php:166
+#: includes/customiser/productive-theme-customiser-homepage-products-on-sale.php:166
+msgid "Number of rows"
+msgstr ""
+
+#: extra/includes/customiser/productive-theme-customiser-blog-related-posts.php:186
+msgid "Related Posts Excerpt Word Count"
+msgstr ""
+
+#: extra/includes/customiser/productive-theme-customiser-blog-related-posts.php:187
+msgid "Number of words to display in post excerpts - default 10."
+msgstr ""
+
+#: extra/includes/customiser/productive-theme-customiser-blog-related-posts.php:214
+msgid "Section Posts Layout"
+msgstr ""
+
+#: extra/includes/customiser/productive-theme-customiser-blog-related-posts.php:217
+msgid "Thumbnail Above"
+msgstr ""
+
+#: extra/includes/customiser/productive-theme-customiser-blog-related-posts.php:218
+msgid "Thumbnail on the Left"
+msgstr ""
+
+#: extra/includes/customiser/productive-theme-customiser-blog-related-posts.php:241
+#: extra/includes/customiser/productive-theme-customiser-product-page-assurance.php:289
+#: includes/customiser/productive-theme-customiser-homepage-products-bestsellers.php:194
+#: includes/customiser/productive-theme-customiser-homepage-products-featured.php:194
+#: includes/customiser/productive-theme-customiser-homepage-products-latest.php:194
+#: includes/customiser/productive-theme-customiser-homepage-products-on-sale.php:194
+msgid "Section Background Color Scheme"
+msgstr ""
+
+#: extra/includes/customiser/productive-theme-customiser-commerce-payment-methods.php:38
+msgid "Allowed Payment Methods"
+msgstr ""
+
+#: extra/includes/customiser/productive-theme-customiser-commerce-payment-methods.php:39
+msgid "Accepted Payment Methods Across Website"
+msgstr ""
+
+#: extra/includes/customiser/productive-theme-customiser-commerce-payment-methods.php:63
+msgid "Display Payment Method Logos"
+msgstr ""
+
+#: extra/includes/customiser/productive-theme-customiser-commerce-payment-methods.php:64
+msgid "Untick the box to hide payment method logos"
+msgstr ""
+
+#: extra/includes/customiser/productive-theme-customiser-commerce-payment-methods.php:86
+msgid "Logos Size (px)"
+msgstr ""
+
+#: extra/includes/customiser/productive-theme-customiser-commerce-payment-methods.php:87
+msgid ""
+"Increases or decreases logos width (in px) - height adjusts automatically."
+msgstr ""
+
+#: extra/includes/customiser/productive-theme-customiser-commerce-payment-methods.php:114
+msgid "Show PayPal?"
+msgstr ""
+
+#: extra/includes/customiser/productive-theme-customiser-commerce-payment-methods.php:115
+msgid "Display PayPal logo"
+msgstr ""
+
+#: extra/includes/customiser/productive-theme-customiser-commerce-payment-methods.php:139
+msgid "Show Stripe?"
+msgstr ""
+
+#: extra/includes/customiser/productive-theme-customiser-commerce-payment-methods.php:140
+msgid "Display Stripe logo"
+msgstr ""
+
+#: extra/includes/customiser/productive-theme-customiser-commerce-payment-methods.php:164
+msgid "Show Visa Card?"
+msgstr ""
+
+#: extra/includes/customiser/productive-theme-customiser-commerce-payment-methods.php:165
+msgid "Display VISA card logo"
+msgstr ""
+
+#: extra/includes/customiser/productive-theme-customiser-commerce-payment-methods.php:189
+msgid "Show MasterCard?"
+msgstr ""
+
+#: extra/includes/customiser/productive-theme-customiser-commerce-payment-methods.php:190
+msgid "Display MasterCard logo"
+msgstr ""
+
+#: extra/includes/customiser/productive-theme-customiser-commerce-payment-methods.php:240
+msgid "Show Google Pay?"
+msgstr ""
+
+#: extra/includes/customiser/productive-theme-customiser-commerce-payment-methods.php:241
+msgid "Display Google Pay logo"
+msgstr ""
+
+#: extra/includes/customiser/productive-theme-customiser-commerce-payment-methods.php:265
+msgid "Show JCB?"
+msgstr ""
+
+#: extra/includes/customiser/productive-theme-customiser-commerce-payment-methods.php:266
+msgid "Display JCB logo"
+msgstr ""
+
+#: extra/includes/customiser/productive-theme-customiser-commerce-payment-methods.php:290
+msgid "Show American Express?"
+msgstr ""
+
+#: extra/includes/customiser/productive-theme-customiser-commerce-payment-methods.php:291
+msgid "Display American Express logo"
+msgstr ""
+
+#: extra/includes/customiser/productive-theme-customiser-commerce-payment-methods.php:315
+msgid "Show Discover?"
+msgstr ""
+
+#: extra/includes/customiser/productive-theme-customiser-commerce-payment-methods.php:316
+msgid "Display Discover logo"
+msgstr ""
+
+#: extra/includes/customiser/productive-theme-customiser-commerce-payment-methods.php:338
+msgid "Alignment"
+msgstr ""
+
+#: extra/includes/customiser/productive-theme-customiser-countdown-global.php:40
+msgid "Countdown Banner (site-wide)"
+msgstr ""
+
+#: extra/includes/customiser/productive-theme-customiser-countdown-global.php:67
+msgid "Enable Countdown Banner"
+msgstr ""
+
+#: extra/includes/customiser/productive-theme-customiser-countdown-global.php:92
+msgid "Countdown end date"
+msgstr ""
+
+#: extra/includes/customiser/productive-theme-customiser-countdown-global.php:102
+#: extra/includes/customiser/productive-theme-customiser-countdown-global.php:622
+msgid "Countdown To Deals Banner (prebuilt, fully customizable) "
+msgstr ""
+
+#: extra/includes/customiser/productive-theme-customiser-countdown-global.php:116
+#: extra/includes/customiser/productive-theme-customiser-countdown-product-page.php:116
+msgid "Promotion copy"
+msgstr ""
+
+#: extra/includes/customiser/productive-theme-customiser-countdown-global.php:139
+#: extra/includes/customiser/productive-theme-customiser-countdown-product-page.php:139
+msgid "Promotion copy colour"
+msgstr ""
+
+#: extra/includes/customiser/productive-theme-customiser-countdown-global.php:150
+#: extra/includes/customiser/productive-theme-customiser-countdown-global.php:640
+msgid "Explore Now!"
+msgstr ""
+
+#: extra/includes/customiser/productive-theme-customiser-countdown-global.php:164
+#: extra/includes/customiser/productive-theme-customiser-countdown-product-page.php:164
+#: includes/customiser/productive-theme-customiser-announcement.php:140
+msgid "CTA text"
+msgstr ""
+
+#: extra/includes/customiser/productive-theme-customiser-countdown-global.php:188
+#: extra/includes/customiser/productive-theme-customiser-countdown-product-page.php:188
+#: includes/customiser/productive-theme-customiser-announcement.php:164
+msgid "CTA Url"
+msgstr ""
+
+#: extra/includes/customiser/productive-theme-customiser-countdown-global.php:211
+#: extra/includes/customiser/productive-theme-customiser-countdown-product-page.php:211
+#: includes/customiser/productive-theme-customiser-announcement.php:187
+msgid "Location of the CTA"
+msgstr ""
+
+#: extra/includes/customiser/productive-theme-customiser-countdown-global.php:214
+#: extra/includes/customiser/productive-theme-customiser-countdown-product-page.php:214
+msgid "Before promotion copy"
+msgstr ""
+
+#: extra/includes/customiser/productive-theme-customiser-countdown-global.php:215
+#: extra/includes/customiser/productive-theme-customiser-countdown-product-page.php:215
+msgid "After promotion copy"
+msgstr ""
+
+#: extra/includes/customiser/productive-theme-customiser-countdown-global.php:216
+#: extra/includes/customiser/productive-theme-customiser-countdown-product-page.php:216
+msgid "Before countdown boxes"
+msgstr ""
+
+#: extra/includes/customiser/productive-theme-customiser-countdown-global.php:217
+#: extra/includes/customiser/productive-theme-customiser-countdown-product-page.php:217
+msgid "After countdown boxes"
+msgstr ""
+
+#: extra/includes/customiser/productive-theme-customiser-countdown-global.php:240
+#: extra/includes/customiser/productive-theme-customiser-countdown-product-page.php:240
+#: includes/customiser/productive-theme-customiser-announcement.php:214
+msgid "CTA Text Colour"
+msgstr ""
+
+#: extra/includes/customiser/productive-theme-customiser-countdown-global.php:264
+#: extra/includes/customiser/productive-theme-customiser-countdown-product-page.php:264
+#: includes/customiser/productive-theme-customiser-announcement.php:238
+msgid "CTA background"
+msgstr ""
+
+#: extra/includes/customiser/productive-theme-customiser-countdown-global.php:288
+#: extra/includes/customiser/productive-theme-customiser-countdown-product-page.php:288
+#: includes/customiser/productive-theme-customiser-announcement.php:262
+msgid "CTA background (on hover)"
+msgstr ""
+
+#: extra/includes/customiser/productive-theme-customiser-countdown-global.php:312
+#: extra/includes/customiser/productive-theme-customiser-countdown-product-page.php:312
+#: includes/customiser/productive-theme-customiser-announcement.php:286
+msgid "CTA Shape"
+msgstr ""
+
+#: extra/includes/customiser/productive-theme-customiser-countdown-global.php:336
+#: extra/includes/customiser/productive-theme-customiser-countdown-product-page.php:336
+msgid "Location of the countdown boxes"
+msgstr ""
+
+#: extra/includes/customiser/productive-theme-customiser-countdown-global.php:339
+#: extra/includes/customiser/productive-theme-customiser-countdown-product-page.php:339
+msgid "First"
+msgstr ""
+
+#: extra/includes/customiser/productive-theme-customiser-countdown-global.php:340
+#: extra/includes/customiser/productive-theme-customiser-countdown-product-page.php:340
+msgid "Last"
+msgstr ""
+
+#: extra/includes/customiser/productive-theme-customiser-countdown-global.php:341
+#: extra/includes/customiser/productive-theme-customiser-countdown-product-page.php:341
+msgid "Hide countdown boxes"
+msgstr ""
+
+#: extra/includes/customiser/productive-theme-customiser-countdown-global.php:364
+msgid "Countdown boxes colour"
+msgstr ""
+
+#: extra/includes/customiser/productive-theme-customiser-countdown-global.php:388
+msgid "Countdown boxes background"
+msgstr ""
+
+#: extra/includes/customiser/productive-theme-customiser-countdown-global.php:412
+msgid "Countdown boxes padding (px)"
+msgstr ""
+
+#: extra/includes/customiser/productive-theme-customiser-countdown-global.php:439
+#: extra/includes/customiser/productive-theme-customiser-countdown-product-page.php:439
+msgid "Banner Layout"
+msgstr ""
+
+#: extra/includes/customiser/productive-theme-customiser-countdown-global.php:443
+#: extra/includes/customiser/productive-theme-customiser-countdown-product-page.php:443
+msgid "Vertical"
+msgstr ""
+
+#: extra/includes/customiser/productive-theme-customiser-countdown-global.php:466
+#: extra/includes/customiser/productive-theme-customiser-countdown-product-page.php:466
+#: includes/customiser/productive-theme-customiser-announcement.php:310
+msgid "Close Button color"
+msgstr ""
+
+#: extra/includes/customiser/productive-theme-customiser-countdown-global.php:490
+#: extra/includes/customiser/productive-theme-customiser-countdown-product-page.php:490
+#: includes/customiser/productive-theme-customiser-announcement.php:334
+msgid "Banner Alignment"
+msgstr ""
+
+#: extra/includes/customiser/productive-theme-customiser-countdown-global.php:513
+#: includes/customiser/productive-theme-customiser-announcement.php:358
+msgid "Bottom Border color"
+msgstr ""
+
+#: extra/includes/customiser/productive-theme-customiser-countdown-global.php:536
+#: extra/includes/customiser/productive-theme-customiser-countdown-product-page.php:536
+#: includes/customiser/productive-theme-customiser-announcement.php:381
+msgid "Banner background color"
+msgstr ""
+
+#: extra/includes/customiser/productive-theme-customiser-countdown-global.php:562
+#: extra/includes/customiser/productive-theme-customiser-countdown-product-page.php:562
+#: includes/customiser/productive-theme-customiser-announcement.php:407
+msgid "Banner background Image"
+msgstr ""
+
+#: extra/includes/customiser/productive-theme-customiser-countdown-global.php:563
+#: extra/includes/customiser/productive-theme-customiser-countdown-product-page.php:563
+#: includes/customiser/productive-theme-customiser-announcement.php:408
+msgid "If set, the image overrides the background color."
+msgstr ""
+
+#: extra/includes/customiser/productive-theme-customiser-countdown-product-page.php:40
+msgid "Countdown Banner (product page)"
+msgstr ""
+
+#: extra/includes/customiser/productive-theme-customiser-countdown-product-page.php:67
+#: extra/includes/customiser/productive-theme-customiser-product-page-assurance.php:61
+msgid "Enable Product Page Countdown Banner"
+msgstr ""
+
+#: extra/includes/customiser/productive-theme-customiser-countdown-product-page.php:92
+msgid "Product Page Countdown end date"
+msgstr ""
+
+#: extra/includes/customiser/productive-theme-customiser-countdown-product-page.php:102
+#: extra/includes/customiser/productive-theme-customiser-countdown-product-page.php:621
+msgid "Take advantage of this special price before"
+msgstr ""
+
+#: extra/includes/customiser/productive-theme-customiser-countdown-product-page.php:364
+msgid "Product Page Countdown boxes colour"
+msgstr ""
+
+#: extra/includes/customiser/productive-theme-customiser-countdown-product-page.php:388
+msgid "Product Page Countdown boxes background"
+msgstr ""
+
+#: extra/includes/customiser/productive-theme-customiser-countdown-product-page.php:412
+msgid "Product Page Countdown boxes padding (px)"
+msgstr ""
+
+#: extra/includes/customiser/productive-theme-customiser-countdown-product-page.php:513
+msgid "Border color"
+msgstr ""
+
+#: extra/includes/customiser/productive-theme-customiser-extras.php:49
+msgid "Content Entrance Animation"
+msgstr ""
+
+#: extra/includes/customiser/productive-theme-customiser-extras.php:72
+msgid "Content Entrance Direction"
+msgstr ""
+
+#: extra/includes/customiser/productive-theme-customiser-extras.php:100
+msgid "Subcategories Style"
+msgstr ""
+
+#: extra/includes/customiser/productive-theme-customiser-extras.php:103
+msgid "Hide Subcategories"
+msgstr ""
+
+#: extra/includes/customiser/productive-theme-customiser-extras.php:104
+msgid "Subcategories Design 01"
+msgstr ""
+
+#: extra/includes/customiser/productive-theme-customiser-extras.php:129
+msgid "Subcategories Per Row"
+msgstr ""
+
+#: extra/includes/customiser/productive-theme-customiser-extras.php:130
+msgid ""
+"The number of subcategories to display (per row) on archive pages (max 7)"
+msgstr ""
+
+#: extra/includes/customiser/productive-theme-customiser-extras.php:158
+msgid "Apply Full Width Layout?"
+msgstr ""
+
+#: extra/includes/customiser/productive-theme-customiser-extras.php:159
+msgid ""
+"Display website in full width of the screen (overrides Website Content Width "
+"below)"
+msgstr ""
+
+#: extra/includes/customiser/productive-theme-customiser-extras.php:182
+msgid "Site-wide Pages Width (px)"
+msgstr ""
+
+#: extra/includes/customiser/productive-theme-customiser-extras.php:183
+msgid ""
+"Note, this sets the max width - website remains responsive (default = 0)."
+msgstr ""
+
+#: extra/includes/customiser/productive-theme-customiser-header-footer.php:49
+#: includes/customiser/productive-theme-customiser-header.php:61
+msgid "Select Header Design"
+msgstr ""
+
+#: extra/includes/customiser/productive-theme-customiser-header-footer.php:52
+#: extra/includes/customiser/productive-theme-customiser-header-footer.php:111
+#: includes/customiser/productive-theme-customiser-footer.php:63
+#: includes/customiser/productive-theme-customiser-header.php:64
+msgid "Productive Business"
+msgstr ""
+
+#: extra/includes/customiser/productive-theme-customiser-header-footer.php:53
+#: extra/includes/customiser/productive-theme-customiser-header-footer.php:112
+#: includes/customiser/productive-theme-customiser-footer.php:64
+#: includes/customiser/productive-theme-customiser-header.php:65
+msgid "Productive eCommerce"
+msgstr ""
+
+#: extra/includes/customiser/productive-theme-customiser-header-footer.php:54
+#: extra/includes/customiser/productive-theme-customiser-header-footer.php:113
+#: includes/customiser/productive-theme-customiser-footer.php:65
+#: includes/customiser/productive-theme-customiser-header.php:66
+msgid "Stockist"
+msgstr ""
+
+#: extra/includes/customiser/productive-theme-customiser-header-footer.php:55
+#: includes/customiser/productive-theme-customiser-header.php:67
+msgid "Header Design 01"
+msgstr ""
+
+#: extra/includes/customiser/productive-theme-customiser-header-footer.php:56
+msgid "Header Design 02"
+msgstr ""
+
+#: extra/includes/customiser/productive-theme-customiser-header-footer.php:57
+msgid "Header Design 03"
+msgstr ""
+
+#: extra/includes/customiser/productive-theme-customiser-header-footer.php:58
+msgid "Header Design 04"
+msgstr ""
+
+#: extra/includes/customiser/productive-theme-customiser-header-footer.php:59
+msgid "Header Design 05"
+msgstr ""
+
+#: extra/includes/customiser/productive-theme-customiser-header-footer.php:60
+msgid "Header Design 06"
+msgstr ""
+
+#: extra/includes/customiser/productive-theme-customiser-header-footer.php:61
+msgid "Header Design 07"
+msgstr ""
+
+#: extra/includes/customiser/productive-theme-customiser-header-footer.php:62
+msgid "Header Design 08"
+msgstr ""
+
+#: extra/includes/customiser/productive-theme-customiser-header-footer.php:63
+msgid "Header Design 09"
+msgstr ""
+
+#: extra/includes/customiser/productive-theme-customiser-header-footer.php:64
+#: includes/customiser/productive-theme-customiser-header.php:68
+msgid "Transact"
+msgstr ""
+
+#: extra/includes/customiser/productive-theme-customiser-header-footer.php:65
+msgid "Header Design 11"
+msgstr ""
+
+#: extra/includes/customiser/productive-theme-customiser-header-footer.php:66
+msgid "Header Design 12"
+msgstr ""
+
+#: extra/includes/customiser/productive-theme-customiser-header-footer.php:67
+msgid "Header Design 13"
+msgstr ""
+
+#: extra/includes/customiser/productive-theme-customiser-header-footer.php:68
+msgid "Header Design 14"
+msgstr ""
+
+#: extra/includes/customiser/productive-theme-customiser-header-footer.php:69
+msgid "Header Design 15"
+msgstr ""
+
+#: extra/includes/customiser/productive-theme-customiser-header-footer.php:70
+msgid "Header Design 16"
+msgstr ""
+
+#: extra/includes/customiser/productive-theme-customiser-header-footer.php:71
+msgid "Header Design 17"
+msgstr ""
+
+#: extra/includes/customiser/productive-theme-customiser-header-footer.php:72
+msgid "Header Design 18"
+msgstr ""
+
+#: extra/includes/customiser/productive-theme-customiser-header-footer.php:73
+msgid "Header Design 19"
+msgstr ""
+
+#: extra/includes/customiser/productive-theme-customiser-header-footer.php:74
+msgid "Header Design 20"
+msgstr ""
+
+#: extra/includes/customiser/productive-theme-customiser-header-footer.php:75
+msgid "Header Design 21"
+msgstr ""
+
+#: extra/includes/customiser/productive-theme-customiser-header-footer.php:76
+msgid "Header Design 22"
+msgstr ""
+
+#: extra/includes/customiser/productive-theme-customiser-header-footer.php:77
+msgid "Header Design 23"
+msgstr ""
+
+#: extra/includes/customiser/productive-theme-customiser-header-footer.php:78
+msgid "Header Design 24"
+msgstr ""
+
+#: extra/includes/customiser/productive-theme-customiser-header-footer.php:79
+msgid "Header Design 25"
+msgstr ""
+
+#: extra/includes/customiser/productive-theme-customiser-header-footer.php:80
+msgid "Header Design 26"
+msgstr ""
+
+#: extra/includes/customiser/productive-theme-customiser-header-footer.php:81
+msgid "Header Design 27"
+msgstr ""
+
+#: extra/includes/customiser/productive-theme-customiser-header-footer.php:82
+msgid "Header Design 28"
+msgstr ""
+
+#: extra/includes/customiser/productive-theme-customiser-header-footer.php:108
+#: includes/customiser/productive-theme-customiser-footer.php:60
+msgid "Select Footer Design"
+msgstr ""
+
+#: extra/includes/customiser/productive-theme-customiser-header-footer.php:114
+#: includes/customiser/productive-theme-customiser-footer.php:66
+msgid "Footer Design 01"
+msgstr ""
+
+#: extra/includes/customiser/productive-theme-customiser-header-footer.php:115
+msgid "Footer Design 02"
+msgstr ""
+
+#: extra/includes/customiser/productive-theme-customiser-header-footer.php:116
+msgid "Footer Design 03"
+msgstr ""
+
+#: extra/includes/customiser/productive-theme-customiser-header-footer.php:117
+msgid "Footer Design 04"
+msgstr ""
+
+#: extra/includes/customiser/productive-theme-customiser-header-footer.php:118
+msgid "Footer Design 05"
+msgstr ""
+
+#: extra/includes/customiser/productive-theme-customiser-header-footer.php:119
+msgid "Footer Design 06"
+msgstr ""
+
+#: extra/includes/customiser/productive-theme-customiser-header-footer.php:120
+msgid "Footer Design 07"
+msgstr ""
+
+#: extra/includes/customiser/productive-theme-customiser-header-footer.php:121
+msgid "Footer Design 08"
+msgstr ""
+
+#: extra/includes/customiser/productive-theme-customiser-header-footer.php:122
+msgid "Footer Design 09"
+msgstr ""
+
+#: extra/includes/customiser/productive-theme-customiser-header-footer.php:144
+msgid "Select Footer Copyright Design"
+msgstr ""
+
+#: extra/includes/customiser/productive-theme-customiser-header-footer.php:147
+msgid "Copyright Design 01"
+msgstr ""
+
+#: extra/includes/customiser/productive-theme-customiser-header-footer.php:148
+msgid "Copyright Design 02"
+msgstr ""
+
+#: extra/includes/customiser/productive-theme-customiser-header-footer.php:149
+msgid "Copyright Design 03"
+msgstr ""
+
+#: extra/includes/customiser/productive-theme-customiser-header-footer.php:150
+msgid "Copyright Design 04"
+msgstr ""
+
+#: extra/includes/customiser/productive-theme-customiser-header-footer.php:151
+msgid "Copyright Design 05"
+msgstr ""
+
+#: extra/includes/customiser/productive-theme-customiser-header-footer.php:174
+msgid "Copyright Content Alignment"
+msgstr ""
+
+#: extra/includes/customiser/productive-theme-customiser-localization.php:34
+msgid "Localization Options"
+msgstr ""
+
+#: extra/includes/customiser/productive-theme-customiser-localization.php:60
+msgid "Select Language Plugin"
+msgstr ""
+
+#: extra/includes/customiser/productive-theme-customiser-localization.php:63
+msgid "WPML"
+msgstr ""
+
+#: extra/includes/customiser/productive-theme-customiser-localization.php:64
+msgid "TranslatePress"
+msgstr ""
+
+#: extra/includes/customiser/productive-theme-customiser-localization.php:65
+msgid "Hide Language Switcher"
+msgstr ""
+
+#: extra/includes/customiser/productive-theme-customiser-localization.php:88
+msgid "Select WooCOmmerce Currency Plugin"
+msgstr ""
+
+#: extra/includes/customiser/productive-theme-customiser-localization.php:91
+msgid "FOX - Currency Switcher"
+msgstr ""
+
+#: extra/includes/customiser/productive-theme-customiser-localization.php:92
+msgid "WCML (Multicurrency by OnTheGoSystems)"
+msgstr ""
+
+#: extra/includes/customiser/productive-theme-customiser-localization.php:93
+msgid "Hide Currency Switcher"
+msgstr ""
+
+#: extra/includes/customiser/productive-theme-customiser-localization.php:116
+#: extra/includes/customiser/productive-theme-customiser-localization.php:140
+msgid "Localisation Popup Top Content"
+msgstr ""
+
+#: extra/includes/customiser/productive-theme-customiser-localization.php:117
+#: extra/includes/customiser/productive-theme-customiser-localization.php:141
+#: includes/customiser/productive-theme-customiser-blog-single.php:343
+msgid "Leave empty to disable (html tags allowed)"
+msgstr ""
+
+#: extra/includes/customiser/productive-theme-customiser-localization.php:163
+msgid "Switchers Popup Max Width (px)"
+msgstr ""
+
+#: extra/includes/customiser/productive-theme-customiser-localization.php:196
+msgid "Show Language Switcher?"
+msgstr ""
+
+#: extra/includes/customiser/productive-theme-customiser-localization.php:197
+msgid "Display or hide language switcher icon"
+msgstr ""
+
+#: extra/includes/customiser/productive-theme-customiser-localization.php:221
+msgid "Show WooCommerce Currency Switcher?"
+msgstr ""
+
+#: extra/includes/customiser/productive-theme-customiser-localization.php:222
+msgid "Display or hide currency switcher icon"
+msgstr ""
+
+#: extra/includes/customiser/productive-theme-customiser-my-account.php:40
+msgid "My Account Popup"
+msgstr ""
+
+#: extra/includes/customiser/productive-theme-customiser-my-account.php:67
+msgid "Enable My Account Popup"
+msgstr ""
+
+#: extra/includes/customiser/productive-theme-customiser-my-account.php:92
+msgid "Send new registration email"
+msgstr ""
+
+#: extra/includes/customiser/productive-theme-customiser-my-account.php:116
+msgid "New Account Username Option"
+msgstr ""
+
+#: extra/includes/customiser/productive-theme-customiser-my-account.php:117
+msgid "Ask user to enter username or generate automatically?"
+msgstr ""
+
+#: extra/includes/customiser/productive-theme-customiser-my-account.php:119
+msgid "Ask User"
+msgstr ""
+
+#: extra/includes/customiser/productive-theme-customiser-my-account.php:120
+msgid "Generate"
+msgstr ""
+
+#: extra/includes/customiser/productive-theme-customiser-product-page-assurance.php:34
+msgid "Product Page Assurance"
+msgstr ""
+
+#: extra/includes/customiser/productive-theme-customiser-product-page-assurance.php:87
+msgid "Product Page Assurance Image"
+msgstr ""
+
+#: extra/includes/customiser/productive-theme-customiser-product-page-assurance.php:111
+msgid "Image width (px)"
+msgstr ""
+
+#: extra/includes/customiser/productive-theme-customiser-product-page-assurance.php:125
+#: extra/includes/customiser/productive-theme-customiser-product-page-assurance.php:340
+msgid "100% Money Back Guarantee"
+msgstr ""
+
+#: extra/includes/customiser/productive-theme-customiser-product-page-assurance.php:139
+msgid "Product Page Assurance Title"
+msgstr ""
+
+#: extra/includes/customiser/productive-theme-customiser-product-page-assurance.php:140
+#: includes/customiser/productive-theme-customiser-homepage-banner-content.php:118
+msgid "Leave empty to disable"
+msgstr ""
+
+#: extra/includes/customiser/productive-theme-customiser-product-page-assurance.php:150
+#: extra/includes/customiser/productive-theme-customiser-product-page-assurance.php:353
+msgid ""
+"14-day returns and money back guarantee available today. Lorem Ipsum is "
+"simply dummy text of the printing."
+msgstr ""
+
+#: extra/includes/customiser/productive-theme-customiser-product-page-assurance.php:164
+msgid "Product Page Assurance Content"
+msgstr ""
+
+#: extra/includes/customiser/productive-theme-customiser-product-page-assurance.php:165
+#: includes/customiser/productive-theme-customiser-homepage-banner-content.php:143
+#: includes/customiser/productive-theme-customiser-homepage-banner-content.php:167
+msgid "Leave empty to disable."
+msgstr ""
+
+#: extra/includes/customiser/productive-theme-customiser-product-page-assurance.php:187
+msgid "Show Payment Methods?"
+msgstr ""
+
+#: extra/includes/customiser/productive-theme-customiser-product-page-assurance.php:211
+msgid "Payment Method Icons width (px)"
+msgstr ""
+
+#: extra/includes/customiser/productive-theme-customiser-product-page-assurance.php:238
+msgid "Section Alignment"
+msgstr ""
+
+#: extra/includes/customiser/productive-theme-customiser-product-page-assurance.php:262
+msgid "Section width (px)"
+msgstr ""
+
+#: extra/includes/customiser/typography/productive-theme-customiser-color-scheme.php:36
+msgid "Switch Colour Scheme"
+msgstr ""
+
+#: extra/includes/customiser/typography/productive-theme-customiser-color-scheme.php:37
+msgid "Assign site-wide color scheme"
+msgstr ""
+
+#: extra/includes/customiser/typography/productive-theme-customiser-color-scheme.php:62
+msgid "Colour Mood"
+msgstr ""
+
+#: extra/includes/customiser/typography/productive-theme-customiser-color-scheme.php:63
+msgid ""
+"Select \"Disable Colour Scheme\" to only utilize the default theme color "
+"scheme within CSS files."
+msgstr ""
+
+#: extra/includes/customiser/typography/productive-theme-customiser-color-scheme.php:65
+msgid "Disable Colour Scheme"
+msgstr ""
+
+#: extra/includes/customiser/typography/productive-theme-customiser-color-scheme.php:66
+msgid "Bright Colour"
+msgstr ""
+
+#: extra/includes/customiser/typography/productive-theme-customiser-color-scheme.php:67
+msgid "Pastel Colour"
+msgstr ""
+
+#: extra/includes/customiser/typography/productive-theme-customiser-color-scheme.php:68
+msgid "Custom Colour Palette"
+msgstr ""
+
+#: extra/includes/customiser/typography/productive-theme-customiser-color-scheme.php:91
+msgid "Dominant Colour"
+msgstr ""
+
+#: extra/includes/customiser/typography/productive-theme-customiser-color-scheme.php:115
+msgid "Color Blend (Combination)"
+msgstr ""
+
+#: extra/includes/customiser/typography/productive-theme-customiser-color-scheme.php:118
+#: includes/customiser/productive-theme-customiser-header.php:283
+msgid "Standard"
+msgstr ""
+
+#: extra/includes/customiser/typography/productive-theme-customiser-color-scheme.php:119
+msgid "Monochromatic"
+msgstr ""
+
+#: extra/includes/customiser/typography/productive-theme-customiser-color-scheme.php:120
+msgid "Complementary"
+msgstr ""
+
+#: extra/includes/customiser/typography/productive-theme-customiser-color-scheme.php:121
+msgid "Analogous"
+msgstr ""
+
+#: extra/includes/customiser/typography/productive-theme-customiser-color-scheme.php:122
+msgid "Triadic"
+msgstr ""
+
+#: extra/includes/customiser/typography/productive-theme-customiser-color-scheme.php:145
+msgid "Brightness Tone"
+msgstr ""
+
+#: extra/includes/customiser/typography/productive-theme-customiser-color-scheme.php:148
+msgid "Standard Tone"
+msgstr ""
+
+#: extra/includes/customiser/typography/productive-theme-customiser-color-scheme.php:149
+msgid "Light Tone"
+msgstr ""
+
+#: extra/includes/customiser/typography/productive-theme-customiser-color-scheme.php:150
+msgid "Dark Tone"
+msgstr ""
+
+#: extra/includes/customiser/typography/productive-theme-customiser-color-scheme.php:151
+msgid "Black Background"
+msgstr ""
+
+#: extra/includes/customiser/typography/productive-theme-customiser-color-scheme.php:204
+msgid "Blue"
+msgstr ""
+
+#: extra/includes/customiser/typography/productive-theme-customiser-color-scheme.php:205
+msgid "Navy"
+msgstr ""
+
+#: extra/includes/customiser/typography/productive-theme-customiser-color-scheme.php:206
+msgid "Green"
+msgstr ""
+
+#: extra/includes/customiser/typography/productive-theme-customiser-color-scheme.php:207
+msgid "Aquamarine"
+msgstr ""
+
+#: extra/includes/customiser/typography/productive-theme-customiser-color-scheme.php:208
+msgid "Red"
+msgstr ""
+
+#: extra/includes/customiser/typography/productive-theme-customiser-color-scheme.php:209
+msgid "Pink"
+msgstr ""
+
+#: extra/includes/customiser/typography/productive-theme-customiser-color-scheme.php:210
+msgid "Chestnut"
+msgstr ""
+
+#: extra/includes/customiser/typography/productive-theme-customiser-color-scheme.php:211
+msgid "Grape"
+msgstr ""
+
+#: extra/includes/customiser/typography/productive-theme-customiser-color-scheme.php:212
+msgid "Chocolate"
+msgstr ""
+
+#: extra/includes/customiser/typography/productive-theme-customiser-color-scheme.php:213
+msgid "Brown"
+msgstr ""
+
+#: extra/includes/customiser/typography/productive-theme-customiser-color-scheme.php:214
+msgid "Purple"
+msgstr ""
+
+#: extra/includes/customiser/typography/productive-theme-customiser-color-scheme.php:215
+msgid "Velvet"
+msgstr ""
+
+#: extra/includes/customiser/typography/productive-theme-customiser-color-scheme.php:216
+msgid "Indigo"
+msgstr ""
+
+#: extra/includes/customiser/typography/productive-theme-customiser-color-scheme.php:217
+msgid "Grey"
+msgstr ""
+
+#: extra/includes/customiser/typography/productive-theme-customiser-color-scheme.php:218
+msgid "Charcoal"
+msgstr ""
+
+#: extra/includes/customiser/typography/productive-theme-customiser-color-scheme.php:219
+msgid "Black"
+msgstr ""
+
+#: extra/includes/extras/update-manager/class-productive-update-manager-theme.php:193
+msgid " theme license has not been activated on this website. Kindly "
+msgstr ""
+
+#: extra/includes/extras/update-manager/class-productive-update-manager-theme.php:194
+msgid "activate your license here"
+msgstr ""
+
+#: extra/includes/extras/update-manager/class-productive-update-manager-theme.php:195
+msgid "to ensure access to settings and updates for new versions."
+msgstr ""
+
+#: extra/includes/module/productive-language-currency.php:31
+msgid "User Preferences"
+msgstr ""
+
+#: extra/options/partials/section-extras.php:40
+msgid "License activation was successful."
+msgstr ""
+
+#: extra/options/partials/section-extras.php:44
+msgid "License activation was unsuccessful: "
+msgstr ""
+
+#: extra/options/partials/section-extras.php:55
+msgid "License status could not be verified at this time."
+msgstr ""
+
+#: extra/options/partials/section-extras.php:60
+msgid "License validation was successful."
+msgstr ""
+
+#: extra/options/partials/section-extras.php:69
+msgid "License validation was unsuccessful."
+msgstr ""
+
+#: extra/options/partials/section-extras.php:70
+msgid "Reason: "
+msgstr ""
+
+#: extra/options/partials/section-extras.php:83
+msgid ""
+"The license status cannot be confirmed at the moment. Please attempt again "
+"later."
+msgstr ""
+
+#: extra/options/partials/section-extras.php:97
+msgid "License Status: "
+msgstr ""
+
+#: extra/options/partials/section-extras.php:150
+msgid "Do you wish to deactivate this license?"
+msgstr ""
+
+#: extra/options/partials/section-extras.php:153
+msgid ""
+"You might need to deactivate your license, especially when migrating this "
+"website to a different server. "
+msgstr ""
+
+#: extra/options/partials/section-extras.php:157
+msgid ""
+"Be aware that upon deactivation, this website will no longer be licensed."
+msgstr ""
+
+#: extra/options/partials/section-extras.php:161
+msgid ""
+"To reactivate the license, either on this server or another, you must "
+"undergo the activation process again."
+msgstr ""
+
+#: extra/options/partials/section-extras.php:166
+msgid "Click below to deactivate the license for this site."
+msgstr ""
+
+#: extra/options/partials/section-extras.php:186
+msgid "Activate License"
+msgstr ""
+
+#: extra/options/partials/section-extras.php:189
+msgid "The email address used for your order typically serves as your license."
+msgstr ""
+
+#: extra/options/partials/section-extras.php:190
+msgid ""
+"To activate your license on this website, please input that email address "
+"below."
+msgstr ""
+
+#: extra/options/theme-settings.php:23 standard/options/theme-settings.php:23
+msgid " Admin Settings and Options"
+msgstr ""
+
+#: extra/options/theme-settings.php:24 standard/options/theme-settings.php:24
+msgid "Productive..."
+msgstr ""
+
+#: extra/options/theme-settings.php:26 extra/options/theme-settings.php:94
+#: standard/options/theme-settings.php:26
+#: standard/options/theme-settings.php:86
+msgid "Theme Dashboard"
+msgstr ""
+
+#: extra/options/theme-settings.php:95
+msgid "License"
+msgstr ""
+
+#: extra/options/theme-settings.php:123 standard/options/theme-settings.php:115
+msgid "Harmonious Plugins"
+msgstr ""
+
+#: extra/options/theme-settings.php:144
+msgid "Share Your Insights! Help enhance "
+msgstr ""
+
+#: extra/woocommerce-extra.php:24
+#: includes/customiser/productive-theme-customiser-homepage-products-bestsellers.php:102
+#: includes/customiser/productive-theme-customiser-homepage-products-bestsellers.php:258
+#: includes/customiser/productive-theme-customiser-homepage-products-featured.php:102
+#: includes/customiser/productive-theme-customiser-homepage-products-featured.php:258
+#: includes/customiser/productive-theme-customiser-homepage-products-latest.php:102
+#: includes/customiser/productive-theme-customiser-homepage-products-latest.php:258
+#: includes/customiser/productive-theme-customiser-homepage-products-on-sale.php:102
+#: includes/customiser/productive-theme-customiser-homepage-products-on-sale.php:258
+msgid "Shop"
+msgstr ""
+
+#: extra/woocommerce-extra.php:26
+msgid "in "
+msgstr ""
+
+#: extra/woocommerce-extra.php:31
+msgid "Categories "
+msgstr ""
+
+#: includes/customiser/productive-theme-customiser-404.php:40
+msgid "404 Page Options"
+msgstr ""
+
+#: includes/customiser/productive-theme-customiser-404.php:67
+msgid "Enable Header Banner"
+msgstr ""
+
+#: includes/customiser/productive-theme-customiser-404.php:94
+msgid "Header Banner Image (404 page only)"
+msgstr ""
+
+#: includes/customiser/productive-theme-customiser-404.php:95
+msgid "Top banner image for 404 (error page)"
+msgstr ""
+
+#: includes/customiser/productive-theme-customiser-404.php:106
+#: includes/customiser/productive-theme-customiser-404.php:267
+msgid "Page Not Found"
+msgstr ""
+
+#: includes/customiser/productive-theme-customiser-404.php:120
+msgid "404 Page Title"
+msgstr ""
+
+#: includes/customiser/productive-theme-customiser-404.php:121
+msgid "The page title, which displays at the top of 404 page"
+msgstr ""
+
+#: includes/customiser/productive-theme-customiser-404.php:130
+#: includes/customiser/productive-theme-customiser-404.php:276
+msgid "You got 404"
+msgstr ""
+
+#: includes/customiser/productive-theme-customiser-404.php:144
+msgid "404 Large Copy"
+msgstr ""
+
+#: includes/customiser/productive-theme-customiser-404.php:145
+msgid "Displays in the main content area of 404 page"
+msgstr ""
+
+#: includes/customiser/productive-theme-customiser-404.php:154
+#: includes/customiser/productive-theme-customiser-404.php:285
+msgid "No page found matching the request. Please browse to a different page."
+msgstr ""
+
+#: includes/customiser/productive-theme-customiser-404.php:168
+msgid "404 Page Information"
+msgstr ""
+
+#: includes/customiser/productive-theme-customiser-404.php:169
+msgid "Smaller information to guide user action."
+msgstr ""
+
+#: includes/customiser/productive-theme-customiser-404.php:179
+#: includes/customiser/productive-theme-customiser-404.php:294
+msgid "Continue to Homepage"
+msgstr ""
+
+#: includes/customiser/productive-theme-customiser-404.php:193
+msgid "Go to Homepage copy"
+msgstr ""
+
+#: includes/customiser/productive-theme-customiser-404.php:194
+msgid "Copy for the anchor link that helps user browse away from 404 page"
+msgstr ""
+
+#: includes/customiser/productive-theme-customiser-404.php:216
+msgid "Back to Homepage Style"
+msgstr ""
+
+#: includes/customiser/productive-theme-customiser-404.php:220
+msgid "Button"
+msgstr ""
+
+#: includes/customiser/productive-theme-customiser-announcement.php:40
+msgid "Header Announcement"
+msgstr ""
+
+#: includes/customiser/productive-theme-customiser-announcement.php:67
+msgid "Enable Header Announcement"
+msgstr ""
+
+#: includes/customiser/productive-theme-customiser-announcement.php:78
+#: includes/customiser/productive-theme-customiser-announcement.php:443
+msgid "Announcement to site visitors (prebuilt, fully customizable) "
+msgstr ""
+
+#: includes/customiser/productive-theme-customiser-announcement.php:92
+msgid "Announcement copy"
+msgstr ""
+
+#: includes/customiser/productive-theme-customiser-announcement.php:115
+msgid "Announcement copy colour"
+msgstr ""
+
+#: includes/customiser/productive-theme-customiser-announcement.php:126
+#: includes/customiser/productive-theme-customiser-announcement.php:461
+msgid "Read now!"
+msgstr ""
+
+#: includes/customiser/productive-theme-customiser-blog-single.php:37
+msgid "Single Post Page"
+msgstr ""
+
+#: includes/customiser/productive-theme-customiser-blog-single.php:38
+msgid "Single Post Page Options"
+msgstr ""
+
+#: includes/customiser/productive-theme-customiser-blog-single.php:63
+msgid "Blog Pages Layout"
+msgstr ""
+
+#: includes/customiser/productive-theme-customiser-blog-single.php:86
+msgid "If available, display video in the place of featured image?"
+msgstr ""
+
+#: includes/customiser/productive-theme-customiser-blog-single.php:109
+msgid "Use Drop Caps"
+msgstr ""
+
+#: includes/customiser/productive-theme-customiser-blog-single.php:110
+msgid "Use Drop Caps on Post & Pages"
+msgstr ""
+
+#: includes/customiser/productive-theme-customiser-blog-single.php:133
+msgid "Blog Page Content Area Width (px)"
+msgstr ""
+
+#: includes/customiser/productive-theme-customiser-blog-single.php:134
+msgid ""
+"The width of the content area on Blog page. Only effective when using One-"
+"Column layout. Set to 1 for default width."
+msgstr ""
+
+#: includes/customiser/productive-theme-customiser-blog-single.php:161
+msgid "Blog Page Content Alignment"
+msgstr ""
+
+#: includes/customiser/productive-theme-customiser-blog-single.php:165
+msgid "Rigt"
+msgstr ""
+
+#: includes/customiser/productive-theme-customiser-blog-single.php:190
+#: includes/customiser/productive-theme-customiser-blog.php:192
+msgid "Display Category"
+msgstr ""
+
+#: includes/customiser/productive-theme-customiser-blog-single.php:214
+msgid "Display Post Author Name"
+msgstr ""
+
+#: includes/customiser/productive-theme-customiser-blog-single.php:238
+msgid "Display Post Author Bio"
+msgstr ""
+
+#: includes/customiser/productive-theme-customiser-blog-single.php:241
+msgid "Above Content"
+msgstr ""
+
+#: includes/customiser/productive-theme-customiser-blog-single.php:242
+msgid "Below Content"
+msgstr ""
+
+#: includes/customiser/productive-theme-customiser-blog-single.php:243
+msgid "Both Above and Below Content"
+msgstr ""
+
+#: includes/customiser/productive-theme-customiser-blog-single.php:244
+msgid "Hide Blog Author Bio"
+msgstr ""
+
+#: includes/customiser/productive-theme-customiser-blog-single.php:253
+#: includes/customiser/productive-theme-customiser-blog-single.php:513
+msgid "About "
+msgstr ""
+
+#: includes/customiser/productive-theme-customiser-blog-single.php:267
+msgid "Copy Before Author Name "
+msgstr ""
+
+#: includes/customiser/productive-theme-customiser-blog-single.php:268
+msgid "Leave empty to disable copy before Author name."
+msgstr ""
+
+#: includes/customiser/productive-theme-customiser-blog-single.php:290
+msgid "Author Bio Background Color Scheme"
+msgstr ""
+
+#: includes/customiser/productive-theme-customiser-blog-single.php:314
+msgid "Display Post Date"
+msgstr ""
+
+#: includes/customiser/productive-theme-customiser-blog-single.php:317
+msgid "Original Posted Date"
+msgstr ""
+
+#: includes/customiser/productive-theme-customiser-blog-single.php:318
+msgid "Last Updated  Date"
+msgstr ""
+
+#: includes/customiser/productive-theme-customiser-blog-single.php:319
+msgid "Hide Posted Date"
+msgstr ""
+
+#: includes/customiser/productive-theme-customiser-blog-single.php:328
+#: includes/customiser/productive-theme-customiser-blog-single.php:569
+msgid ""
+"<span class=\"bolded\">Customizable Disclaimer Section: </span>Lorem Ipsum "
+"has been the industry’s standard dummy text ever since the 1500s, when an "
+"unknown printer took a galley of type and scrambled it to make a type "
+"specimen book."
+msgstr ""
+
+#: includes/customiser/productive-theme-customiser-blog-single.php:342
+msgid "Disclaimer Copy"
+msgstr ""
+
+#: includes/customiser/productive-theme-customiser-blog-single.php:366
+msgid "Disclaimer Title"
+msgstr ""
+
+#: includes/customiser/productive-theme-customiser-blog-single.php:367
+msgid "Leave empty to disable disclaimer title."
+msgstr ""
+
+#: includes/customiser/productive-theme-customiser-blog-single.php:389
+msgid "Disclaimer Background Color Scheme"
+msgstr ""
+
+#: includes/customiser/productive-theme-customiser-blog.php:37
+msgid "Blog Archives"
+msgstr ""
+
+#: includes/customiser/productive-theme-customiser-blog.php:38
+msgid "Blog Archives (Categories) Options"
+msgstr ""
+
+#: includes/customiser/productive-theme-customiser-blog.php:63
+msgid "Blog Categories Layout"
+msgstr ""
+
+#: includes/customiser/productive-theme-customiser-blog.php:87
+msgid "Number of Blog Posts Per Row"
+msgstr ""
+
+#: includes/customiser/productive-theme-customiser-blog.php:88
+msgid "Use 3 or more for best result"
+msgstr ""
+
+#: includes/customiser/productive-theme-customiser-blog.php:118
+msgid "Blog Post Placeholder Thumbnail"
+msgstr ""
+
+#: includes/customiser/productive-theme-customiser-blog.php:119
+msgid "An image that shows as thumbnail if a blog post does not have one"
+msgstr ""
+
+#: includes/customiser/productive-theme-customiser-blog.php:142
+msgid "Blog Archives Style"
+msgstr ""
+
+#: includes/customiser/productive-theme-customiser-blog.php:167
+msgid "Display Post Reading Time"
+msgstr ""
+
+#: includes/customiser/productive-theme-customiser-blog.php:216
+msgid "Display Excerpt"
+msgstr ""
+
+#: includes/customiser/productive-theme-customiser-blog.php:240
+msgid "Excerpt Word Count"
+msgstr ""
+
+#: includes/customiser/productive-theme-customiser-blog.php:241
+msgid "Number of words to display in post excerpts."
+msgstr ""
+
+#: includes/customiser/productive-theme-customiser-blog.php:268
+msgid "Display Post Author"
+msgstr ""
+
+#: includes/customiser/productive-theme-customiser-blog.php:292
+msgid "Display Last Updated Date"
+msgstr ""
+
+#: includes/customiser/productive-theme-customiser-blog.php:316
+msgid "Display Comment Count"
+msgstr ""
+
+#: includes/customiser/productive-theme-customiser-blog.php:340
+msgid "Display Read More Button"
+msgstr ""
+
+#: includes/customiser/productive-theme-customiser-commerce-categories.php:37
+#: includes/productiveminds-theme-dashboad-items.php:163
+msgid "Product Archives"
+msgstr ""
+
+#: includes/customiser/productive-theme-customiser-commerce-categories.php:38
+msgid "Product Archives (Shop, Category, Loop) Options"
+msgstr ""
+
+#: includes/customiser/productive-theme-customiser-commerce-categories.php:65
+msgid "Always show Sidebar on WooCommerce Archives?"
+msgstr ""
+
+#: includes/customiser/productive-theme-customiser-commerce-categories.php:66
+msgid ""
+"If enabled, sidebars will always be displayed on Product catalog and "
+"archives, even if the site is set to one-column layout)"
+msgstr ""
+
+#: includes/customiser/productive-theme-customiser-commerce-categories.php:87
+msgid "Product Loops Style"
+msgstr ""
+
+#: includes/customiser/productive-theme-customiser-commerce-categories.php:110
+msgid "Add to Cart Display"
+msgstr ""
+
+#: includes/customiser/productive-theme-customiser-commerce-categories.php:113
+msgid "Show Always"
+msgstr ""
+
+#: includes/customiser/productive-theme-customiser-commerce-categories.php:114
+msgid "Show on Hover only"
+msgstr ""
+
+#: includes/customiser/productive-theme-customiser-commerce-generic.php:37
+msgid "General WooCommerce Options"
+msgstr ""
+
+#: includes/customiser/productive-theme-customiser-commerce-generic.php:38
+msgid "WooCommerce options across website"
+msgstr ""
+
+#: includes/customiser/productive-theme-customiser-commerce-generic.php:64
+msgid "Show Header Mini-Cart Icon?"
+msgstr ""
+
+#: includes/customiser/productive-theme-customiser-commerce-generic.php:65
+#: includes/customiser/productive-theme-customiser-global-popup.php:167
+msgid "Display Cart icon in the header"
+msgstr ""
+
+#: includes/customiser/productive-theme-customiser-commerce-generic.php:89
+msgid "Show Header Wishlist Icon?"
+msgstr ""
+
+#: includes/customiser/productive-theme-customiser-commerce-generic.php:90
+#: includes/customiser/productive-theme-customiser-global-popup.php:192
+msgid "Display Wishlist icon in the header"
+msgstr ""
+
+#: includes/customiser/productive-theme-customiser-commerce-generic.php:114
+msgid "Show Header Compare Icon?"
+msgstr ""
+
+#: includes/customiser/productive-theme-customiser-commerce-generic.php:115
+#: includes/customiser/productive-theme-customiser-global-popup.php:217
+msgid "Display product compare icon in the header"
+msgstr ""
+
+#: includes/customiser/productive-theme-customiser-commerce-product-page.php:37
+msgid "Product Page"
+msgstr ""
+
+#: includes/customiser/productive-theme-customiser-commerce-product-page.php:38
+msgid "Product Details Page Options"
+msgstr ""
+
+#: includes/customiser/productive-theme-customiser-commerce-product-page.php:65
+msgid "Always show Sidebar on Product Page?"
+msgstr ""
+
+#: includes/customiser/productive-theme-customiser-commerce-product-page.php:66
+msgid ""
+"If enabled, sidebars will always be displayed on Product details page, even "
+"if the site is set to one-column layout"
+msgstr ""
+
+#: includes/customiser/productive-theme-customiser-commerce-product-page.php:90
+msgid "Show Top Banner on Product Page?"
+msgstr ""
+
+#: includes/customiser/productive-theme-customiser-commerce-product-page.php:91
+msgid ""
+"If disabled, top banner will be hidden on product page, even if enabled site-"
+"wide."
+msgstr ""
+
+#: includes/customiser/productive-theme-customiser-commerce-product-page.php:115
+msgid "Show Previous/Next Nav"
+msgstr ""
+
+#: includes/customiser/productive-theme-customiser-commerce-product-page.php:116
+msgid "Users can navigate to the previous and next product page, when enabled."
+msgstr ""
+
+#: includes/customiser/productive-theme-customiser-common.php:37
+#: includes/start.php:510
+msgid " Theme"
+msgstr ""
+
+#: includes/customiser/productive-theme-customiser-common.php:38
+msgid "Customisable Options for"
+msgstr ""
+
+#: includes/customiser/productive-theme-customiser-common.php:49
+msgid "Homepage (theme options)"
+msgstr ""
+
+#: includes/customiser/productive-theme-customiser-common.php:50
+msgid "Homepage Customisable Options for"
+msgstr ""
+
+#: includes/customiser/productive-theme-customiser-common.php:61
+msgid "Page Components (theme options)"
+msgstr ""
+
+#: includes/customiser/productive-theme-customiser-common.php:62
+msgid "Components and modules displayed on pages across the site"
+msgstr ""
+
+#: includes/customiser/productive-theme-customiser-common.php:73
+msgid "WooCommerce (theme options)"
+msgstr ""
+
+#: includes/customiser/productive-theme-customiser-common.php:74
+msgid "WooCommerce Customisable Options for"
+msgstr ""
+
+#: includes/customiser/productive-theme-customiser-footer-copyright.php:31
+msgid "Customize Footer Copyright Options "
+msgstr ""
+
+#: includes/customiser/productive-theme-customiser-footer-copyright.php:35
+msgid "Footer Copyright Options"
+msgstr ""
+
+#: includes/customiser/productive-theme-customiser-footer-copyright.php:62
+msgid "Show Footer Copyright?"
+msgstr ""
+
+#: includes/customiser/productive-theme-customiser-footer-copyright.php:63
+msgid "Display the copyright section (below footer)?"
+msgstr ""
+
+#: includes/customiser/productive-theme-customiser-footer-copyright.php:87
+msgid "Footer copyright content"
+msgstr ""
+
+#: includes/customiser/productive-theme-customiser-footer-copyright.php:88
+msgid "Leave blank for no copyright info"
+msgstr ""
+
+#: includes/customiser/productive-theme-customiser-footer-copyright.php:110
+msgid "Display Content Below Copyright"
+msgstr ""
+
+#: includes/customiser/productive-theme-customiser-footer-copyright.php:111
+msgid "Leave blank, if there is nothing to display."
+msgstr ""
+
+#: includes/customiser/productive-theme-customiser-footer-copyright.php:164
+msgid "&copy; "
+msgstr ""
+
+#: includes/customiser/productive-theme-customiser-footer-copyright.php:164
+msgid " WordPress Theme "
+msgstr ""
+
+#: includes/customiser/productive-theme-customiser-footer.php:31
+msgid "Footer Options "
+msgstr ""
+
+#: includes/customiser/productive-theme-customiser-footer.php:35
+#: includes/productiveminds-theme-dashboad-items.php:236
+msgid "Footer Options"
+msgstr ""
+
+#: includes/customiser/productive-theme-customiser-footer.php:88
+msgid "Footer Color Tone"
+msgstr ""
+
+#: includes/customiser/productive-theme-customiser-footer.php:91
+msgid "Light"
+msgstr ""
+
+#: includes/customiser/productive-theme-customiser-footer.php:92
+msgid "Page Body Color"
+msgstr ""
+
+#: includes/customiser/productive-theme-customiser-footer.php:117
+msgid "Footer Logo Image"
+msgstr ""
+
+#: includes/customiser/productive-theme-customiser-footer.php:140
+msgid "Footer Logo Width (px)"
+msgstr ""
+
+#: includes/customiser/productive-theme-customiser-footer.php:141
+#: includes/customiser/productive-theme-customiser-global-popup.php:88
+#: includes/customiser/productive-theme-customiser-header.php:120
+msgid "Increases or decreases width in px - height adjusts automatically."
+msgstr ""
+
+#: includes/customiser/productive-theme-customiser-footer.php:169
+msgid "Display Website Logo in Footer?"
+msgstr ""
+
+#: includes/customiser/productive-theme-customiser-footer.php:170
+msgid "Display the Logo of your website in the footer?"
+msgstr ""
+
+#: includes/customiser/productive-theme-customiser-footer.php:194
+msgid "Show Website Name in Footer?"
+msgstr ""
+
+#: includes/customiser/productive-theme-customiser-footer.php:195
+msgid "Display the name of your website in the footer?"
+msgstr ""
+
+#: includes/customiser/productive-theme-customiser-footer.php:219
+msgid "Show Business Hours in Footer?"
+msgstr ""
+
+#: includes/customiser/productive-theme-customiser-footer.php:220
+msgid "Display business hours (opening hours) in website footer"
+msgstr ""
+
+#: includes/customiser/productive-theme-customiser-footer.php:244
+msgid "Show Business Location in Footer?"
+msgstr ""
+
+#: includes/customiser/productive-theme-customiser-footer.php:245
+msgid "Display business location (physical address) in website footer"
+msgstr ""
+
+#: includes/customiser/productive-theme-customiser-footer.php:269
+msgid "Show Website Description in Footer?"
+msgstr ""
+
+#: includes/customiser/productive-theme-customiser-footer.php:270
+msgid "Display the Description of your website in the footer?"
+msgstr ""
+
+#: includes/customiser/productive-theme-customiser-footer.php:293
+msgid "Display Phone, WhatsApp, and Email?"
+msgstr ""
+
+#: includes/customiser/productive-theme-customiser-footer.php:294
+msgid ""
+"Display phone number, WhatsApp number, and email address in website footer"
+msgstr ""
+
+#: includes/customiser/productive-theme-customiser-footer.php:319
+msgid "Display Social Media Icons?"
+msgstr ""
+
+#: includes/customiser/productive-theme-customiser-footer.php:320
+msgid "Display social media icons in website footer"
+msgstr ""
+
+#: includes/customiser/productive-theme-customiser-footer.php:329
+#: includes/customiser/productive-theme-customiser-footer.php:1175
+msgid "Follow us on"
+msgstr ""
+
+#: includes/customiser/productive-theme-customiser-footer.php:343
+msgid "Follow us on copy"
+msgstr ""
+
+#: includes/customiser/productive-theme-customiser-footer.php:365
+msgid "Social media icons colour scheme"
+msgstr ""
+
+#: includes/customiser/productive-theme-customiser-footer.php:388
+msgid "Footer Social Media Icon Size (px)"
+msgstr ""
+
+#: includes/customiser/productive-theme-customiser-footer.php:389
+msgid "Increases or decreases icon width and height."
+msgstr ""
+
+#: includes/customiser/productive-theme-customiser-footer.php:415
+msgid "Display Website 1"
+msgstr ""
+
+#: includes/customiser/productive-theme-customiser-footer.php:438
+msgid "Display Website 2"
+msgstr ""
+
+#: includes/customiser/productive-theme-customiser-footer.php:461
+msgid "Display Website 3"
+msgstr ""
+
+#: includes/customiser/productive-theme-customiser-footer.php:484
+msgid "Display Website 4"
+msgstr ""
+
+#: includes/customiser/productive-theme-customiser-footer.php:507
+msgid "Display Website 5"
+msgstr ""
+
+#: includes/customiser/productive-theme-customiser-footer.php:530
+msgid "Display WhatsApp"
+msgstr ""
+
+#: includes/customiser/productive-theme-customiser-footer.php:553
+msgid "Display Email"
+msgstr ""
+
+#: includes/customiser/productive-theme-customiser-footer.php:576
+msgid "Display Phone"
+msgstr ""
+
+#: includes/customiser/productive-theme-customiser-footer.php:588
+msgid "Access more features with PRO"
+msgstr ""
+
+#: includes/customiser/productive-theme-customiser-footer.php:591
+msgid "Compare Free vs Pro Features"
+msgstr ""
+
+#: includes/customiser/productive-theme-customiser-footer.php:593
+msgid "See a Live Demo"
+msgstr ""
+
+#: includes/customiser/productive-theme-customiser-footer.php:595
+msgid "See the Documentation"
+msgstr ""
+
+#: includes/customiser/productive-theme-customiser-global-popup.php:37
+#: includes/customiser/productive-theme-customiser-global-popup.php:38
+msgid "Off Canvas Options"
+msgstr ""
+
+#: includes/customiser/productive-theme-customiser-global-popup.php:65
+msgid "Off Canvas Logo"
+msgstr ""
+
+#: includes/customiser/productive-theme-customiser-global-popup.php:87
+msgid "Off Canvas Logo Width (px)"
+msgstr ""
+
+#: includes/customiser/productive-theme-customiser-global-popup.php:116
+msgid "Display Search Box?"
+msgstr ""
+
+#: includes/customiser/productive-theme-customiser-global-popup.php:141
+msgid "Display My Account Icon?"
+msgstr ""
+
+#: includes/customiser/productive-theme-customiser-global-popup.php:166
+msgid "Display Mini-Cart Icon?"
+msgstr ""
+
+#: includes/customiser/productive-theme-customiser-global-popup.php:191
+msgid "Display Wishlist Icon?"
+msgstr ""
+
+#: includes/customiser/productive-theme-customiser-global-popup.php:216
+msgid "Display Compare Icon?"
+msgstr ""
+
+#: includes/customiser/productive-theme-customiser-global-popup.php:241
+msgid "Display Power Button?"
+msgstr ""
+
+#: includes/customiser/productive-theme-customiser-global-popup.php:242
+msgid ""
+"Note, this option is only effective, if power button is part of the current "
+"header design."
+msgstr ""
+
+#: includes/customiser/productive-theme-customiser-global-popup.php:266
+msgid "Popup Height"
+msgstr ""
+
+#: includes/customiser/productive-theme-customiser-global-popup.php:267
+msgid "Select the preferred height of the popup."
+msgstr ""
+
+#: includes/customiser/productive-theme-customiser-global-popup.php:269
+msgid "Default Height"
+msgstr ""
+
+#: includes/customiser/productive-theme-customiser-global-popup.php:270
+msgid "Fullscreen Height"
+msgstr ""
+
+#: includes/customiser/productive-theme-customiser-header.php:37
+#: includes/customiser/productive-theme-customiser-header.php:38
+msgid "Header Options"
+msgstr ""
+
+#: includes/customiser/productive-theme-customiser-header.php:91
+msgid "Transparent Home Header?"
+msgstr ""
+
+#: includes/customiser/productive-theme-customiser-header.php:92
+msgid "Utilize the Home Header of the site as a transparent overlay"
+msgstr ""
+
+#: includes/customiser/productive-theme-customiser-header.php:94
+msgid "Yes, Transparent Home Header"
+msgstr ""
+
+#: includes/customiser/productive-theme-customiser-header.php:119
+msgid "Logo Width (px)"
+msgstr ""
+
+#: includes/customiser/productive-theme-customiser-header.php:147
+msgid "Logo Vertical Spacing (px)"
+msgstr ""
+
+#: includes/customiser/productive-theme-customiser-header.php:148
+msgid "Increases or decreases the spacing above and below the logo."
+msgstr ""
+
+#: includes/customiser/productive-theme-customiser-header.php:176
+msgid "Show Header Search Option?"
+msgstr ""
+
+#: includes/customiser/productive-theme-customiser-header.php:177
+msgid "Display search box in the header"
+msgstr ""
+
+#: includes/customiser/productive-theme-customiser-header.php:201
+msgid "Show My Account Icon in Header?"
+msgstr ""
+
+#: includes/customiser/productive-theme-customiser-header.php:202
+msgid "Show login/logout icon in the header"
+msgstr ""
+
+#: includes/customiser/productive-theme-customiser-header.php:226
+msgid "Account Icon Opens Login Popup?"
+msgstr ""
+
+#: includes/customiser/productive-theme-customiser-header.php:227
+msgid "Open login popup when icon is clicked"
+msgstr ""
+
+#: includes/customiser/productive-theme-customiser-header.php:250
+msgid "Header Icons Width (px)"
+msgstr ""
+
+#: includes/customiser/productive-theme-customiser-header.php:251
+msgid ""
+"Increases or decreases width of all header icons - height adjusts "
+"automatically."
+msgstr ""
+
+#: includes/customiser/productive-theme-customiser-header.php:278
+msgid "Header NavIcon Style"
+msgstr ""
+
+#: includes/customiser/productive-theme-customiser-header.php:281
+msgid "Contemporary"
+msgstr ""
+
+#: includes/customiser/productive-theme-customiser-header.php:282
+msgid "Contemporary With Border"
+msgstr ""
+
+#: includes/customiser/productive-theme-customiser-header.php:284
+msgid "Standard With Border"
+msgstr ""
+
+#: includes/customiser/productive-theme-customiser-header.php:307
+msgid "Header Menu more icon style"
+msgstr ""
+
+#: includes/customiser/productive-theme-customiser-header.php:310
+msgid "Angled bracket (>)"
+msgstr ""
+
+#: includes/customiser/productive-theme-customiser-header.php:311
+msgid "Plus and Minus (+/--)"
+msgstr ""
+
+#: includes/customiser/productive-theme-customiser-header.php:334
+msgid "Select Header Menu Option"
+msgstr ""
+
+#: includes/customiser/productive-theme-customiser-header.php:335
+msgid ""
+"Select third party mega menu, if a mega menu is implemented to avoid loading "
+"the default menu scripts."
+msgstr ""
+
+#: includes/customiser/productive-theme-customiser-header.php:337
+msgid "Theme&#39;s Default Menu"
+msgstr ""
+
+#: includes/customiser/productive-theme-customiser-header.php:338
+msgid "Third Party Mega Menu"
+msgstr ""
+
+#: includes/customiser/productive-theme-customiser-homepage-banner-and-slider-options.php:35
+msgid "Home Banner Options"
+msgstr ""
+
+#: includes/customiser/productive-theme-customiser-homepage-banner-and-slider-options.php:38
+msgid "Banner & Slider Options"
+msgstr ""
+
+#: includes/customiser/productive-theme-customiser-homepage-banner-and-slider-options.php:51
+msgid "Enable Home Banner"
+msgstr ""
+
+#: includes/customiser/productive-theme-customiser-homepage-banner-and-slider-options.php:52
+msgid "Enable Banner on Blog Posts Home"
+msgstr ""
+
+#: includes/customiser/productive-theme-customiser-homepage-banner-and-slider-options.php:54
+msgid "Enable Home Banner & Slider"
+msgstr ""
+
+#: includes/customiser/productive-theme-customiser-homepage-banner-and-slider-options.php:55
+msgid "Enable Banner & Slider on Blog Posts Home"
+msgstr ""
+
+#: includes/customiser/productive-theme-customiser-homepage-banner-and-slider-options.php:75
+msgid "Untick the box to hide the home banner and slider"
+msgstr ""
+
+#: includes/customiser/productive-theme-customiser-homepage-banner-and-slider-options.php:97
+msgid "Full Width Banner/Slider?"
+msgstr ""
+
+#: includes/customiser/productive-theme-customiser-homepage-banner-and-slider-options.php:100
+msgid "Yes, Full Width"
+msgstr ""
+
+#: includes/customiser/productive-theme-customiser-homepage-banner-and-slider-options.php:101
+msgid "No, Fit Page Content"
+msgstr ""
+
+#: includes/customiser/productive-theme-customiser-homepage-banner-and-slider-options.php:127
+msgid "Main Banner/Slider Height (px)"
+msgstr ""
+
+#: includes/customiser/productive-theme-customiser-homepage-banner-and-slider-options.php:154
+msgid "Main Banner/Slider Content Width (px)"
+msgstr ""
+
+#: includes/customiser/productive-theme-customiser-homepage-banner-and-slider-options.php:155
+msgid "The width of the area container copy and CTAs"
+msgstr ""
+
+#: includes/customiser/productive-theme-customiser-homepage-banner-and-slider-options.php:181
+msgid "Main Banner/Slider Overlay Color"
+msgstr ""
+
+#: includes/customiser/productive-theme-customiser-homepage-banner-and-slider-options.php:204
+msgid "Banner Overlay Opacity"
+msgstr ""
+
+#: includes/customiser/productive-theme-customiser-homepage-banner-and-slider-options.php:231
+msgid "Banner Border Color"
+msgstr ""
+
+#: includes/customiser/productive-theme-customiser-homepage-banner-and-slider-options.php:254
+msgid "Banner Content Vertical Alignment"
+msgstr ""
+
+#: includes/customiser/productive-theme-customiser-homepage-banner-and-slider-options.php:277
+msgid "Banner Content Horizontal Alignment"
+msgstr ""
+
+#: includes/customiser/productive-theme-customiser-homepage-banner-content.php:41
+msgid "Banner Content"
+msgstr ""
+
+#: includes/customiser/productive-theme-customiser-homepage-banner-content.php:69
+msgid "Background Image"
+msgstr ""
+
+#: includes/customiser/productive-theme-customiser-homepage-banner-content.php:70
+msgid "The main background image in the homepage"
+msgstr ""
+
+#: includes/customiser/productive-theme-customiser-homepage-banner-content.php:92
+msgid "Banner/Slider Content Container Background"
+msgstr ""
+
+#: includes/customiser/productive-theme-customiser-homepage-banner-content.php:103
+#: includes/customiser/productive-theme-customiser-homepage-banner-content.php:205
+msgid "Simple Project Ideas"
+msgstr ""
+
+#: includes/customiser/productive-theme-customiser-homepage-banner-content.php:117
+msgid "Banner Title Copy"
+msgstr ""
+
+#: includes/customiser/productive-theme-customiser-homepage-banner-content.php:128
+#: includes/customiser/productive-theme-customiser-homepage-banner-content.php:217
+msgid ""
+"Communicate your ideas clearly, using simple terms. Make your message easy "
+"to understand."
+msgstr ""
+
+#: includes/customiser/productive-theme-customiser-homepage-banner-content.php:142
+msgid "Banner Explainer Copy"
+msgstr ""
+
+#: includes/customiser/productive-theme-customiser-homepage-banner-content.php:152
+#: includes/customiser/productive-theme-customiser-homepage-banner-content.php:229
+msgid "About Our Website"
+msgstr ""
+
+#: includes/customiser/productive-theme-customiser-homepage-banner-content.php:166
+msgid "Banner Auxiliary Copy"
+msgstr ""
+
+#: includes/customiser/productive-theme-customiser-homepage-banner-ctas.php:35
+#: includes/customiser/productive-theme-customiser-homepage-banner-ctas.php:38
+msgid "Banner CTAs Options"
+msgstr ""
+
+#: includes/customiser/productive-theme-customiser-homepage-banner-ctas.php:44
+msgid "Customize the Call To Actions on home banner and slides"
+msgstr ""
+
+#: includes/customiser/productive-theme-customiser-homepage-banner-ctas.php:57
+#: includes/customiser/productive-theme-customiser-homepage-banner-ctas.php:500
+#: includes/start.php:587
+msgid "Learn More"
+msgstr ""
+
+#: includes/customiser/productive-theme-customiser-homepage-banner-ctas.php:71
+msgid "CTA 1 Copy"
+msgstr ""
+
+#: includes/customiser/productive-theme-customiser-homepage-banner-ctas.php:95
+msgid "CTA 1 Url"
+msgstr ""
+
+#: includes/customiser/productive-theme-customiser-homepage-banner-ctas.php:96
+msgid "Full Url starting with &#39;http&#39; (leave empty to disable)"
+msgstr ""
+
+#: includes/customiser/productive-theme-customiser-homepage-banner-ctas.php:118
+msgid "CTA 1 Shape"
+msgstr ""
+
+#: includes/customiser/productive-theme-customiser-homepage-banner-ctas.php:142
+msgid "CTA 1 Text Color"
+msgstr ""
+
+#: includes/customiser/productive-theme-customiser-homepage-banner-ctas.php:166
+msgid "CTA 1 Background Color"
+msgstr ""
+
+#: includes/customiser/productive-theme-customiser-homepage-banner-ctas.php:178
+#: includes/customiser/productive-theme-customiser-homepage-banner-ctas.php:554
+#: includes/customiser/productive-theme-customiser-power-button.php:51
+#: includes/customiser/productive-theme-customiser-power-button.php:429
+msgid "Get Started"
+msgstr ""
+
+#: includes/customiser/productive-theme-customiser-homepage-banner-ctas.php:192
+msgid "CTA 2 Copy"
+msgstr ""
+
+#: includes/customiser/productive-theme-customiser-homepage-banner-ctas.php:216
+msgid "CTA 2 Url"
+msgstr ""
+
+#: includes/customiser/productive-theme-customiser-homepage-banner-ctas.php:239
+msgid "CTA 2 Shape"
+msgstr ""
+
+#: includes/customiser/productive-theme-customiser-homepage-banner-ctas.php:263
+msgid "CTA 2 Text & Border Color"
+msgstr ""
+
+#: includes/customiser/productive-theme-customiser-homepage-banner-ctas.php:287
+msgid "CTA 2 Background Color"
+msgstr ""
+
+#: includes/customiser/productive-theme-customiser-homepage-banner-ctas.php:317
+#: includes/customiser/productive-theme-customiser-homepage-banner-text-auxiliary.php:123
+#: includes/customiser/productive-theme-customiser-homepage-banner-text-explainer.php:97
+#: includes/customiser/productive-theme-customiser-homepage-banner-text-title.php:98
+#: includes/customiser/productive-theme-customiser-power-button.php:237
+msgid "Font Family"
+msgstr ""
+
+#: includes/customiser/productive-theme-customiser-homepage-banner-ctas.php:343
+#: includes/customiser/productive-theme-customiser-homepage-banner-text-auxiliary.php:149
+#: includes/customiser/productive-theme-customiser-homepage-banner-text-explainer.php:123
+#: includes/customiser/productive-theme-customiser-homepage-banner-text-title.php:124
+#: includes/customiser/productive-theme-customiser-power-button.php:263
+msgid "Font Style"
+msgstr ""
+
+#: includes/customiser/productive-theme-customiser-homepage-banner-ctas.php:367
+#: includes/customiser/productive-theme-customiser-homepage-banner-text-auxiliary.php:173
+#: includes/customiser/productive-theme-customiser-homepage-banner-text-explainer.php:147
+#: includes/customiser/productive-theme-customiser-homepage-banner-text-title.php:148
+#: includes/customiser/productive-theme-customiser-power-button.php:287
+msgid "Font Size (rem)"
+msgstr ""
+
+#: includes/customiser/productive-theme-customiser-homepage-banner-ctas.php:368
+#: includes/customiser/productive-theme-customiser-homepage-banner-text-auxiliary.php:174
+#: includes/customiser/productive-theme-customiser-homepage-banner-text-explainer.php:148
+#: includes/customiser/productive-theme-customiser-homepage-banner-text-title.php:149
+#: includes/customiser/productive-theme-customiser-power-button.php:288
+msgid ""
+"This size is scaled relatively across the various elements of the website."
+msgstr ""
+
+#: includes/customiser/productive-theme-customiser-homepage-banner-ctas.php:397
+#: includes/customiser/productive-theme-customiser-homepage-banner-text-auxiliary.php:203
+#: includes/customiser/productive-theme-customiser-homepage-banner-text-explainer.php:177
+#: includes/customiser/productive-theme-customiser-homepage-banner-text-title.php:178
+#: includes/customiser/productive-theme-customiser-power-button.php:317
+msgid "Font Weight"
+msgstr ""
+
+#: includes/customiser/productive-theme-customiser-homepage-banner-ctas.php:423
+#: includes/customiser/productive-theme-customiser-homepage-banner-text-auxiliary.php:229
+#: includes/customiser/productive-theme-customiser-homepage-banner-text-explainer.php:203
+#: includes/customiser/productive-theme-customiser-homepage-banner-text-title.php:204
+#: includes/customiser/productive-theme-customiser-power-button.php:343
+msgid "Line Height"
+msgstr ""
+
+#: includes/customiser/productive-theme-customiser-homepage-banner-ctas.php:453
+#: includes/customiser/productive-theme-customiser-homepage-banner-text-auxiliary.php:259
+#: includes/customiser/productive-theme-customiser-homepage-banner-text-explainer.php:233
+#: includes/customiser/productive-theme-customiser-homepage-banner-text-title.php:234
+#: includes/customiser/productive-theme-customiser-power-button.php:373
+msgid "Text Transformation"
+msgstr ""
+
+#: includes/customiser/productive-theme-customiser-homepage-banner-ctas.php:479
+#: includes/customiser/productive-theme-customiser-homepage-banner-text-auxiliary.php:285
+#: includes/customiser/productive-theme-customiser-homepage-banner-text-explainer.php:259
+#: includes/customiser/productive-theme-customiser-homepage-banner-text-title.php:260
+#: includes/customiser/productive-theme-customiser-power-button.php:399
+msgid "Text Decoration"
+msgstr ""
+
+#: includes/customiser/productive-theme-customiser-homepage-banner-text-auxiliary.php:35
+#: includes/customiser/productive-theme-customiser-homepage-banner-text-auxiliary.php:38
+msgid "Banner Auxiliary Options"
+msgstr ""
+
+#: includes/customiser/productive-theme-customiser-homepage-banner-text-auxiliary.php:44
+msgid "Customize the auxiliary copy on home banner and slides."
+msgstr ""
+
+#: includes/customiser/productive-theme-customiser-homepage-banner-text-auxiliary.php:69
+#: includes/customiser/productive-theme-customiser-homepage-banner-text-explainer.php:69
+#: includes/customiser/productive-theme-customiser-homepage-banner-text-title.php:69
+msgid "Color"
+msgstr ""
+
+#: includes/customiser/productive-theme-customiser-homepage-banner-text-auxiliary.php:92
+msgid "Location of Auxiliary Copy"
+msgstr ""
+
+#: includes/customiser/productive-theme-customiser-homepage-banner-text-auxiliary.php:95
+msgid "Above main content"
+msgstr ""
+
+#: includes/customiser/productive-theme-customiser-homepage-banner-text-auxiliary.php:96
+msgid "Below main content"
+msgstr ""
+
+#: includes/customiser/productive-theme-customiser-homepage-banner-text-explainer.php:35
+#: includes/customiser/productive-theme-customiser-homepage-banner-text-explainer.php:38
+msgid "Banner Explainer Options"
+msgstr ""
+
+#: includes/customiser/productive-theme-customiser-homepage-banner-text-explainer.php:44
+msgid "Customize the explainer copy on home banner and slides."
+msgstr ""
+
+#: includes/customiser/productive-theme-customiser-homepage-banner-text-title.php:35
+#: includes/customiser/productive-theme-customiser-homepage-banner-text-title.php:38
+msgid "Banner Title Options"
+msgstr ""
+
+#: includes/customiser/productive-theme-customiser-homepage-banner-text-title.php:44
+msgid "Customize the title copy on home banner and slides."
+msgstr ""
+
+#: includes/customiser/productive-theme-customiser-homepage-products-bestsellers.php:42
+msgid "Home Best Sellers Section"
+msgstr ""
+
+#: includes/customiser/productive-theme-customiser-homepage-products-bestsellers.php:67
+msgid "Enable BestSellers Section?"
+msgstr ""
+
+#: includes/customiser/productive-theme-customiser-homepage-products-bestsellers.php:78
+#: includes/customiser/productive-theme-customiser-homepage-products-bestsellers.php:249
+msgid "BestSellers"
+msgstr ""
+
+#: includes/customiser/productive-theme-customiser-homepage-products-bestsellers.php:115
+#: includes/customiser/productive-theme-customiser-homepage-products-featured.php:115
+#: includes/customiser/productive-theme-customiser-homepage-products-latest.php:115
+#: includes/customiser/productive-theme-customiser-homepage-products-on-sale.php:115
+msgid "\"Go to Shop\" link Copy"
+msgstr ""
+
+#: includes/customiser/productive-theme-customiser-homepage-products-bestsellers.php:202
+#: includes/customiser/productive-theme-customiser-homepage-products-featured.php:202
+#: includes/customiser/productive-theme-customiser-homepage-products-latest.php:202
+#: includes/customiser/productive-theme-customiser-homepage-products-on-sale.php:202
+msgid "Manage Hero Image and Content"
+msgstr ""
+
+#: includes/customiser/productive-theme-customiser-homepage-products-bestsellers.php:203
+#: includes/customiser/productive-theme-customiser-homepage-products-featured.php:203
+#: includes/customiser/productive-theme-customiser-homepage-products-latest.php:203
+#: includes/customiser/productive-theme-customiser-homepage-products-on-sale.php:203
+msgid "Manage Hero Content"
+msgstr ""
+
+#: includes/customiser/productive-theme-customiser-homepage-products-featured.php:42
+msgid "Home Featured Products Section"
+msgstr ""
+
+#: includes/customiser/productive-theme-customiser-homepage-products-featured.php:67
+msgid "Enable Featured Products Section?"
+msgstr ""
+
+#: includes/customiser/productive-theme-customiser-homepage-products-latest.php:42
+msgid "Home Latest Products Section"
+msgstr ""
+
+#: includes/customiser/productive-theme-customiser-homepage-products-latest.php:67
+msgid "Enable Latest Products Section?"
+msgstr ""
+
+#: includes/customiser/productive-theme-customiser-homepage-products-on-sale.php:41
+#: includes/customiser/productive-theme-customiser-homepage-products-on-sale.php:78
+#: includes/customiser/productive-theme-customiser-homepage-products-on-sale.php:249
+msgid "Products On Sale"
+msgstr ""
+
+#: includes/customiser/productive-theme-customiser-homepage-products-on-sale.php:42
+msgid "Home Products On Sale Section"
+msgstr ""
+
+#: includes/customiser/productive-theme-customiser-homepage-products-on-sale.php:67
+msgid "Enable On Sale Products Section?"
+msgstr ""
+
+#: includes/customiser/productive-theme-customiser-layout-and-design.php:37
+msgid "Pages Layout and Design Options"
+msgstr ""
+
+#: includes/customiser/productive-theme-customiser-layout-and-design.php:38
+msgid "Layout Options affecting all website pages"
+msgstr ""
+
+#: includes/customiser/productive-theme-customiser-layout-and-design.php:63
+msgid "Site-wide Page Layout Options"
+msgstr ""
+
+#: includes/customiser/productive-theme-customiser-layout-and-design.php:69
+msgid "Three columns"
+msgstr ""
+
+#: includes/customiser/productive-theme-customiser-power-button.php:37
+msgid "Power Button"
+msgstr ""
+
+#: includes/customiser/productive-theme-customiser-power-button.php:38
+msgid "Power Button Styles"
+msgstr ""
+
+#: includes/customiser/productive-theme-customiser-power-button.php:65
+msgid "Button Text"
+msgstr ""
+
+#: includes/customiser/productive-theme-customiser-power-button.php:89
+msgid "Url"
+msgstr ""
+
+#: includes/customiser/productive-theme-customiser-power-button.php:90
+msgid "Full Url starting with &#39;http&#39; (leave empty to disable button)"
+msgstr ""
+
+#: includes/customiser/productive-theme-customiser-power-button.php:112
+msgid "Text Color"
+msgstr ""
+
+#: includes/customiser/productive-theme-customiser-power-button.php:136
+msgid "Text Color (on hover)"
+msgstr ""
+
+#: includes/customiser/productive-theme-customiser-power-button.php:160
+msgid "Background Color"
+msgstr ""
+
+#: includes/customiser/productive-theme-customiser-power-button.php:184
+msgid "Background Color (on hover)"
+msgstr ""
+
+#: includes/customiser/productive-theme-customiser-power-button.php:208
+msgid "Button Shape"
+msgstr ""
+
+#: includes/customiser/productive-theme-customiser-top-banner.php:37
+#: includes/customiser/productive-theme-customiser-top-banner.php:38
+msgid "Top Banner Options"
+msgstr ""
+
+#: includes/customiser/productive-theme-customiser-top-banner.php:66
+msgid "Top Banner Image"
+msgstr ""
+
+#: includes/customiser/productive-theme-customiser-top-banner.php:67
+msgid "Site-wide top banner image"
+msgstr ""
+
+#: includes/customiser/productive-theme-customiser-top-banner.php:91
+msgid "Top Banner Width"
+msgstr ""
+
+#: includes/customiser/productive-theme-customiser-top-banner.php:95
+msgid "Page Content Width"
+msgstr ""
+
+#: includes/customiser/productive-theme-customiser-top-banner.php:96
+msgid "Hide Top Banner"
+msgstr ""
+
+#: includes/customiser/productive-theme-customiser-top-banner.php:119
+msgid "Top Banner Title CSS Style"
+msgstr ""
+
+#: includes/customiser/productive-theme-customiser-top-banner.php:120
+msgid ""
+"Select the css style to apply to titles in the top banner (default = h3)."
+msgstr ""
+
+#: includes/customiser/productive-theme-customiser-top-banner.php:142
+msgid "Overlay Color"
+msgstr ""
+
+#: includes/customiser/productive-theme-customiser-top-banner.php:165
+msgid "Overlay Opacity"
+msgstr ""
+
+#: includes/customiser/productive-theme-customiser-top-banner.php:192
+msgid "Vertical Alignment"
+msgstr ""
+
+#: includes/customiser/productive-theme-customiser-top-banner.php:215
+msgid "Horizontal Alignment"
+msgstr ""
+
+#: includes/customiser/productive-theme-customiser-top-banner.php:238
+msgid "Banner Height (px)"
+msgstr ""
+
+#: includes/default.php:145
+msgid ""
+"Missing content? To resolve this, please install the PASS Addons plugin and "
+"add the relevant data."
+msgstr ""
+
+#: includes/default.php:209 includes/default.php:274
+msgid ""
+"Missing content? To resolve this, please install the Productive Style plugin "
+"and add the relevant data."
+msgstr ""
+
+#: includes/productive-theme-render-functions.php:52
+msgid "blog"
+msgstr ""
+
+#: includes/productiveminds-theme-dashboad-items.php:20
+msgid "Site Identity"
+msgstr ""
+
+#: includes/productiveminds-theme-dashboad-items.php:24
+msgid "Logo, site name, favicon"
+msgstr ""
+
+#: includes/productiveminds-theme-dashboad-items.php:36
+msgid "Headings Typography"
+msgstr ""
+
+#: includes/productiveminds-theme-dashboad-items.php:40
+msgid "Fonts typography for h1, h2, h3, h4..."
+msgstr ""
+
+#: includes/productiveminds-theme-dashboad-items.php:52
+msgid "Site Body Typography"
+msgstr ""
+
+#: includes/productiveminds-theme-dashboad-items.php:56
+msgid "Control site-wide typography"
+msgstr ""
+
+#: includes/productiveminds-theme-dashboad-items.php:64
+msgid "Switch Colour Schemes"
+msgstr ""
+
+#: includes/productiveminds-theme-dashboad-items.php:68
+msgid "With one-click, change all colours"
+msgstr ""
+
+#: includes/productiveminds-theme-dashboad-items.php:76
+msgid "Individual Colours"
+msgstr ""
+
+#: includes/productiveminds-theme-dashboad-items.php:80
+msgid "Customize specific colour"
+msgstr ""
+
+#: includes/productiveminds-theme-dashboad-items.php:92
+msgid "Breadcrumb Options"
+msgstr ""
+
+#: includes/productiveminds-theme-dashboad-items.php:96
+msgid "ontrol site-wide Breadcrumbs"
+msgstr ""
+
+#: includes/productiveminds-theme-dashboad-items.php:108
+msgid "Newsletter Opt Ins"
+msgstr ""
+
+#: includes/productiveminds-theme-dashboad-items.php:112
+msgid "Activate newsletter opt-ins"
+msgstr ""
+
+#: includes/productiveminds-theme-dashboad-items.php:124
+msgid "Header Contact Section"
+msgstr ""
+
+#: includes/productiveminds-theme-dashboad-items.php:128
+msgid "Body color and background"
+msgstr ""
+
+#: includes/productiveminds-theme-dashboad-items.php:136
+msgid "Website Layout"
+msgstr ""
+
+#: includes/productiveminds-theme-dashboad-items.php:140
+msgid "1 column, left or right sidebars, 3 columns"
+msgstr ""
+
+#: includes/productiveminds-theme-dashboad-items.php:167
+msgid "Shop and Product categories"
+msgstr ""
+
+#: includes/productiveminds-theme-dashboad-items.php:175
+msgid "WooCommerce Options"
+msgstr ""
+
+#: includes/productiveminds-theme-dashboad-items.php:179
+msgid "General WooCommerce options"
+msgstr ""
+
+#: includes/productiveminds-theme-dashboad-items.php:187
+msgid "Payment Methods"
+msgstr ""
+
+#: includes/productiveminds-theme-dashboad-items.php:191
+msgid "Accepted payment method logos"
+msgstr ""
+
+#: includes/productiveminds-theme-dashboad-items.php:200
+msgid "Header Option"
+msgstr ""
+
+#: includes/productiveminds-theme-dashboad-items.php:204
+msgid "Website header  style and content"
+msgstr ""
+
+#: includes/productiveminds-theme-dashboad-items.php:212
+msgid "Switch Header Design"
+msgstr ""
+
+#: includes/productiveminds-theme-dashboad-items.php:216
+#: includes/productiveminds-theme-dashboad-items.php:252
+msgid "Change design and colour mode"
+msgstr ""
+
+#: includes/productiveminds-theme-dashboad-items.php:224
+msgid "Localization"
+msgstr ""
+
+#: includes/productiveminds-theme-dashboad-items.php:228
+msgid "Language & Currency switcher options"
+msgstr ""
+
+#: includes/productiveminds-theme-dashboad-items.php:240
+msgid "Website footer style and content"
+msgstr ""
+
+#: includes/productiveminds-theme-dashboad-items.php:248
+msgid "Switch Footer Design"
+msgstr ""
+
+#: includes/productiveminds-theme-dashboad-items.php:260
+msgid "Switch Copyright Design"
+msgstr ""
+
+#: includes/productiveminds-theme-dashboad-items.php:264
+msgid "Change copyright section design"
+msgstr ""
+
+#: includes/productiveminds-theme-dashboad-items.php:272
+msgid "404 Page"
+msgstr ""
+
+#: includes/productiveminds-theme-dashboad-items.php:276
+msgid "Make page 404 interesting"
+msgstr ""
+
+#: includes/productiveminds-theme-dashboad-items.php:284
+msgid "Blog Archive"
+msgstr ""
+
+#: includes/productiveminds-theme-dashboad-items.php:288
+#: includes/productiveminds-theme-dashboad-items.php:300
+msgid "Content and controls options"
+msgstr ""
+
+#: includes/productiveminds-theme-dashboad-items.php:296
+msgid "Blog Page"
+msgstr ""
+
+#: includes/productiveminds-theme-dashboad-items.php:308
+msgid "Blog Page Width"
+msgstr ""
+
+#: includes/productiveminds-theme-dashboad-items.php:312
+msgid "Be specific about blog page width"
+msgstr ""
+
+#: includes/start.php:206
+msgid "Skip to content"
+msgstr ""
+
+#: includes/start.php:240
+msgid "WooCommerce Sidebar (Archive)"
+msgstr ""
+
+#: includes/start.php:251
+msgid "WooCommerce Sidebar (Product Page)"
+msgstr ""
+
+#: includes/start.php:358
+msgid "Sub Menu"
+msgstr ""
+
+#: includes/start.php:496
+msgid "PASS Addons Pro"
+msgstr ""
+
+#: includes/start.php:510
+msgid "Thanks for choosing "
+msgstr ""
+
+#: includes/start.php:513
+msgid ""
+"This theme comes loaded with many awesome features, including prebuilt "
+"starter sites you can set up in just a few clicks. "
+msgstr ""
+
+#: includes/start.php:514
+msgid "However, many of these features rely on our free plugin, "
+msgstr ""
+
+#: includes/start.php:519
+msgid "To unleash the full potential of this theme, "
+msgstr ""
+
+#: includes/start.php:525 includes/start.php:529
+msgid "Configure "
+msgstr ""
+
+#: includes/start.php:563
+msgid "Activate "
+msgstr ""
+
+#: includes/start.php:580
+msgid "Install "
+msgstr ""
+
+#: includes/start.php:816
+msgid "Search result for "
+msgstr ""
+
+#: includes/start.php:823
+msgid " matches found for your search. Your searched for: "
+msgstr ""
+
+#: includes/start.php:825
+msgid " match found for your search. Your searched for: "
+msgstr ""
+
+#: includes/start.php:886 includes/start.php:905 includes/start.php:921
+msgid "Menu"
+msgstr ""
+
+#: includes/start.php:1090 template-parts/part-page-single-post.php:120
+msgid "Share on: "
+msgstr ""
+
+#: includes/start.php:1093 includes/start.php:1094 includes/start.php:1349
+msgid "Read "
+msgstr ""
+
+#: includes/start.php:1093 includes/start.php:1094
+msgid " on "
+msgstr ""
+
+#: includes/start.php:1197
+msgid "View posts by author of "
+msgstr ""
+
+#: includes/start.php:1389
+msgid " comments"
+msgstr ""
+
+#: includes/start.php:1402
+msgid "Read more"
+msgstr ""
+
+#: includes/start.php:1417 template-parts/part-page-single-post.php:56
+msgid "By "
+msgstr ""
+
+#: includes/start.php:1531
+msgid "Edit <span class=\"screen-reader-text\">%s</span>"
+msgstr ""
+
+#: includes/woocommerce.php:87
+msgctxt "breadcrumb"
+msgid "Home"
+msgstr ""
+
+#: includes/woocommerce.php:199
+msgid "Browse Our Catalog"
+msgstr ""
+
+#: searchform.php:26 woocommerce/product-searchform.php:36
+msgid "Search"
+msgstr ""
+
+#: standard/options/partials/section-go-pro.php:991
+msgid "Download the Pro Version"
+msgstr ""
+
+#: standard/options/partials/section-go-pro.php:1005
+msgid "More about Pro"
+msgstr ""
+
+#: standard/options/theme-settings.php:48
+msgid "You do not have permission to access this page."
+msgstr ""
+
+#: standard/options/theme-settings.php:87
+msgid "Free vs Pro"
+msgstr ""
+
+#: standard/options/theme-settings.php:135
+msgid ""
+"Support our efforts, interact with fellow users, and contribute to enhancing "
+msgstr ""
+
+#: template-parts/part-page-none.php:13
+msgid "Nothing found that match your request."
+msgstr ""
+
+#: template-parts/part-page-single-post.php:47
+msgid "Posted in "
+msgstr ""
+
+#: template-parts/part-page-single-post.php:69
+msgid "Posted on: "
+msgstr ""
+
+#: template-parts/part-page-single-post.php:74
+msgid "last updated: "
+msgstr ""
+
+#: template-parts/part-page.php:43
+msgid "Page %"
+msgstr ""
+
+#: woocommerce/product-searchform.php:32
+msgid "Search for:"
+msgstr ""
+
+#. Theme Name of the plugin/theme
+msgid "Pass Max"
+msgstr ""
+
+#. Theme URI of the plugin/theme
+msgid "https://www.productiveminds.com/product/pass-max"
+msgstr ""
+
+#. Description of the plugin/theme
+msgid ""
+"Pass Max is a multipurpose theme designed for flexible, easy site building. "
+"It includes a distraction-free template for page builders and is Gutenberg-"
+"optimised. RTL languages are supported, along with multiple header and "
+"footer options, customisable sitewide colour palettes, strong performance, "
+"WooCommerce enhancements, and companion plugin integration for prebuilt "
+"starter sites. The theme is lightweight, SEO-optimised, and verified for "
+"compatibility with popular tools and plugins. Demo: https://starter-"
+"sites.productiveminds.com/pass-max. Support: https://www.productiveminds.com/"
+"support"
+msgstr ""
+
+#. Author of the plugin/theme
+msgid "productiveminds"
+msgstr ""
+
+#. Author URI of the plugin/theme
+msgid "https://www.productiveminds.com"
+msgstr ""
+
+#. Template Name of the plugin/theme
+msgid "Full Width, With Title on Top Banner"
+msgstr ""
+
+#. Template Name of the plugin/theme
+msgid "Full Width, No Title (Page Builders)"
+msgstr ""
+
+#. Template Name of the plugin/theme
+msgid "One-Column"
+msgstr ""
+
+#. Template Name of the plugin/theme
+msgid "No Title Page"
+msgstr ""
+
+#. Template Name of the plugin/theme
+msgid "Three-Column"
+msgstr ""

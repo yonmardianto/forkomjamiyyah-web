@@ -1,0 +1,71 @@
+{
+  "$schema": "https://schemas.wp.org/trunk/theme.json",
+  "version": 2,
+  "title": "Red",
+  "settings": {
+    "color": {
+      "palette": [
+        {
+          "color": "#412f2f",
+          "name": "Primary",
+          "slug": "primary"
+        },
+        {
+          "color": "#f53131",
+          "name": "Secondary",
+          "slug": "secondary"
+        },
+        {
+          "color": "#030c26",
+          "name": "Tertiary",
+          "slug": "tertiary"
+        },
+        {
+          "color": "#171a2c",
+          "name": "Secondary Background",
+          "slug": "secondary-bg"
+        },
+        {
+          "color": "#fff",
+          "name": "White",
+          "slug": "white"
+        },
+        {
+          "color": "#000",
+          "name": "Black",
+          "slug": "black"
+        },
+        {
+          "color": "#0C0C0C",
+          "name": "Base",
+          "slug": "base"
+        },
+        {
+          "color": "#F4F4F4",
+          "name": "Contrast",
+          "slug": "contrast"
+        },
+        {
+          "color": "#121212",
+          "name": "Dark Text Color",
+          "slug": "dark-text-color"
+        },
+        {
+          "color": "#111111",
+          "name": "Link Color",
+          "slug": "link-color"
+        },
+        {
+          "color": "#f2f2f2",
+          "name": "Button Hover Text Color",
+          "slug": "button-hover-text-color"
+        },
+        {
+          "color": "#f58931",
+          "name": "Button Hover Color",
+          "slug": "button-hover-color"
+        }
+      ]
+    }
+  }
+}

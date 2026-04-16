@@ -1,0 +1,335 @@
+# Copyright (C) 2026 profolio-fse
+# This file is distributed under the same license as the profolio-fse package.
+msgid ""
+msgstr ""
+"Project-Id-Version: profolio-fse\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"POT-Creation-Date: 2026-01-22 10:37+0000\n"
+"X-Poedit-Basepath: ..\n"
+"X-Poedit-KeywordsList: __;_e;_ex:1,2c;_n:1,2;_n_noop:1,2;_nx:1,2,4c;_nx_noop:1,2,3c;_x:1,2c;esc_attr__;esc_attr_e;esc_attr_x:1,2c;esc_html__;esc_html_e;esc_html_x:1,2c\n"
+"X-Poedit-SearchPath-0: .\n"
+"X-Poedit-SearchPathExcluded-0: *.js\n"
+"X-Poedit-SourceCharset: UTF-8\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+
+#: ../functions.php:32
+msgid "Profolio Fse"
+msgstr ""
+
+#: ../patterns/404.php:14
+msgid "404: Page Not Disco-vered"
+msgstr ""
+
+#: ../patterns/404.php:18
+msgid "Looks like the dance floor is empty here! This page has done a disappearing act. Head back to the main stage by clicking the navigation links, and let's keep the party going!"
+msgstr ""
+
+#: ../patterns/404.php:25
+msgid "Go to home page"
+msgstr ""
+
+#: ../patterns/archive-product.php:55
+msgid "No products were found matching your selection."
+msgstr ""
+
+#: ../patterns/archive.php:47, ../patterns/blog-left.php:53, ../patterns/blog-right.php:50, ../patterns/post.php:50, ../patterns/search.php:48
+msgid "No posts found"
+msgstr ""
+
+#: ../patterns/articles.php:18
+msgid "Recent Blog Posts"
+msgstr ""
+
+#: ../patterns/banner.php:19
+msgid "Welcome To My Profile"
+msgstr ""
+
+#: ../patterns/banner.php:19
+msgid "I am"
+msgstr ""
+
+#: ../patterns/banner.php:19
+msgid "Julia Henderson"
+msgstr ""
+
+#: ../patterns/banner.php:23
+msgid "Mattis pellentesque ex phasellus amet nulla aliquam commodo eu posuere in sit efficitur per libero consectetuer id elit neque condimentum parturient Adipiscing ipsum netus donec erat vivamus congue eget fermentum"
+msgstr ""
+
+#: ../patterns/banner.php:28
+msgid "View my Work"
+msgstr ""
+
+#: ../patterns/blog-left.php:9
+msgid "News Left Sidebar"
+msgstr ""
+
+#: ../patterns/blog-right.php:10
+msgid "News Right Sidebar"
+msgstr ""
+
+#: ../patterns/cart.php:18
+msgid "You may be interested in…"
+msgstr ""
+
+#: ../patterns/cart.php:76
+msgid "Your cart is currently empty!"
+msgstr ""
+
+#: ../patterns/cart.php:84
+msgid "New in store"
+msgstr ""
+
+#: ../patterns/contact.php:15
+msgid "Get in touch"
+msgstr ""
+
+#: ../patterns/contact.php:19, ../patterns/footer.php:15
+msgid "Let's Work Together"
+msgstr ""
+
+#: ../patterns/contact.php:23
+msgid "Mattis pellentesque ex phasellus amet nulla aliquam commodo eu posuere in sit efficitur per libero consectetuer id elit."
+msgstr ""
+
+#: ../patterns/contact.php:28
+msgid "Add yours from shortcode"
+msgstr ""
+
+#: ../patterns/contact.php:36
+msgid "New York, USA"
+msgstr ""
+
+#: ../patterns/experience.php:23
+msgid "Welcome to my profile"
+msgstr ""
+
+#: ../patterns/experience.php:27
+msgid "Lead Product and Designer and Art Director"
+msgstr ""
+
+#: ../patterns/experience.php:31
+msgid "Mattis pellentesque ex phasellus amet nulla aliquam commodo eu posuere in sit efficitur per libero consectetuer id elit neque condimentum parturient Adipiscing ipsum netus donec erat vivamus congue eget fermentum curae curabitur tempor etiam sem orci imperdiet congue penatibus."
+msgstr ""
+
+#: ../patterns/experience.php:41
+msgid "Total Projects"
+msgstr ""
+
+#: ../patterns/experience.php:51
+msgid "Total Testimonials"
+msgstr ""
+
+#: ../patterns/experience.php:61
+msgid "User's Request"
+msgstr ""
+
+#: ../patterns/faq.php:14
+msgid "faq"
+msgstr ""
+
+#: ../patterns/faq.php:18
+msgid "Frequently Asked Questions"
+msgstr ""
+
+#: ../patterns/faq.php:25
+msgid "Rhoncus elit curae dictum mauris natoque urna imperdiet laoreet aptent"
+msgstr ""
+
+#: ../patterns/faq.php:26, ../patterns/faq.php:34, ../patterns/faq.php:42, ../patterns/faq.php:50, ../patterns/faq.php:58
+msgid "Porttitor amet luctus aenean aptent netus consectetuer suspendisse. Senectus semper posuere vehicula dui auctor penatibus praesent venenatis nullam. Consectetuer montes suspendisse cubilia commodo nulla id. Conubia primis montes netus nullam taciti hendrerit tempor. Suscipit natoque eleifend potenti fermentum laoreet. Ultricies neque integer conubia ornare libero maximus orci ridiculus. Ac venenatis senectus egestas commodo ex porttitor at montes iaculis ullamcorper tempor."
+msgstr ""
+
+#: ../patterns/faq.php:33
+msgid "Porta suspendisse dis semper commodo et aenean magnis laoreet vehicula"
+msgstr ""
+
+#: ../patterns/faq.php:41
+msgid "Ac id inceptos eleifend purus ante dapibus ultricies magna dictumst"
+msgstr ""
+
+#: ../patterns/faq.php:49
+msgid "Fusce viverra tempus sociosqu a commodo cubilia orci egestas consequat"
+msgstr ""
+
+#: ../patterns/faq.php:57
+msgid "Sodales massa fusce proin egestas facilisi vestibulum nostra montes ornare"
+msgstr ""
+
+#: ../patterns/footer.php:19
+msgid "Vitae commodo dignissim aliquam cursus posuere montes sociosqu efficitur aliquet pellentesque phasellus tempor sodales porttitor ad congue dolor scelerisque elit ac primis velit aenean letius nulla ornare auctor netus magnis semper class donec eros eu fames"
+msgstr ""
+
+#: ../patterns/footer.php:34
+msgid "Looking for a One Time Project"
+msgstr ""
+
+#: ../patterns/footer.php:38, ../patterns/footer.php:54
+msgid "Class aptent taciti sociosqu ad."
+msgstr ""
+
+#: ../patterns/footer.php:50
+msgid "Looking for a Dedicated Designer"
+msgstr ""
+
+#: ../patterns/footer.php:70
+msgid "Developed By"
+msgstr ""
+
+#: ../patterns/footer.php:70
+msgid "Themegrove.com"
+msgstr ""
+
+#: ../patterns/footer.php:74
+msgid "©Copyright All Right Reserved"
+msgstr ""
+
+#: ../patterns/header.php:20
+msgid "Get Started"
+msgstr ""
+
+#: ../patterns/post.php:10
+msgid "News"
+msgstr ""
+
+#: ../patterns/projects.php:14
+msgid "My Projects"
+msgstr ""
+
+#: ../patterns/projects.php:18
+msgid "Some Of My Projects"
+msgstr ""
+
+#: ../patterns/projects.php:35
+msgid "Design of a mobile app develops "
+msgstr ""
+
+#: ../patterns/projects.php:39, ../patterns/projects.php:59, ../patterns/projects.php:79, ../patterns/projects.php:99
+msgid "Nullam maecenas gravida suscipit potenti lorem eros si tincidunt litora imperdiet maximus dapibus eu hendrerit tempus cras adipiscing faucibus sem consectetur platea justo euismod"
+msgstr ""
+
+#: ../patterns/projects.php:55
+msgid "AI Based Social Networks"
+msgstr ""
+
+#: ../patterns/projects.php:75
+msgid "NFT Buy and Sell Platform"
+msgstr ""
+
+#: ../patterns/projects.php:95
+msgid "Web Traffic Management"
+msgstr ""
+
+#: ../patterns/services.php:14
+msgid "Services"
+msgstr ""
+
+#: ../patterns/services.php:18
+msgid "My Services"
+msgstr ""
+
+#: ../patterns/services.php:27
+msgid "UI/UX Design"
+msgstr ""
+
+#: ../patterns/services.php:31, ../patterns/services.php:59, ../patterns/services.php:87
+msgid "Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos hymenaeos. Suspendisse enim turpis, dictum sed, iaculis a, condimentum nec, nisi. Aenean ut eros et nisl sagittis vestibulum."
+msgstr ""
+
+#: ../patterns/services.php:36, ../patterns/services.php:64, ../patterns/services.php:92
+msgid "View My Work"
+msgstr ""
+
+#: ../patterns/services.php:55
+msgid "Graphic Design"
+msgstr ""
+
+#: ../patterns/services.php:83
+msgid "Product Design"
+msgstr ""
+
+#: ../patterns/sidebar.php:15
+msgid "Latest Posts"
+msgstr ""
+
+#: ../patterns/sidebar.php:23
+msgid "Categories"
+msgstr ""
+
+#: ../patterns/sidebar.php:31
+msgid "Tags"
+msgstr ""
+
+#: ../patterns/single-product.php:57
+msgid "Related Products"
+msgstr ""
+
+#: ../patterns/skills.php:14
+msgid "Skills"
+msgstr ""
+
+#: ../patterns/skills.php:18
+msgid "Skills and Tools"
+msgstr ""
+
+#: ../patterns/skills.php:29
+msgid "UI/UX Deisgn"
+msgstr ""
+
+#: ../patterns/skills.php:39
+msgid "Graphic Deisgn"
+msgstr ""
+
+#: ../patterns/skills.php:49
+msgid "Illustrator"
+msgstr ""
+
+#: ../patterns/skills.php:59
+msgid "After Effects"
+msgstr ""
+
+#: ../patterns/skills.php:69
+msgid "Wordpress"
+msgstr ""
+
+#: ../patterns/testimonials.php:14
+msgid "Testimonials"
+msgstr ""
+
+#: ../patterns/testimonials.php:18
+msgid "What My Clients Say About Me"
+msgstr ""
+
+#: ../patterns/testimonials.php:29, ../patterns/testimonials.php:81
+msgid "Eu lorem vel eget libero quam curabitur consequat cursus faucibus auctor placerat ad egestas sodales ipsum cras leo lectus adipiscing a at tortor natoque ultrices commodo non pharetra mollis nisl morbi euismod nibh arcu interdum augue"
+msgstr ""
+
+#: ../patterns/testimonials.php:39
+msgid "Sarah Jenkins"
+msgstr ""
+
+#: ../patterns/testimonials.php:43
+msgid "CEO at TechFLow"
+msgstr ""
+
+#: ../patterns/testimonials.php:55
+msgid "Eu lorem vel eget libero quam curabitur consequat cursus faucibus auctor placerat ad egestas sodales ipsum cras leo lectus adipiscing a at tortor natoque ultrices commodo non pharetra mollis nisl morbi euismod "
+msgstr ""
+
+#: ../patterns/testimonials.php:65
+msgid "David Chen"
+msgstr ""
+
+#: ../patterns/testimonials.php:69
+msgid "Founder at TechFLow"
+msgstr ""
+
+#: ../patterns/testimonials.php:91
+msgid "Elena Rodriguez"
+msgstr ""
+
+#: ../patterns/testimonials.php:95
+msgid "Marketing Director"
+msgstr ""

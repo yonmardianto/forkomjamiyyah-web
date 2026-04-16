@@ -1,0 +1,46 @@
+<wpml-config>
+    <admin-texts>
+        <key name="theme_mods_pass-max">
+            <key name="0"/>
+            <key name="nav_menu_locations"/>
+            <key name="custom_css_post_id"/>
+            <key name="sidebars_widgets">
+                <key name="time"/>
+                <key name="data">
+                    <key name="homepage_hero_widget"/>
+                    <key name="sidebar_left">
+                        <key name="0"/>
+                        <key name="1"/>
+                        <key name="2"/>
+                    </key>
+                    <key name="sidebar_right">
+                        <key name="0"/>
+                        <key name="1"/>
+                    </key>
+                    <key name="sidebar-1"/>
+                </key>
+            </key>
+            <key name="custom_logo"/>
+        </key>
+        <key name="theme_mods_pass-max-pro">
+            <key name="0"/>
+            <key name="nav_menu_locations"/>
+            <key name="sidebars_widgets">
+                <key name="time"/>
+                <key name="data">
+                    <key name="homepage_hero_widget"/>
+                    <key name="sidebar_left">
+                        <key name="0"/>
+                        <key name="1"/>
+                        <key name="2"/>
+                    </key>
+                    <key name="sidebar_right">
+                        <key name="0"/>
+                        <key name="1"/>
+                    </key>
+                    <key name="sidebar-1"/>
+                </key>
+            </key>
+        </key>
+    </admin-texts>
+</wpml-config>

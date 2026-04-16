@@ -1,0 +1,170 @@
+/**
+ * 
+ * @package     pass-max
+ * @author      productiveminds.com
+ * @copyright   productiveminds.com
+ */
+
+function productiveminds_theme_menu_icons_uls( el_objects, source ) {
+    let i;
+    for( i = 0; i < el_objects.length; i++ ) {
+        let header_top_nav_ul_element = el_objects[i];
+        let header_nav_anchor_element = header_top_nav_ul_element.previousElementSibling;
+        if( null !== header_nav_anchor_element && undefined !== header_nav_anchor_element) {
+            let more_anchor_button = document.createElement('button');
+            if( "angled" === productive_parent_theme_js_handle_name.productive_passmax_header_menu_more_icon ) {
+                productiveminds_theme_do_menu_nav_icon_svg( header_nav_anchor_element, more_anchor_button );
+            } else if( "plus_minus" === productive_parent_theme_js_handle_name.productive_passmax_header_menu_more_icon ) {
+                productiveminds_theme_do_menu_nav_icon_css( header_nav_anchor_element, more_anchor_button );
+            }
+            /* toggle when icon is clicked */
+            more_anchor_button.addEventListener("keydown", (e) => {
+                if( " " === e.key ) {
+                    e.preventDefault();
+                    let menu_ul_block = more_anchor_button.parentElement.parentElement.querySelector("ul");
+                    productiveminds_theme_do_menu_item_click_action( menu_ul_block, source );
+                }
+            });
+            more_anchor_button.addEventListener("click", function(e) {
+                e.preventDefault();
+                let menu_ul_block = more_anchor_button.parentElement.parentElement.querySelector("ul");
+                productiveminds_theme_do_menu_item_click_action( menu_ul_block, source );
+            });
+            if( "site_header_nav_big_screen" === source ) {
+                more_anchor_button.addEventListener("mouseleave", function(e) {
+                    e.preventDefault();
+                    this.parentElement.parentElement.querySelector("ul").classList.add("menu_block_is_viz");
+                    this.parentElement.parentElement.querySelector("ul").style = "";
+                });
+                more_anchor_button.parentElement.parentElement.querySelector("ul").classList.add("menu_block_is_viz");
+            }
+        }
+    }
+}
+function productiveminds_theme_menu_icons_divs( el_objects, source ) {
+    let i;
+    for( i = 0; i < el_objects.length; i++ ) {
+        let header_top_nav_ul_element = el_objects[i];
+        let header_nav_anchor_element = header_top_nav_ul_element.previousElementSibling;
+        if( null !== header_nav_anchor_element && undefined !== header_nav_anchor_element) {
+            let more_anchor_button = document.createElement('button');
+            if( "angled" === productive_parent_theme_js_handle_name.productive_passmax_header_menu_more_icon ) {
+                productiveminds_theme_do_menu_nav_icon_svg( header_nav_anchor_element, more_anchor_button );
+            } else if( "plus_minus" === productive_parent_theme_js_handle_name.productive_passmax_header_menu_more_icon ) {
+                productiveminds_theme_do_menu_nav_icon_css( header_nav_anchor_element, more_anchor_button );
+            }
+            /* toggle when icon is clicked */
+            more_anchor_button.addEventListener("keydown", (e) => {
+                if( " " === e.key ) {
+                    e.preventDefault();
+                    let menu_ul_block = more_anchor_button.parentElement.querySelector("div");
+                    productiveminds_theme_do_menu_item_click_action( menu_ul_block, source );
+                }
+            });
+            more_anchor_button.addEventListener("click", function(e) {
+                e.preventDefault();
+                let menu_ul_block = more_anchor_button.parentElement.querySelector("div");
+                productiveminds_theme_do_menu_item_click_action( menu_ul_block, source );
+            });
+            if( "site_header_nav_big_screen" === source ) {
+                more_anchor_button.addEventListener("mouseleave", function(e) {
+                    e.preventDefault();
+                    this.parentElement.querySelector("div").classList.add("menu_block_is_viz");
+                    this.parentElement.querySelector("div").style = "";
+                });
+                more_anchor_button.parentElement.querySelector("div").classList.add("menu_block_is_viz");
+            }
+        }
+    }
+}
+function productiveminds_theme_do_menu_item_click_action( menu_ul_block, source ) {
+    if( menu_ul_block.classList.contains( "menu_block_is_viz" ) ) {
+        menu_ul_block.style.display = "none";
+        menu_ul_block.classList.remove( "menu_block_is_viz" );
+    } else {
+        menu_ul_block.style.display = "block";
+        menu_ul_block.classList.add( "menu_block_is_viz" );
+    }
+}
+function productiveminds_theme_do_menu_nav_icon_svg( header_nav_anchor_element, more_anchor_button ) {
+    more_anchor_button.setAttribute( "aria-label", productive_parent_theme_js_handle_name.text_submenu );
+    more_anchor_button.innerHTML = productive_parent_theme_js_handle_name.productive_nav_more_icon + '<span class="screen-reader-text">' + productive_parent_theme_js_handle_name.text_submenu;
+    header_nav_anchor_element.append( more_anchor_button );
+}
+function productiveminds_theme_do_menu_nav_icon_css( header_nav_anchor_element, more_anchor_button ) {
+    more_anchor_button.setAttribute( "aria-label", productive_parent_theme_js_handle_name.text_submenu );
+    more_anchor_button.classList.add( "menu_with_children_l1" );
+    header_nav_anchor_element.append( more_anchor_button );
+}
+
+
+function productiveminds_theme_init_theme_scripts() {
+    
+    if( 'default' === productive_parent_theme_js_handle_name.productive_passmax_header_megamenu_option ) {
+        const header_big_screen_nav_ul_elements = document.querySelectorAll( ".site_header_nav_big_screen ul#productiveminds-header-nav ul" );
+        productiveminds_theme_menu_icons_uls( header_big_screen_nav_ul_elements, "site_header_nav_big_screen" );
+        const header_global_screen_nav_ul_elements = document.querySelectorAll( ".site_header_nav_global_screen ul#productiveminds-header-nav ul" );
+        productiveminds_theme_menu_icons_uls( header_global_screen_nav_ul_elements, "site_header_nav_global_screen" );
+
+        const header_big_screen_nav_div_elements = document.querySelectorAll( ".site_header_nav_big_screen div#productiveminds-header-nav ul ul" );
+        productiveminds_theme_menu_icons_divs( header_big_screen_nav_div_elements, "site_header_nav_big_screen" );
+        const header_global_nav_div_elements = document.querySelectorAll( ".site_header_nav_global_screen div#productiveminds-header-nav ul ul" );
+        productiveminds_theme_menu_icons_divs( header_global_nav_div_elements, "site_header_nav_global_screen" );
+    }
+    
+    let site_header_search_icon = document.querySelector(".site-header-search-icon.parent_theme");
+    if( null !== site_header_search_icon && undefined !== site_header_search_icon) {
+        site_header_search_icon.addEventListener("click", function(e) {
+            e.preventDefault();
+            let site_header_search_block = document.querySelector(".header_search_overlay");
+            if( null !== site_header_search_block && undefined !== site_header_search_block) {
+                site_header_search_block.classList.toggle("noned_but_only_applicable_in_smallscreen");
+            }
+        });
+    }
+    
+    let productiveminds_navicon_catalog = document.querySelector("button.productiveminds-navicon-button.header-menu-navicon-catalog-button");
+    if( null !== productiveminds_navicon_catalog && undefined !== productiveminds_navicon_catalog) {
+        productiveminds_navicon_catalog.addEventListener("click", function() {
+            let button_container_site_header_menu = this.parentElement.parentElement.parentElement;
+            if( null !== button_container_site_header_menu && undefined !== button_container_site_header_menu) {
+                let button_container_site_header_menu_list = button_container_site_header_menu.querySelector(".header-catalog-vertical-menu-category-container");
+                if( null !== button_container_site_header_menu_list && undefined !== button_container_site_header_menu_list) {
+                    let set_in_focus = false;
+                    if( button_container_site_header_menu_list.classList.contains("noned") ) {
+                        set_in_focus = true;
+                    }
+                    button_container_site_header_menu_list.classList.toggle("noned");
+                    if( set_in_focus ) {
+                        productiveminds_open_and_set_catalog_menu_dropdown_in_focus( button_container_site_header_menu_list, this );
+                    }
+                }
+            }
+        });
+    }
+    
+    let wpadminbar_div_exists = document.getElementById("wpadminbar");
+    if( null !== wpadminbar_div_exists && undefined !== wpadminbar_div_exists) {
+        let pro_transp_home_header = document.querySelector("body.home.pro_transp_home_header > header");
+        if( null !== pro_transp_home_header && undefined !== pro_transp_home_header) {
+            pro_transp_home_header.style.marginTop = wpadminbar_div_exists.offsetHeight + "px";
+        }
+        let productive_sticky_header = document.getElementById("productive_sticky_header");
+        if( null !== productive_sticky_header && undefined !== productive_sticky_header) {
+            productive_sticky_header.style.marginTop = wpadminbar_div_exists.offsetHeight + "px";
+        }
+    }
+    
+}
+
+function productiveminds_theme_execute_theme_std_scripts() {
+    let delay = 0;
+    if( undefined !== productiveminds_global_is_admin && "yes" === productiveminds_global_is_admin ) {
+        delay = 2000;
+    }
+    setTimeout( _productiveminds_theme_execute_theme_std_scripts, delay );
+}
+function _productiveminds_theme_execute_theme_std_scripts() {
+    productiveminds_theme_init_theme_scripts();
+}
+document.addEventListener( 'DOMContentLoaded', productiveminds_theme_execute_theme_std_scripts() );
