@@ -1,0 +1,78 @@
+/* ==========================================================================
+   WP Events Calendar — Admin Stylesheet
+   ========================================================================== */
+
+/* --------------------------------------------------------------------------
+   1. Event Meta Box — Date Fields
+   -------------------------------------------------------------------------- */
+#wec_event_dates_meta_box .inside {
+	padding: 12px;
+}
+
+#wec_event_dates_meta_box .inside > div {
+	margin-bottom: 14px;
+}
+
+#wec_event_dates_meta_box label strong {
+	font-size: 0.85rem;
+	color: #1d2327;
+}
+
+#wec_event_dates_meta_box input[type="datetime-local"] {
+	width: 100%;
+	margin-top: 5px;
+	padding: 6px 8px;
+	border: 1px solid #c3c4c7;
+	border-radius: 4px;
+	font-size: 0.85rem;
+	color: #2c3338;
+	background-color: #fff;
+	box-sizing: border-box;
+	transition: border-color 0.2s ease, box-shadow 0.2s ease;
+}
+
+#wec_event_dates_meta_box input[type="datetime-local"]:focus {
+	border-color: #2271b1;
+	box-shadow: 0 0 0 2px rgba(34, 113, 177, 0.15);
+	outline: none;
+}
+
+/* Validation error state */
+#wec_event_dates_meta_box input[type="datetime-local"].wec-input-error {
+	border-color: #d63638;
+	box-shadow: 0 0 0 2px rgba(214, 54, 56, 0.15);
+}
+
+/* --------------------------------------------------------------------------
+   2. Settings Page — Custom CSS Textarea
+   -------------------------------------------------------------------------- */
+#wec-custom-css-editor,
+.wec-settings-wrap textarea[name="wec_custom_css"] {
+	width: 100%;
+	font-family: "Courier New", Courier, monospace;
+	font-size: 0.85rem;
+	line-height: 1.6;
+	padding: 10px 12px;
+	border: 1px solid #c3c4c7;
+	border-radius: 4px;
+	background-color: #1e1e1e;
+	color: #d4d4d4;
+	resize: vertical;
+	min-height: 200px;
+	box-sizing: border-box;
+	transition: border-color 0.2s ease;
+}
+
+#wec-custom-css-editor:focus,
+.wec-settings-wrap textarea[name="wec_custom_css"]:focus {
+	border-color: #2271b1;
+	box-shadow: 0 0 0 2px rgba(34, 113, 177, 0.15);
+	outline: none;
+}
+
+.form-table td .description {
+	margin-top: 8px;
+	font-size: 0.8rem;
+	font-style: italic;
+	color: #646970;
+}
