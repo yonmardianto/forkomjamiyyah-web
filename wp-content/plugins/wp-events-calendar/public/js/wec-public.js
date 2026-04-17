@@ -83,24 +83,65 @@ document.addEventListener('DOMContentLoaded', function () {
             }
         });
 
+        // FIX: Ensure the container has an explicit width before rendering.
+        // FullCalendar reads offsetWidth at render time — if it's 0 (e.g. inside
+        // a flex/grid parent that hasn't laid out yet), the columns collapse.
+        calendarEl.style.minWidth = '100%';
+
+        // FIX: Use a helper that renders once then calls updateSize() at multiple
+        // checkpoints so the layout self-corrects regardless of when the parent
+        // container finally gets a non-zero width.
+        function renderAndFix() {
+            calendar.render();
+            safeUpdateSize();
+        }
+
+        function safeUpdateSize() {
+            // Immediately attempt a resize
+            calendar.updateSize();
+
+            // Then retry at short intervals in case the container width is still 0
+            var attempts = 0;
+            var maxAttempts = 10;
+            var interval = setInterval(function () {
+                attempts++;
+                var width = calendarEl.offsetWidth;
+                if (width > 50) {
+                    calendar.updateSize();
+                    clearInterval(interval);
+                } else if (attempts >= maxAttempts) {
+                    // Give up retrying but do one final resize
+                    calendar.updateSize();
+                    clearInterval(interval);
+                }
+            }, 100); // Check every 100ms, up to 1 second total
+        }
+
         // Render inside requestAnimationFrame so the browser has completed at least
         // one layout pass before FullCalendar measures its container.
         requestAnimationFrame(function () {
-            calendar.render();
+            renderAndFix();
 
-            // ResizeObserver: the only reliable way to know when the flex container
-            // actually has a non-zero width. Fires as soon as the container is laid out.
+            // ResizeObserver: fires whenever the container dimensions change,
+            // including the first time it gets a real width from a parent flex/grid.
             if (typeof ResizeObserver !== 'undefined') {
-                var roFired = false;
                 var ro = new ResizeObserver(function (entries) {
                     var width = entries[0].contentRect.width;
-                    if (width > 50 && !roFired) {
-                        roFired = true;
+                    if (width > 50) {
                         calendar.updateSize();
-                        ro.disconnect(); // Stop observing after first valid resize
                     }
                 });
                 ro.observe(calendarEl);
+
+                // FIX: Also disconnect after the window 'load' event fires —
+                // by then all resources (stylesheets, fonts) are loaded and the
+                // layout is truly stable, so we no longer need to watch.
+                window.addEventListener('load', function () {
+                    setTimeout(function () {
+                        calendar.updateSize();
+                        ro.disconnect();
+                    }, 200);
+                }, { once: true });
             } else {
                 // Fallback for very old browsers
                 window.addEventListener('load', function () {
