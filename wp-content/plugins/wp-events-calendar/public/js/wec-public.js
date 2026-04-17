@@ -1,18 +1,30 @@
 document.addEventListener('DOMContentLoaded', function () {
     var calendarEl = document.getElementById('wec-calendar-container');
 
-    if (calendarEl) {
-        function formatDate(dateObj) {
-            if (!dateObj) return '';
-            var d = String(dateObj.getDate()).padStart(2, '0');
-            var m = String(dateObj.getMonth() + 1).padStart(2, '0');
-            var y = dateObj.getFullYear();
-            var h = String(dateObj.getHours()).padStart(2, '0');
-            var min = String(dateObj.getMinutes()).padStart(2, '0');
-            return d + '/' + m + '/' + y + ' ' + h + ':' + min;
-        }
+    if (!calendarEl) return;
 
-        var calendar = new FullCalendar.Calendar(calendarEl, {
+    function formatDate(dateObj) {
+        if (!dateObj) return '';
+        var d = String(dateObj.getDate()).padStart(2, '0');
+        var m = String(dateObj.getMonth() + 1).padStart(2, '0');
+        var y = dateObj.getFullYear();
+        var h = String(dateObj.getHours()).padStart(2, '0');
+        var min = String(dateObj.getMinutes()).padStart(2, '0');
+        return d + '/' + m + '/' + y + ' ' + h + ':' + min;
+    }
+
+    var calendarRendered = false;
+    var calendar = null;
+
+    function initCalendar() {
+        if (calendarRendered) return;
+
+        // Guard: don't render if container still has no real width
+        if (calendarEl.offsetWidth < 50) return;
+
+        calendarRendered = true;
+
+        calendar = new FullCalendar.Calendar(calendarEl, {
             initialView: 'dayGridMonth',
             height: 'auto',
             expandRows: true,
@@ -21,7 +33,7 @@ document.addEventListener('DOMContentLoaded', function () {
                 center: 'title',
                 right: 'dayGridMonth,timeGridWeek,timeGridDay'
             },
-            events: wecData.apiUrl, // Fetch events from REST API
+            events: wecData.apiUrl,
             eventsSet: function (events) {
                 var listContainer = document.getElementById('wec-event-list-container');
                 if (!listContainer) return;
@@ -33,27 +45,28 @@ document.addEventListener('DOMContentLoaded', function () {
                     return;
                 }
 
-                // Copy and sort events by start date
                 var sortedEvents = events.slice().sort(function (a, b) {
                     return a.start - b.start;
                 });
 
                 sortedEvents.forEach(function (event) {
                     var startDate = formatDate(event.start);
-
-                    var itemHtml = '<div style="margin-bottom: 15px; padding-bottom: 15px; border-bottom: 1px solid #eee;">' +
-                        '<h4 style="margin: 0 0 5px 0;">' + event.title + '</h4>' +
-                        '<p style="margin: 0 0 5px 0; font-size: 13px; color: #555;">📅 ' + startDate + '</p>' +
-                        '<a href="' + (event.url || '#') + '" style="font-size: 13px; color: #fff; text-decoration: none;">Lihat Detail &rarr;</a>' +
+                    var eventUrl = event.extendedProps && event.extendedProps.url
+                        ? event.extendedProps.url
+                        : (event.url || '#');
+                    var itemHtml = '<div class="wec-event-item" style="margin-bottom: 12px; padding-bottom: 12px; border-bottom: 1px solid #eee;">' +
+                        '<h4 style="margin: 0 0 4px 0; font-size: 14px; line-height: 1.4;">' + event.title + '</h4>' +
+                        '<p style="margin: 0 0 8px 0; font-size: 12px; color: #888;">📅 ' + startDate + '</p>' +
+                        '<a href="' + eventUrl + '" style="display: inline-block; font-size: 12px; font-weight: 600; color: #3b5bdb; text-decoration: none; border: 1px solid #3b5bdb; border-radius: 4px; padding: 3px 10px; transition: background 0.2s;" ' +
+                        'onmouseover="this.style.background=\'#3b5bdb\';this.style.color=\'#fff\';" ' +
+                        'onmouseout="this.style.background=\'transparent\';this.style.color=\'#3b5bdb\';">Lihat Detail &rarr;</a>' +
                         '</div>';
-
                     listContainer.innerHTML += itemHtml;
                 });
             },
             eventClick: function (info) {
-                info.jsEvent.preventDefault(); // Don't let the browser navigate
+                info.jsEvent.preventDefault();
 
-                // Populate modal data
                 var modal = document.getElementById('wec-event-modal');
                 var title = document.getElementById('wec-modal-title');
                 var time = document.getElementById('wec-modal-time');
@@ -77,89 +90,94 @@ document.addEventListener('DOMContentLoaded', function () {
                 }
 
                 link.href = info.event.url || '#';
-
-                // Show modal
                 modal.style.display = 'block';
             }
         });
 
-        // FIX: Ensure the container has an explicit width before rendering.
-        // FullCalendar reads offsetWidth at render time — if it's 0 (e.g. inside
-        // a flex/grid parent that hasn't laid out yet), the columns collapse.
-        calendarEl.style.minWidth = '100%';
+        calendar.render();
 
-        // FIX: Use a helper that renders once then calls updateSize() at multiple
-        // checkpoints so the layout self-corrects regardless of when the parent
-        // container finally gets a non-zero width.
-        function renderAndFix() {
-            calendar.render();
-            safeUpdateSize();
-        }
-
-        function safeUpdateSize() {
-            // Immediately attempt a resize
-            calendar.updateSize();
-
-            // Then retry at short intervals in case the container width is still 0
-            var attempts = 0;
-            var maxAttempts = 10;
-            var interval = setInterval(function () {
-                attempts++;
-                var width = calendarEl.offsetWidth;
-                if (width > 50) {
-                    calendar.updateSize();
-                    clearInterval(interval);
-                } else if (attempts >= maxAttempts) {
-                    // Give up retrying but do one final resize
-                    calendar.updateSize();
-                    clearInterval(interval);
-                }
-            }, 100); // Check every 100ms, up to 1 second total
-        }
-
-        // Render inside requestAnimationFrame so the browser has completed at least
-        // one layout pass before FullCalendar measures its container.
-        requestAnimationFrame(function () {
-            renderAndFix();
-
-            // ResizeObserver: fires whenever the container dimensions change,
-            // including the first time it gets a real width from a parent flex/grid.
-            if (typeof ResizeObserver !== 'undefined') {
-                var ro = new ResizeObserver(function (entries) {
-                    var width = entries[0].contentRect.width;
-                    if (width > 50) {
-                        calendar.updateSize();
-                    }
-                });
-                ro.observe(calendarEl);
-
-                // FIX: Also disconnect after the window 'load' event fires —
-                // by then all resources (stylesheets, fonts) are loaded and the
-                // layout is truly stable, so we no longer need to watch.
-                window.addEventListener('load', function () {
-                    setTimeout(function () {
-                        calendar.updateSize();
-                        ro.disconnect();
-                    }, 200);
-                }, { once: true });
-            } else {
-                // Fallback for very old browsers
-                window.addEventListener('load', function () {
-                    setTimeout(function () { calendar.updateSize(); }, 300);
-                });
-            }
-        });
-
-        // Close modal logic
-        var closeBtn = document.getElementById('wec-modal-close');
-        var modal = document.getElementById('wec-event-modal');
-        closeBtn.onclick = function () {
-            modal.style.display = "none";
-        }
-        window.onclick = function (event) {
-            if (event.target == modal) {
-                modal.style.display = "none";
-            }
+        // After render, watch for size changes (e.g. sidebar collapsing, window resize)
+        if (typeof ResizeObserver !== 'undefined') {
+            var ro = new ResizeObserver(function () {
+                calendar.updateSize();
+            });
+            ro.observe(calendarEl);
         }
     }
+
+    // --- Strategy 1: Elementor's own "frontend/init" event ---
+    // Elementor fires this after all widgets and sections are laid out.
+    window.addEventListener('elementor/frontend/init', function () {
+        setTimeout(function () {
+            initCalendar();
+        }, 100);
+    });
+
+    // --- Strategy 2: Polling fallback ---
+    // In case the Elementor event already fired or never fires,
+    // poll until the container has a real width (max 3 seconds).
+    var pollAttempts = 0;
+    var maxPollAttempts = 30; // 30 x 100ms = 3 seconds
+    var pollInterval = setInterval(function () {
+        pollAttempts++;
+
+        if (calendarEl.offsetWidth > 50) {
+            clearInterval(pollInterval);
+            initCalendar();
+        } else if (pollAttempts >= maxPollAttempts) {
+            // Container still has no width after 3s — render anyway and let
+            // ResizeObserver fix it once the width resolves.
+            clearInterval(pollInterval);
+            if (!calendarRendered) {
+                calendarRendered = true;
+                calendar = new FullCalendar.Calendar(calendarEl, {
+                    initialView: 'dayGridMonth',
+                    height: 'auto',
+                    expandRows: true,
+                    headerToolbar: {
+                        left: 'prev,next today',
+                        center: 'title',
+                        right: 'dayGridMonth,timeGridWeek,timeGridDay'
+                    },
+                    events: wecData.apiUrl,
+                });
+                calendar.render();
+
+                if (typeof ResizeObserver !== 'undefined') {
+                    var ro = new ResizeObserver(function (entries) {
+                        if (entries[0].contentRect.width > 50) {
+                            calendar.updateSize();
+                        }
+                    });
+                    ro.observe(calendarEl);
+                }
+            }
+        }
+    }, 100);
+
+    // --- Strategy 3: window.load safety net ---
+    // By the time all assets are loaded, Elementor is always done laying out.
+    window.addEventListener('load', function () {
+        setTimeout(function () {
+            if (!calendarRendered) {
+                initCalendar();
+            } else if (calendar) {
+                calendar.updateSize();
+            }
+        }, 300);
+    });
+
+    // Close modal logic
+    var closeBtn = document.getElementById('wec-modal-close');
+    var modal = document.getElementById('wec-event-modal');
+    if (closeBtn) {
+        closeBtn.onclick = function () {
+            modal.style.display = "none";
+        };
+    }
+    window.onclick = function (event) {
+        if (event.target == modal) {
+            modal.style.display = "none";
+        }
+    };
 });
