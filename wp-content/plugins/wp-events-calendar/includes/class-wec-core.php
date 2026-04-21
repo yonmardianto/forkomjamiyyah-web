@@ -33,6 +33,9 @@ class WEC_Core {
 
 		add_action( 'admin_menu', array( $this->admin, 'add_plugin_admin_menu' ) );
 		add_action( 'admin_init', array( $this->admin, 'register_settings' ) );
+
+		add_filter( 'manage_wec_event_posts_columns', array( $this->admin, 'add_wec_event_columns' ) );
+		add_action( 'manage_wec_event_posts_custom_column', array( $this->admin, 'render_wec_event_columns' ), 10, 2 );
 	}
 
 	private function define_public_hooks() {

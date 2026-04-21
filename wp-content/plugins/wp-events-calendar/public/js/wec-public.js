@@ -1,8 +1,48 @@
 document.addEventListener('DOMContentLoaded', function () {
     var calendarEl = document.getElementById('wec-calendar-container');
-
     if (!calendarEl) return;
 
+    // ── Color Palette ─────────────────────────────────────────────────────
+    // wecData.siteColors is a PHP-passed object: { "1": {bg, text}, "2": {bg, text}, ... }
+    var SITE_COLORS = (wecData && wecData.siteColors) ? wecData.siteColors : {};
+    var DEFAULT_COLOR = { bg: '#868e96', text: '#ffffff' };
+
+    function getSiteColor(blogId) {
+        return SITE_COLORS[blogId] || DEFAULT_COLOR;
+    }
+
+    function formatDateShort(start, end, isAllDay) {
+        if (!start) return '';
+
+        var startDate = new Date(start);
+        var startDay = startDate.getDate();
+
+        if (!end) return String(startDay);
+
+        var endDate = new Date(end);
+
+        if (isAllDay) {
+            // FullCalendar: allDay end date is exclusive (hari setelah hari terakhir)
+            // Jika beda waktunya 1 hari (tepat 24 jam), maka event hanya berlangsung 1 hari
+            var timeDiff = endDate.getTime() - startDate.getTime();
+            if (timeDiff <= 86400000) {
+                return String(startDay);
+            }
+            // Kurangi 1 hari untuk mendapat hari terakhir yang sebenarnya
+            endDate.setDate(endDate.getDate() - 1);
+        }
+
+        var endDay = endDate.getDate();
+
+        // Jika start dan end sama (event 1 hari), tampilkan angka tunggal
+        if (startDay === endDay && startDate.getMonth() === endDate.getMonth()) {
+            return String(startDay);
+        }
+
+        return startDay + '-' + endDay;
+    }
+
+    // ── Date Formatting ───────────────────────────────────────────────────
     function formatDate(dateObj) {
         if (!dateObj) return '';
         var d = String(dateObj.getDate()).padStart(2, '0');
@@ -13,18 +53,109 @@ document.addEventListener('DOMContentLoaded', function () {
         return d + '/' + m + '/' + y + ' ' + h + ':' + min;
     }
 
+    function formatDateOnly(dateObj) {
+        if (!dateObj) return '';
+        var d = String(dateObj.getDate()).padStart(2, '0');
+        var m = String(dateObj.getMonth() + 1).padStart(2, '0');
+        var y = dateObj.getFullYear();
+        return d + '/' + m + '/' + y;
+    }
+
+    // ── Legend Builder ────────────────────────────────────────────────────
+    // Collects unique sites from visible events and renders a color legend
+    function buildLegend(events) {
+        var legendEl = document.getElementById('wec-calendar-legend');
+        if (!legendEl) return;
+
+        var seen = {}; // blogId → blogName
+        events.forEach(function (ev) {
+            var blogId = ev.extendedProps && ev.extendedProps.blogId;
+            var blogName = ev.extendedProps && ev.extendedProps.blogName;
+            if (blogId && !seen[blogId]) {
+                seen[blogId] = blogName || ('Site ' + blogId);
+            }
+        });
+
+        legendEl.innerHTML = '';
+
+        Object.keys(seen).forEach(function (blogId) {
+            var color = getSiteColor(blogId);
+            var item = document.createElement('span');
+            item.style.cssText = [
+                'display:inline-flex',
+                'align-items:center',
+                'gap:6px',
+                'padding:4px 10px',
+                'border-radius:20px',
+                'font-size:12px',
+                'font-weight:600',
+                'background:' + color.bg,
+                'color:' + color.text,
+                'box-shadow:0 1px 3px rgba(0,0,0,0.15)',
+            ].join(';');
+            item.innerHTML = '&#9679; ' + seen[blogId];
+            legendEl.appendChild(item);
+        });
+    }
+
+
+
+
+    function buildSidebar(events) {
+        var listContainer = document.getElementById('wec-event-list-container');
+        if (!listContainer) return;
+
+        listContainer.innerHTML = '';
+
+        if (events.length === 0) {
+            listContainer.innerHTML = '<p style="color:#777;font-size:13px;">Tidak ada event di periode ini.</p>';
+            return;
+        }
+
+        var sorted = events.slice().sort(function (a, b) { return a.start - b.start; });
+
+        // Header "EVENT" matching the attachment's serif style and orange underline
+        var headerHtml =
+            '<div style="margin-bottom:20px;">' +
+            '<span style="font-family:\'Playfair Display\', serif, \'Times New Roman\';font-size:20px;font-weight:700;text-transform:uppercase;color:#333;border-bottom:3px solid #fec42d;padding-bottom:2px;display:inline-block;line-height:1;">EVENT</span>' +
+            '</div>';
+
+        listContainer.innerHTML = headerHtml;
+
+        sorted.forEach(function (event) {
+            var blogId = event.extendedProps && event.extendedProps.blogId;
+            var blogName = event.extendedProps && event.extendedProps.blogName;
+            var isAllDay = event.allDay || (event.extendedProps && event.extendedProps.allDay);
+            var color = getSiteColor(blogId);
+
+            var dateLabel = formatDateShort(event.start, event.end, isAllDay);
+
+            let siteBadge = blogName
+                ? '<span style="font-size:10px;font-weight:600;background:' + color.bg + ';color:#fff;padding:2px 8px;border-radius:10px;margin-left:auto;white-space:nowrap;">' +
+                blogName + '</span>'
+                : '';
+
+            if (blogId == "1") {
+                siteBadge = '';
+            }
+
+            var itemHtml =
+                '<div class="wec-event-item">' +
+                '<span style="min-width:35px;font-size:12px;font-weight:700;color:#524c6e;">' + dateLabel + '</span>' +
+                '<span style="font-size:12px;color:#5b567d;flex:1;">' + event.title + '</span>' +
+                siteBadge +
+                '</div>';
+
+            listContainer.innerHTML += itemHtml;
+        });
+    }
+
+    // ── Calendar Init ─────────────────────────────────────────────────────
     var calendarRendered = false;
     var calendar = null;
 
-    function initCalendar() {
-        if (calendarRendered) return;
-
-        // Guard: don't render if container still has no real width
-        if (calendarEl.offsetWidth < 50) return;
-
-        calendarRendered = true;
-
-        calendar = new FullCalendar.Calendar(calendarEl, {
+    function buildCalendarOptions() {
+        return {
             initialView: 'dayGridMonth',
             height: 'auto',
             expandRows: true,
@@ -34,120 +165,118 @@ document.addEventListener('DOMContentLoaded', function () {
                 right: 'dayGridMonth,timeGridWeek,timeGridDay'
             },
             events: wecData.apiUrl,
-            eventsSet: function (events) {
-                var listContainer = document.getElementById('wec-event-list-container');
-                if (!listContainer) return;
 
-                listContainer.innerHTML = '';
-
-                if (events.length === 0) {
-                    listContainer.innerHTML = '<p style="color:#777;">Tidak ada event di periode ini.</p>';
-                    return;
-                }
-
-                var sortedEvents = events.slice().sort(function (a, b) {
-                    return a.start - b.start;
-                });
-
-                sortedEvents.forEach(function (event) {
-                    var startDate = formatDate(event.start);
-                    var eventUrl = event.extendedProps && event.extendedProps.url
-                        ? event.extendedProps.url
-                        : (event.url || '#');
-                    var itemHtml = '<div class="wec-event-item" style="margin-bottom: 12px; padding-bottom: 12px; border-bottom: 1px solid #eee;">' +
-                        '<h4 style="margin: 0 0 4px 0; font-size: 14px; line-height: 1.4;">' + event.title + '</h4>' +
-                        '<p style="margin: 0 0 8px 0; font-size: 12px; color: #888;">📅 ' + startDate + '</p>' +
-                        '<a href="' + eventUrl + '" style="display: inline-block; font-size: 12px; font-weight: 600; color: #3b5bdb; text-decoration: none; border: 1px solid #3b5bdb; border-radius: 4px; padding: 3px 10px; transition: background 0.2s;" ' +
-                        'onmouseover="this.style.background=\'#3b5bdb\';this.style.color=\'#fff\';" ' +
-                        'onmouseout="this.style.background=\'transparent\';this.style.color=\'#3b5bdb\';">Lihat Detail &rarr;</a>' +
-                        '</div>';
-                    listContainer.innerHTML += itemHtml;
-                });
+            // Apply per-site colors when each event element is mounted
+            eventDidMount: function (info) {
+                var blogId = info.event.extendedProps && info.event.extendedProps.blogId;
+                var color = getSiteColor(blogId);
+                info.el.style.backgroundColor = color.bg;
+                info.el.style.borderColor = color.bg;
+                info.el.style.color = color.text;
             },
+
+            // Rebuild sidebar + legend whenever the event set changes
+            eventsSet: function (events) {
+                buildSidebar(events);
+                buildLegend(events);
+            },
+
+            // Modal on event click
             eventClick: function (info) {
                 info.jsEvent.preventDefault();
 
                 var modal = document.getElementById('wec-event-modal');
-                var title = document.getElementById('wec-modal-title');
-                var time = document.getElementById('wec-modal-time');
-                var desc = document.getElementById('wec-modal-desc');
-                var link = document.getElementById('wec-modal-link');
-                var img = document.getElementById('wec-modal-image');
+                var titleEl = document.getElementById('wec-modal-title');
+                var timeEl = document.getElementById('wec-modal-time');
+                var siteEl = document.getElementById('wec-modal-site');
+                var descEl = document.getElementById('wec-modal-desc');
+                var imgEl = document.getElementById('wec-modal-image');
 
-                title.innerText = info.event.title;
+                var blogId = info.event.extendedProps.blogId;
+                var blogName = info.event.extendedProps.blogName;
+                var isAllDay = info.event.allDay;
+                var color = getSiteColor(blogId);
 
-                var startTime = formatDate(info.event.start);
-                var endTime = info.event.end ? ' - ' + formatDate(info.event.end) : '';
-                time.innerText = startTime + endTime;
+                titleEl.innerText = info.event.title;
 
-                desc.innerHTML = info.event.extendedProps.description || '';
-
-                if (info.event.extendedProps.imageUrl) {
-                    img.src = info.event.extendedProps.imageUrl;
-                    img.style.display = 'block';
+                // Time display
+                if (isAllDay) {
+                    var startTxt = formatDateOnly(info.event.start);
+                    var endRaw = info.event.end;
+                    // FullCalendar allDay end is exclusive — subtract 1 day
+                    var endDisplay = '';
+                    if (endRaw) {
+                        var endAdj = new Date(endRaw.getTime() - 86400000);
+                        var endTxt = formatDateOnly(endAdj);
+                        endDisplay = startTxt !== endTxt ? startTxt + ' &ndash; ' + endTxt : startTxt;
+                    } else {
+                        endDisplay = startTxt;
+                    }
+                    timeEl.innerHTML = endDisplay + ' ';
                 } else {
-                    img.style.display = 'none';
+                    var startTime = formatDate(info.event.start);
+                    var endTime = info.event.end ? ' &ndash; ' + formatDate(info.event.end) : '';
+                    timeEl.innerHTML = startTime + endTime;
                 }
 
-                link.href = info.event.url || '#';
+                // Site badge in modal
+                if (siteEl) {
+                    siteEl.innerHTML = blogName
+                        ? '&#127970; <span style="display:inline-block;background:' + color.bg + ';color:' + color.text +
+                        ';font-size:11px;font-weight:700;padding:2px 8px;border-radius:10px;">' + blogName + '</span>'
+                        : '';
+                }
+
+                descEl.innerHTML = info.event.extendedProps.description || '';
+
+                if (info.event.extendedProps.imageUrl) {
+                    imgEl.src = info.event.extendedProps.imageUrl;
+                    imgEl.style.display = 'block';
+                } else {
+                    imgEl.style.display = 'none';
+                }
+
                 modal.style.display = 'block';
             }
-        });
+        };
+    }
 
+    function initCalendar() {
+        if (calendarRendered) return;
+        if (calendarEl.offsetWidth < 50) return;
+
+        calendarRendered = true;
+        calendar = new FullCalendar.Calendar(calendarEl, buildCalendarOptions());
         calendar.render();
 
-        // After render, watch for size changes (e.g. sidebar collapsing, window resize)
         if (typeof ResizeObserver !== 'undefined') {
-            var ro = new ResizeObserver(function () {
-                calendar.updateSize();
-            });
+            var ro = new ResizeObserver(function () { calendar.updateSize(); });
             ro.observe(calendarEl);
         }
     }
 
-    // --- Strategy 1: Elementor's own "frontend/init" event ---
-    // Elementor fires this after all widgets and sections are laid out.
+    // ── Strategy 1: Elementor frontend/init ──────────────────────────────
     window.addEventListener('elementor/frontend/init', function () {
-        setTimeout(function () {
-            initCalendar();
-        }, 100);
+        setTimeout(initCalendar, 100);
     });
 
-    // --- Strategy 2: Polling fallback ---
-    // In case the Elementor event already fired or never fires,
-    // poll until the container has a real width (max 3 seconds).
+    // ── Strategy 2: Polling fallback (max 3 s) ────────────────────────────
     var pollAttempts = 0;
-    var maxPollAttempts = 30; // 30 x 100ms = 3 seconds
     var pollInterval = setInterval(function () {
         pollAttempts++;
-
         if (calendarEl.offsetWidth > 50) {
             clearInterval(pollInterval);
             initCalendar();
-        } else if (pollAttempts >= maxPollAttempts) {
-            // Container still has no width after 3s — render anyway and let
-            // ResizeObserver fix it once the width resolves.
+        } else if (pollAttempts >= 30) {
             clearInterval(pollInterval);
             if (!calendarRendered) {
                 calendarRendered = true;
-                calendar = new FullCalendar.Calendar(calendarEl, {
-                    initialView: 'dayGridMonth',
-                    height: 'auto',
-                    expandRows: true,
-                    headerToolbar: {
-                        left: 'prev,next today',
-                        center: 'title',
-                        right: 'dayGridMonth,timeGridWeek,timeGridDay'
-                    },
-                    events: wecData.apiUrl,
-                });
+                calendar = new FullCalendar.Calendar(calendarEl, buildCalendarOptions());
                 calendar.render();
 
                 if (typeof ResizeObserver !== 'undefined') {
                     var ro = new ResizeObserver(function (entries) {
-                        if (entries[0].contentRect.width > 50) {
-                            calendar.updateSize();
-                        }
+                        if (entries[0].contentRect.width > 50) calendar.updateSize();
                     });
                     ro.observe(calendarEl);
                 }
@@ -155,8 +284,7 @@ document.addEventListener('DOMContentLoaded', function () {
         }
     }, 100);
 
-    // --- Strategy 3: window.load safety net ---
-    // By the time all assets are loaded, Elementor is always done laying out.
+    // ── Strategy 3: window.load safety net ───────────────────────────────
     window.addEventListener('load', function () {
         setTimeout(function () {
             if (!calendarRendered) {
@@ -167,17 +295,13 @@ document.addEventListener('DOMContentLoaded', function () {
         }, 300);
     });
 
-    // Close modal logic
+    // ── Modal close logic ─────────────────────────────────────────────────
     var closeBtn = document.getElementById('wec-modal-close');
     var modal = document.getElementById('wec-event-modal');
     if (closeBtn) {
-        closeBtn.onclick = function () {
-            modal.style.display = "none";
-        };
+        closeBtn.onclick = function () { modal.style.display = 'none'; };
     }
     window.onclick = function (event) {
-        if (event.target == modal) {
-            modal.style.display = "none";
-        }
+        if (event.target === modal) modal.style.display = 'none';
     };
 });

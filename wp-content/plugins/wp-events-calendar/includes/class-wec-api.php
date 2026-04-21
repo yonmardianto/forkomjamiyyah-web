@@ -63,18 +63,22 @@ class WEC_API {
 				$blog_name = get_bloginfo( 'name' ); // Get the subsite's name
 				
 				foreach ( $events as $event ) {
-					$start = get_post_meta( $event->ID, '_wec_start_date', true );
-					$end   = get_post_meta( $event->ID, '_wec_end_date', true );
+					$start   = get_post_meta( $event->ID, '_wec_start_date', true );
+					$end     = get_post_meta( $event->ID, '_wec_end_date', true );
+					$all_day = (bool) get_post_meta( $event->ID, '_wec_all_day', true );
 					$image_url = get_the_post_thumbnail_url( $event->ID, 'wec-event-image' );
 
 					$formatted_events[] = array(
 						'id'          => $site->blog_id . '-' . $event->ID, // Unique ID across the network
-						'title'       => '[' . $blog_name . '] ' . $event->post_title, // Prepend subsite name
+						'title'       => $event->post_title,
 						'start'       => $start,
-						'end'         => $end,
+						'end'         => ( $all_day && ! empty( $end ) ) ? date( 'Y-m-d', strtotime( $end . ' +1 day' ) ) : $end,
+						'allDay'      => $all_day,
 						'description' => wp_strip_all_tags( $event->post_content ),
 						'imageUrl'    => $image_url ? $image_url : '',
-						'url'         => get_permalink( $event->ID )
+						'url'         => get_permalink( $event->ID ),
+						'blogId'      => $site->blog_id,
+						'blogName'    => $blog_name,
 					);
 				}
 				
@@ -82,21 +86,27 @@ class WEC_API {
 			}
 		} else {
 			// Single site logic
-			$events = get_posts( $args );
+			$events    = get_posts( $args );
+			$blog_id   = get_current_blog_id();
+			$blog_name = get_bloginfo( 'name' );
 			
 			foreach ( $events as $event ) {
-				$start = get_post_meta( $event->ID, '_wec_start_date', true );
-				$end   = get_post_meta( $event->ID, '_wec_end_date', true );
+				$start   = get_post_meta( $event->ID, '_wec_start_date', true );
+				$end     = get_post_meta( $event->ID, '_wec_end_date', true );
+				$all_day = (bool) get_post_meta( $event->ID, '_wec_all_day', true );
 				$image_url = get_the_post_thumbnail_url( $event->ID, 'wec-event-image' );
 
 				$formatted_events[] = array(
 					'id'          => $event->ID,
 					'title'       => $event->post_title,
 					'start'       => $start,
-					'end'         => $end,
+					'end'         => ( $all_day && ! empty( $end ) ) ? date( 'Y-m-d', strtotime( $end . ' +1 day' ) ) : $end,
+					'allDay'      => $all_day,
 					'description' => wp_strip_all_tags( $event->post_content ),
 					'imageUrl'    => $image_url ? $image_url : '',
-					'url'         => get_permalink( $event->ID )
+					'url'         => get_permalink( $event->ID ),
+					'blogId'      => $blog_id,
+					'blogName'    => $blog_name,
 				);
 			}
 		}

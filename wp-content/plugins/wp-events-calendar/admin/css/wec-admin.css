@@ -44,6 +44,72 @@
 }
 
 /* --------------------------------------------------------------------------
+   1b. All Day — Checkbox Row
+   -------------------------------------------------------------------------- */
+
+/* Row container */
+.wec-all-day-row {
+	margin-bottom: 14px;
+	padding: 8px 10px;
+	background: #f0f6fc;
+	border: 1px solid #c3d9f0;
+	border-radius: 6px;
+}
+
+/* Label */
+.wec-all-day-label {
+	display: flex;
+	align-items: center;
+	gap: 8px;
+	font-size: 0.85rem;
+	font-weight: 600;
+	color: #1d2327;
+	cursor: pointer;
+	user-select: none;
+}
+
+/* Checkbox */
+.wec-all-day-label input[type="checkbox"] {
+	width: 16px;
+	height: 16px;
+	accent-color: #2e7d32;
+	cursor: pointer;
+	flex-shrink: 0;
+}
+
+/* Label text span — highlight when checked */
+#wec_all_day:checked + span {
+	color: #2e7d32;
+}
+
+/* Animated wrappers */
+#wec-date-only-wrap,
+#wec-datetime-wrap {
+	transition: opacity 0.2s ease;
+}
+
+/* Date-only inputs use the same style as datetime-local */
+#wec_event_dates_meta_box input[type="date"] {
+	width: 100%;
+	margin-top: 5px;
+	padding: 6px 8px;
+	border: 1px solid #c3c4c7;
+	border-radius: 4px;
+	font-size: 0.85rem;
+	color: #2c3338;
+	background-color: #fff;
+	box-sizing: border-box;
+	transition: border-color 0.2s ease, box-shadow 0.2s ease;
+}
+
+#wec_event_dates_meta_box input[type="date"]:focus {
+	border-color: #2e7d32;
+	box-shadow: 0 0 0 2px rgba(46, 125, 50, 0.15);
+	outline: none;
+}
+
+
+/* --------------------------------------------------------------------------
    2. Settings Page — Custom CSS Textarea
    -------------------------------------------------------------------------- */
 #wec-custom-css-editor,
