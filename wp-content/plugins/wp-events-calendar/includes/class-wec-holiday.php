@@ -10,13 +10,14 @@
 class WEC_Holiday
 {
     /** Endpoint Nager.Date — %d diisi tahun, ID = Indonesia */
-    const API_URL    = 'https://date.nager.at/api/v3/PublicHolidays/%d/ID';
+    // const API_URL = 'https://date.nager.at/api/v3/PublicHolidays/%d/ID';
+    const API_URL = 'https://libur.deno.dev/api?year=%d';
 
     /** Kunci transient WordPress — %d diisi tahun */
-    const CACHE_KEY  = 'wec_holidays_%d';
+    const CACHE_KEY = 'wec_holidays_%d';
 
     /** Durasi cache: 1 bulan (hari libur nasional jarang berubah) */
-    const CACHE_TTL  = MONTH_IN_SECONDS;
+    const CACHE_TTL = MONTH_IN_SECONDS;
 
     /**
      * Kembalikan array hari libur untuk tahun tertentu.
@@ -28,7 +29,7 @@ class WEC_Holiday
     public function get_holidays(int $year): array
     {
         $cache_key = sprintf(self::CACHE_KEY, $year);
-        $cached    = get_transient($cache_key);
+        $cached = get_transient($cache_key);
 
         if ($cached !== false) {
             return $cached;
@@ -49,7 +50,7 @@ class WEC_Holiday
             return [];
         }
 
-        $body     = wp_remote_retrieve_body($response);
+        $body = wp_remote_retrieve_body($response);
         $holidays = json_decode($body, true);
 
         if (!is_array($holidays)) {
@@ -59,9 +60,9 @@ class WEC_Holiday
         // Simpan hanya field yang dibutuhkan frontend agar payload kecil
         $clean = array_map(function ($h) {
             return [
-                'date'      => sanitize_text_field($h['date']),
-                'localName' => sanitize_text_field($h['localName']),
-                'name'      => sanitize_text_field($h['name']),
+                'date' => sanitize_text_field($h['date']),
+                // 'localName' => sanitize_text_field($h['localName']),
+                'localName' => sanitize_text_field($h['name']),
             ];
         }, $holidays);
 
@@ -96,12 +97,12 @@ class WEC_Holiday
     public function register_routes(): void
     {
         register_rest_route('wec/v1', '/holidays', [
-            'methods'             => 'GET',
-            'callback'            => [$this, 'get_holidays_endpoint'],
+            'methods' => 'GET',
+            'callback' => [$this, 'get_holidays_endpoint'],
             'permission_callback' => '__return_true',
-            'args'                => [
+            'args' => [
                 'year' => [
-                    'default'           => (int) date('Y'),
+                    'default' => (int) date('Y'),
                     'sanitize_callback' => 'absint',
                 ],
             ],
@@ -113,7 +114,7 @@ class WEC_Holiday
      */
     public function get_holidays_endpoint(\WP_REST_Request $request): \WP_REST_Response
     {
-        $year     = (int) $request->get_param('year');
+        $year = (int) $request->get_param('year');
         $holidays = $this->get_holidays($year);
         return rest_ensure_response($holidays);
     }
