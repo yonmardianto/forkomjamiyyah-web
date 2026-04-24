@@ -11,6 +11,32 @@ document.addEventListener('DOMContentLoaded', function () {
         return SITE_COLORS[blogId] || DEFAULT_COLOR;
     }
 
+    // ── Holiday Data ──────────────────────────────────────────────────────
+    var holidayMap = {}; // key: 'YYYY-MM-DD', value: localName
+    var fetchedYears = {};
+
+    function loadHolidays(year, callback) {
+        if (fetchedYears[year]) {
+            if (callback) callback();
+            return;
+        }
+
+        var url = wecData.holidayApiUrl + '?year=' + year;
+        fetch(url)
+            .then(function (r) { return r.json(); })
+            .then(function (data) {
+                data.forEach(function (h) {
+                    holidayMap[h.date] = h.localName;
+                });
+                fetchedYears[year] = true;
+                if (callback) callback();
+            })
+            .catch(function (e) {
+                console.warn('[WEC] Gagal load holidays:', e);
+                if (callback) callback();
+            });
+    }
+
     function formatDateShort(start, end, isAllDay) {
         if (!start) return '';
 
@@ -108,46 +134,73 @@ document.addEventListener('DOMContentLoaded', function () {
         listContainer.innerHTML = '';
 
         if (events.length === 0) {
-            listContainer.innerHTML = '<p style="color:#777;font-size:13px;">Tidak ada event di periode ini.</p>';
-            return;
-        }
+            listContainer.innerHTML = '<p style="color:#777;font-size:13px;margin-bottom:20px;">Tidak ada event kegiatan di bulan ini.</p>';
+        } else {
+            var sorted = events.slice().sort(function (a, b) { return a.start - b.start; });
 
-        var sorted = events.slice().sort(function (a, b) { return a.start - b.start; });
-
-        // Header "EVENT" matching the attachment's serif style and orange underline
-        var headerHtml =
-            '<div style="margin-bottom:20px;">' +
-            '<span style="font-family:\'Playfair Display\', serif, \'Times New Roman\';font-size:20px;font-weight:700;text-transform:uppercase;color:#333;border-bottom:3px solid #fec42d;padding-bottom:2px;display:inline-block;line-height:1;">EVENT</span>' +
-            '</div>';
-
-        listContainer.innerHTML = headerHtml;
-
-        sorted.forEach(function (event) {
-            var blogId = event.extendedProps && event.extendedProps.blogId;
-            var blogName = event.extendedProps && event.extendedProps.blogName;
-            var isAllDay = event.allDay || (event.extendedProps && event.extendedProps.allDay);
-            var color = getSiteColor(blogId);
-
-            var dateLabel = formatDateShort(event.start, event.end, isAllDay);
-
-            let siteBadge = blogName
-                ? '<span style="font-size:10px;font-weight:600;background:' + color.bg + ';color:#fff;padding:2px 8px;border-radius:10px;margin-left:auto;white-space:nowrap;">' +
-                blogName + '</span>'
-                : '';
-
-            if (blogId == "1") {
-                siteBadge = '';
-            }
-
-            var itemHtml =
-                '<div class="wec-event-item">' +
-                '<span style="min-width:35px;font-size:12px;font-weight:700;color:#524c6e;">' + dateLabel + '</span>' +
-                '<span style="font-size:12px;color:#5b567d;flex:1;">' + event.title + '</span>' +
-                siteBadge +
+            // Header "EVENT" matching the attachment's serif style and orange underline
+            var headerHtml =
+                '<div style="margin-bottom:20px;">' +
+                '<span style="font-family:\'Playfair Display\', serif, \'Times New Roman\';font-size:20px;font-weight:700;text-transform:uppercase;color:#333;border-bottom:3px solid #fec42d;padding-bottom:2px;display:inline-block;line-height:1;">EVENT</span>' +
                 '</div>';
 
-            listContainer.innerHTML += itemHtml;
-        });
+            listContainer.innerHTML = headerHtml;
+
+            sorted.forEach(function (event) {
+                var blogId = event.extendedProps && event.extendedProps.blogId;
+                var blogName = event.extendedProps && event.extendedProps.blogName;
+                var isAllDay = event.allDay || (event.extendedProps && event.extendedProps.allDay);
+                var color = getSiteColor(blogId);
+
+                var dateLabel = formatDateShort(event.start, event.end, isAllDay);
+
+                let siteBadge = blogName
+                    ? '<span style="font-size:10px;font-weight:600;background:' + color.bg + ';color:#fff;padding:2px 8px;border-radius:10px;margin-left:auto;white-space:nowrap;">' +
+                    blogName + '</span>'
+                    : '';
+
+                if (blogId == "1") {
+                    siteBadge = '';
+                }
+
+                var itemHtml =
+                    '<div class="wec-event-item">' +
+                    '<span style="min-width:35px;font-size:12px;font-weight:700;color:#524c6e;">' + dateLabel + '</span>' +
+                    '<span style="font-size:12px;color:#5b567d;flex:1;">' + event.title + '</span>' +
+                    siteBadge +
+                    '</div>';
+
+                listContainer.innerHTML += itemHtml;
+            });
+        }
+
+        // ── Holiday Section ───────────────────────────────────────────────
+        if (calendar) {
+            var currentDate = calendar.getDate();
+            var currentYear = currentDate.getFullYear();
+            var currentMonth = currentDate.getMonth();
+
+            var holidaysThisMonth = Object.keys(holidayMap).filter(function (dateStr) {
+                var d = new Date(dateStr);
+                return d.getFullYear() === currentYear && d.getMonth() === currentMonth;
+            }).sort();
+
+            if (holidaysThisMonth.length > 0) {
+                listContainer.innerHTML +=
+                    '<div class="wec-holiday-section-header">HARI LIBUR NASIONAL</div>';
+
+                holidaysThisMonth.forEach(function (dateStr) {
+                    var d = new Date(dateStr);
+                    var day = String(d.getDate()).padStart(2, '0');
+                    listContainer.innerHTML +=
+                        '<div class="wec-holiday-item">' +
+                        '<span class="wec-holiday-day">' + day + '</span>' +
+                        '<span class="wec-holiday-name">' + holidayMap[dateStr] + '</span>' +
+                        '<span class="wec-holiday-badge-inline">Libur</span>' +
+                        '</div>';
+                });
+            }
+        }
     }
 
     // ── Calendar Init ─────────────────────────────────────────────────────
@@ -179,6 +232,39 @@ document.addEventListener('DOMContentLoaded', function () {
             eventsSet: function (events) {
                 buildSidebar(events);
                 buildLegend(events);
+            },
+
+            datesSet: function (dateInfo) {
+                var startYear = dateInfo.start.getFullYear();
+                var endYear = dateInfo.end.getFullYear();
+
+                for (var y = startYear; y <= endYear; y++) {
+                    if (!fetchedYears[y]) {
+                        loadHolidays(y, function () {
+                            if (calendar) {
+                                buildSidebar(calendar.getEvents());
+                                // Trigger a re-render of day cells to show holiday badges
+                                calendar.render();
+                            }
+                        });
+                    }
+                }
+            },
+
+            dayCellDidMount: function (info) {
+                var y = info.date.getFullYear();
+                var m = String(info.date.getMonth() + 1).padStart(2, '0');
+                var d = String(info.date.getDate()).padStart(2, '0');
+                var key = y + '-' + m + '-' + d;
+
+                if (holidayMap[key]) {
+                    var badge = document.createElement('div');
+                    badge.className = 'wec-holiday-badge';
+                    badge.title = holidayMap[key];
+                    badge.innerText = holidayMap[key];
+                    info.el.appendChild(badge);
+                    info.el.classList.add('wec-is-holiday');
+                }
             },
 
             // Modal on event click

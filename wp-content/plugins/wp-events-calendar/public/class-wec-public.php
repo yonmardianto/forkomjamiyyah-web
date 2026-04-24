@@ -34,6 +34,7 @@ class WEC_Public
 
 		wp_localize_script('wec-public-script', 'wecData', array(
 			'apiUrl' => rest_url('wec/v1/events'),
+			'holidayApiUrl' => rest_url('wec/v1/holidays'),
 			'siteColors' => $site_colors,
 		));
 	}

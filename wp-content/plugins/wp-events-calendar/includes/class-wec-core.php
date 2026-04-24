@@ -13,11 +13,13 @@ class WEC_Core {
 	private function load_dependencies() {
 		require_once plugin_dir_path( dirname( __FILE__ ) ) . 'includes/class-wec-cpt.php';
 		require_once plugin_dir_path( dirname( __FILE__ ) ) . 'includes/class-wec-api.php';
+		require_once plugin_dir_path( dirname( __FILE__ ) ) . 'includes/class-wec-holiday.php';
 		require_once plugin_dir_path( dirname( __FILE__ ) ) . 'admin/class-wec-admin.php';
 		require_once plugin_dir_path( dirname( __FILE__ ) ) . 'public/class-wec-public.php';
 
 		$this->cpt    = new WEC_CPT();
 		$this->api    = new WEC_API();
+		$this->holiday = new WEC_Holiday();
 		$this->admin  = new WEC_Admin();
 		$this->public = new WEC_Public();
 	}
@@ -40,6 +42,7 @@ class WEC_Core {
 
 	private function define_public_hooks() {
 		add_action( 'rest_api_init', array( $this->api, 'register_routes' ) );
+		add_action( 'rest_api_init', array( $this->holiday, 'register_routes' ) );
 
 		add_action( 'wp_enqueue_scripts', array( $this->public, 'enqueue_styles' ) );
 		add_action( 'wp_enqueue_scripts', array( $this->public, 'enqueue_scripts' ) );

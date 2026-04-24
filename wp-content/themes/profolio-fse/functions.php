@@ -48,3 +48,7 @@ require get_template_directory() . '/class/admin-info.php';
 
 //recommend plugins
 require get_theme_file_path( '/inc/tgm-plugin/tgmpa-hook.php' );
+
+add_theme_support( 'menus' );
+
+add_theme_support( 'widgets' );
