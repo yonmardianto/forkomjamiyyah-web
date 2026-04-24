@@ -38,6 +38,8 @@ class WEC_Core {
 
 		add_filter( 'manage_wec_event_posts_columns', array( $this->admin, 'add_wec_event_columns' ) );
 		add_action( 'manage_wec_event_posts_custom_column', array( $this->admin, 'render_wec_event_columns' ), 10, 2 );
+
+		add_action( 'admin_post_wec_clear_holiday_cache', array( $this->admin, 'handle_clear_cache' ) );
 	}
 
 	private function define_public_hooks() {

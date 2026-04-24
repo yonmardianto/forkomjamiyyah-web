@@ -61,8 +61,47 @@ class WEC_Admin
 				</table>
 				<?php submit_button(); ?>
 			</form>
+
+			<hr>
+
+			<h2><?php _e('Cache Management', 'wp-events-calendar'); ?></h2>
+			<p><?php _e('Holiday data is cached for 1 month to ensure performance. You can clear it here to force a re-fetch from the API.', 'wp-events-calendar'); ?></p>
+			
+			<form method="post" action="<?php echo admin_url('admin-post.php'); ?>">
+				<input type="hidden" name="action" value="wec_clear_holiday_cache">
+				<?php wp_nonce_field('wec_clear_cache_nonce', '_wpnonce'); ?>
+				<?php submit_button(__('Clear National Holidays Cache', 'wp-events-calendar'), 'secondary', 'submit', false); ?>
+			</form>
+
+			<?php if (isset($_GET['cache_cleared']) && $_GET['cache_cleared'] == 1): ?>
+				<div class="updated notice is-dismissible">
+					<p><?php _e('Holiday cache has been cleared successfully.', 'wp-events-calendar'); ?></p>
+				</div>
+			<?php endif; ?>
 		</div>
 		<?php
+	}
+
+	/**
+	 * Handler for clearing holiday cache
+	 */
+	public function handle_clear_cache()
+	{
+		if (!current_user_can('manage_options')) {
+			wp_die(__('You do not have sufficient permissions to access this page.', 'wp-events-calendar'));
+		}
+
+		check_admin_referer('wec_clear_cache_nonce', '_wpnonce');
+
+		if (!class_exists('WEC_Holiday')) {
+			require_once plugin_dir_path(dirname(__FILE__)) . 'includes/class-wec-holiday.php';
+		}
+
+		$holiday = new WEC_Holiday();
+		$holiday->flush_cache();
+
+		wp_redirect(add_query_arg('cache_cleared', 1, admin_url('edit.php?post_type=wec_event&page=wec_settings')));
+		exit;
 	}
 
 	public function add_wec_event_columns($columns)

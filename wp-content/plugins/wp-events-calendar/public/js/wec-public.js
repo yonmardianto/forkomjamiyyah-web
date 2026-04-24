@@ -129,14 +129,28 @@ document.addEventListener('DOMContentLoaded', function () {
 
     function buildSidebar(events) {
         var listContainer = document.getElementById('wec-event-list-container');
-        if (!listContainer) return;
+        if (!listContainer || !calendar) return;
 
         listContainer.innerHTML = '';
 
-        if (events.length === 0) {
+        var currentDate = calendar.getDate();
+        var currentYear = currentDate.getFullYear();
+        var currentMonth = currentDate.getMonth();
+
+        // Hanya tampilkan event yang benar-benar ada di bulan yang aktif (bukan hari sisa dari bulan lalu/depan)
+        var filteredEvents = events.filter(function (event) {
+            var d = event.start ? (event.start.getTime ? event.start : new Date(event.start)) : null;
+            return d && d.getFullYear() === currentYear && d.getMonth() === currentMonth;
+        });
+
+        if (filteredEvents.length === 0) {
             listContainer.innerHTML = '<p style="color:#777;font-size:13px;margin-bottom:20px;">Tidak ada event kegiatan di bulan ini.</p>';
         } else {
-            var sorted = events.slice().sort(function (a, b) { return a.start - b.start; });
+            var sorted = filteredEvents.slice().sort(function (a, b) {
+                var timeA = a.start ? (a.start.getTime ? a.start.getTime() : new Date(a.start).getTime()) : 0;
+                var timeB = b.start ? (b.start.getTime ? b.start.getTime() : new Date(b.start).getTime()) : 0;
+                return timeA - timeB;
+            });
 
             // Header "EVENT" matching the attachment's serif style and orange underline
             var headerHtml =
@@ -176,12 +190,8 @@ document.addEventListener('DOMContentLoaded', function () {
 
         // ── Holiday Section ───────────────────────────────────────────────
         if (calendar) {
-            var currentDate = calendar.getDate();
-            var currentYear = currentDate.getFullYear();
-            var currentMonth = currentDate.getMonth();
-
             var holidaysThisMonth = Object.keys(holidayMap).filter(function (dateStr) {
-                var d = new Date(dateStr);
+                var d = new Date(dateStr + 'T00:00:00');
                 return d.getFullYear() === currentYear && d.getMonth() === currentMonth;
             }).sort();
 
@@ -190,7 +200,7 @@ document.addEventListener('DOMContentLoaded', function () {
                     '<div class="wec-holiday-section-header">HARI LIBUR NASIONAL</div>';
 
                 holidaysThisMonth.forEach(function (dateStr) {
-                    var d = new Date(dateStr);
+                    var d = new Date(dateStr + 'T00:00:00');
                     var day = String(d.getDate()).padStart(2, '0');
                     listContainer.innerHTML +=
                         '<div class="wec-holiday-item">' +
@@ -209,6 +219,7 @@ document.addEventListener('DOMContentLoaded', function () {
 
     function buildCalendarOptions() {
         return {
+            locale: 'id',
             initialView: 'dayGridMonth',
             height: 'auto',
             expandRows: true,
