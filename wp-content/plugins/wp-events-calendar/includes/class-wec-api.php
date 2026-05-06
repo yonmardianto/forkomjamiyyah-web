@@ -50,8 +50,8 @@ class WEC_API {
 
 		$formatted_events = array();
 
-		// Check if WordPress is in Multisite mode
-		if ( is_multisite() ) {
+		// Check if WordPress is in Multisite mode and current site is the main site
+		if ( is_multisite() && is_main_site() ) {
 			// Get all active, public subsites
 			$sites = get_sites( array( 'public' => 1, 'archived' => 0, 'spam' => 0, 'deleted' => 0 ) );
 			

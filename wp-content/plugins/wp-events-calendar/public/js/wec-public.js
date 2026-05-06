@@ -201,7 +201,7 @@ document.addEventListener('DOMContentLoaded', function () {
 
                 holidaysThisMonth.forEach(function (dateStr) {
                     var d = new Date(dateStr + 'T00:00:00');
-                    var day = String(d.getDate()).padStart(2, '0');
+                    var day = formatDateShort(d, null, true);
                     listContainer.innerHTML +=
                         '<div class="wec-holiday-item">' +
                         '<span class="wec-holiday-day">' + day + '</span>' +
@@ -223,6 +223,7 @@ document.addEventListener('DOMContentLoaded', function () {
             initialView: 'dayGridMonth',
             height: 'auto',
             expandRows: true,
+            displayEventTime: false,
             headerToolbar: {
                 left: 'prev,next today',
                 center: 'title',
