@@ -1,391 +1,407 @@
-/* ==========================================================================
-   WP Events Calendar — Public Stylesheet
-   ========================================================================== */
+	/* ==========================================================================
+	WP Events Calendar — Public Stylesheet
+	========================================================================== */
 
-/* --------------------------------------------------------------------------
-   1. Wrapper & Layout
-   -------------------------------------------------------------------------- */
-.wec-wrapper {
-	display: flex;
-	flex-wrap: wrap;
-	gap: 24px;
-	background: #ffffff;
-	padding: 24px;
-	border-radius: 12px;
-	box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
-	max-width: 1200px;
-	margin: 0 auto;
-	font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
-}
-
-/* --------------------------------------------------------------------------
-   2. Calendar Container
-   -------------------------------------------------------------------------- */
-#wec-calendar-container {
-	flex: 1 1 62%;
-	min-width: 300px;
-	width: 100%;
-	box-sizing: border-box;
-}
-
-/* FullCalendar overrides */
-#wec-calendar-container .fc {
-	font-family: inherit;
-}
-
-#wec-calendar-container .fc .fc-toolbar-title {
-	font-size: 1.2rem;
-	font-weight: 700;
-	color: #1a1a2e;
-}
-
-#wec-calendar-container .fc .fc-button-primary {
-	background-color: #3b5bdb;
-	border-color: #3b5bdb;
-	color: #fff;
-	border-radius: 6px;
-	font-size: 0.85rem;
-	padding: 5px 12px;
-	transition: background-color 0.2s ease;
-}
-
-#wec-calendar-container .fc .fc-button-primary:hover,
-#wec-calendar-container .fc .fc-button-primary:not(:disabled):active,
-#wec-calendar-container .fc .fc-button-primary:not(:disabled).fc-button-active {
-	background-color: #2f4ac0;
-	border-color: #2f4ac0;
-}
-
-#wec-calendar-container .fc .fc-daygrid-day-number {
-	color: #444;
-	font-size: 0.85rem;
-	padding: 4px 6px;
-}
-
-#wec-calendar-container .fc .fc-day-today {
-	background-color: #eef2ff !important;
-}
-
-#wec-calendar-container .fc .fc-event {
-	background-color: #3b5bdb;
-	border-color: #3b5bdb;
-	border-radius: 4px;
-	font-size: 0.78rem;
-	padding: 2px 5px;
-	cursor: pointer;
-	transition: opacity 0.2s ease;
-}
-
-#wec-calendar-container .fc .fc-event:hover {
-	opacity: 0.85;
-}
-
-#wec-calendar-container .fc .fc-col-header-cell {
-	background-color: #f8f9fc;
-	color: #555;
-	font-size: 0.8rem;
-	font-weight: 600;
-	text-transform: uppercase;
-	letter-spacing: 0.05em;
-	padding: 8px 0;
-}
-
-/* --------------------------------------------------------------------------
-   3. Event List Sidebar
-   -------------------------------------------------------------------------- */
-#wec-event-list-sidebar {
-	flex: 1 1 30%;
-	min-width: 240px;
-	border-left: 1px solid #e8eaf0;
-	padding-left: 24px;
-}
-
-#wec-event-list-sidebar h3 {
-	margin-top: 0;
-	margin-bottom: 16px;
-	font-size: 1rem;
-	font-weight: 700;
-	color: #1a1a2e;
-	text-transform: uppercase;
-	letter-spacing: 0.06em;
-	border-bottom: 2px solid #3b5bdb;
-	padding-bottom: 8px;
-}
-
-#wec-event-list-container {
-	max-height: 600px;
-	overflow-y: auto;
-	padding-right: 6px;
-	scrollbar-width: thin;
-	scrollbar-color: #c0c8e8 transparent;
-}
-
-#wec-event-list-container::-webkit-scrollbar {
-	width: 5px;
-}
-
-#wec-event-list-container::-webkit-scrollbar-track {
-	background: transparent;
-}
-
-#wec-event-list-container::-webkit-scrollbar-thumb {
-	background-color: #c0c8e8;
-	border-radius: 10px;
-}
-
-/* Individual event row */
-.wec-event-item {
-	display: flex;
-	align-items: baseline;
-	padding: 12px 0;
-	border-bottom: 1px solid #f0f0f0;
-	gap: 12px;
-	text-decoration: none;
-	color: inherit;
-	transition: background 0.2s ease;
-}
-
-.wec-event-item:hover {
-	background: #fcfcfc;
-}
-
-.wec-event-item h4 {
-	margin: 0 0 5px;
-	font-size: 0.9rem;
-	font-weight: 600;
-	color: #1a1a2e;
-	line-height: 1.3;
-}
-
-.wec-event-item .wec-event-date {
-	font-size: 0.78rem;
-	color: #666;
-	display: flex;
-	align-items: center;
-	gap: 4px;
-}
-
-.wec-event-item .wec-event-date::before {
-	content: "📅";
-	font-size: 0.75rem;
-}
-
-/* Empty / loading state */
-#wec-event-list-container > p {
-	color: #999;
-	font-size: 0.88rem;
-	text-align: center;
-	padding: 20px 0;
-}
-
-/* --------------------------------------------------------------------------
-   4. Event Detail Modal
-   -------------------------------------------------------------------------- */
-#wec-event-modal {
-	display: none;
-	position: fixed;
-	top: 0;
-	left: 0;
-	width: 100%;
-	height: 100%;
-	background: rgba(10, 10, 30, 0.55);
-	z-index: 9999;
-	backdrop-filter: blur(3px);
-	justify-content: center;
-	align-items: center;
-}
-
-#wec-event-modal.is-open {
-	display: flex;
-}
-
-.wec-modal-inner {
-	position: relative;
-	background: #fff;
-	padding: 28px;
-	border-radius: 12px;
-	max-width: 440px;
-	width: 90%;
-	box-shadow: 0 20px 60px rgba(0, 0, 0, 0.2);
-	animation: wecModalIn 0.25s ease;
-}
-
-@keyframes wecModalIn {
-	from {
-		opacity: 0;
-		transform: translateY(-16px) scale(0.97);
-	}
-	to {
-		opacity: 1;
-		transform: translateY(0) scale(1);
-	}
-}
-
-#wec-modal-close {
-	position: absolute;
-	top: 14px;
-	right: 18px;
-	cursor: pointer;
-	font-size: 22px;
-	font-weight: 700;
-	color: #999;
-	line-height: 1;
-	transition: color 0.2s;
-}
-
-#wec-modal-close:hover {
-	color: #333;
-}
-
-#wec-modal-title {
-	margin: 0 0 14px;
-	font-size: 1.1rem;
-	font-weight: 700;
-	color: #1a1a2e;
-	padding-right: 24px;
-	line-height: 1.4;
-}
-
-#wec-modal-image {
-	width: 100%;
-	max-width: 100%;
-	height: 180px;
-	object-fit: cover;
-	display: none;
-	margin-bottom: 16px;
-	border-radius: 8px;
-}
-
-.wec-modal-inner p {
-	margin: 6px 0;
-	font-size: 0.88rem;
-	color: #555;
-}
-
-.wec-modal-inner p strong {
-	color: #333;
-}
-
-#wec-modal-desc {
-	font-size: 0.88rem;
-	color: #555;
-	line-height: 1.6;
-	margin-top: 10px;
-	border-top: 1px solid #eee;
-	padding-top: 10px;
-}
-
-#wec-modal-link {
-	display: inline-block;
-	margin-top: 14px;
-	padding: 8px 18px;
-	background: #3b5bdb;
-	color: #fff;
-	border-radius: 6px;
-	text-decoration: none;
-	font-size: 0.85rem;
-	font-weight: 600;
-	transition: background 0.2s ease;
-}
-
-#wec-modal-link:hover {
-	background: #2f4ac0;
-	color: #fff;
-}
-
-/* --------------------------------------------------------------------------
-   5. Responsive
-   -------------------------------------------------------------------------- */
-@media (max-width: 768px) {
+	/* --------------------------------------------------------------------------
+	1. Wrapper & Layout
+	-------------------------------------------------------------------------- */
 	.wec-wrapper {
-		flex-direction: column;
-		padding: 16px;
-		gap: 16px;
+		display: flex;
+		flex-wrap: wrap;
+		gap: 24px;
+		background: #ffffff;
+		padding: 24px;
+		border-radius: 12px;
+		box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+		max-width: 1200px;
+		margin: 0 auto;
+		font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
 	}
 
+	/* --------------------------------------------------------------------------
+	2. Calendar Container
+	-------------------------------------------------------------------------- */
+	#wec-calendar-container {
+		flex: 1 1 62%;
+		min-width: 300px;
+		width: 100%;
+		box-sizing: border-box;
+	}
+
+	/* FullCalendar overrides */
+	#wec-calendar-container .fc {
+		font-family: inherit;
+	}
+
+	#wec-calendar-container .fc .fc-toolbar-title {
+		font-size: 1.2rem;
+		font-weight: 700;
+		color: #1a1a2e;
+	}
+
+	#wec-calendar-container .fc .fc-button-primary {
+		background-color: #3b5bdb;
+		border-color: #3b5bdb;
+		color: #fff;
+		border-radius: 6px;
+		font-size: 0.85rem;
+		padding: 5px 12px;
+		transition: background-color 0.2s ease;
+	}
+
+	#wec-calendar-container .fc .fc-button-primary:hover,
+	#wec-calendar-container .fc .fc-button-primary:not(:disabled):active,
+	#wec-calendar-container .fc .fc-button-primary:not(:disabled).fc-button-active {
+		background-color: #2f4ac0;
+		border-color: #2f4ac0;
+	}
+
+	#wec-calendar-container .fc .fc-daygrid-day-number {
+		color: #444;
+		font-size: 0.85rem;
+		padding: 4px 6px;
+	}
+
+	#wec-calendar-container .fc .fc-day-today {
+		background-color: #eef2ff !important;
+	}
+
+	#wec-calendar-container .fc .fc-event {
+		background-color: #3b5bdb;
+		border-color: #3b5bdb;
+		border-radius: 4px;
+		font-size: 0.78rem;
+		padding: 2px 5px;
+		cursor: pointer;
+		transition: opacity 0.2s ease;
+	}
+
+	#wec-calendar-container .fc .fc-event:hover {
+		opacity: 0.85;
+	}
+
+	#wec-calendar-container .fc .fc-col-header-cell {
+		background-color: #f8f9fc;
+		color: #555;
+		font-size: 0.8rem;
+		font-weight: 600;
+		text-transform: uppercase;
+		letter-spacing: 0.05em;
+		padding: 8px 0;
+	}
+
+	/* --------------------------------------------------------------------------
+	3. Event List Sidebar
+	-------------------------------------------------------------------------- */
 	#wec-event-list-sidebar {
-		border-left: none;
-		border-top: 1px solid #e8eaf0;
-		padding-left: 0;
-		padding-top: 16px;
+		flex: 1 1 30%;
+		min-width: 240px;
+		border-left: 1px solid #e8eaf0;
+		padding-left: 24px;
+	}
+
+	#wec-event-list-sidebar h3 {
+		margin-top: 0;
+		margin-bottom: 16px;
+		font-size: 1rem;
+		font-weight: 700;
+		color: #1a1a2e;
+		text-transform: uppercase;
+		letter-spacing: 0.06em;
+		border-bottom: 2px solid #3b5bdb;
+		padding-bottom: 8px;
 	}
 
 	#wec-event-list-container {
-		max-height: 300px;
+		max-height: 600px;
+		overflow-y: auto;
+		padding-right: 6px;
+		scrollbar-width: thin;
+		scrollbar-color: #c0c8e8 transparent;
 	}
-}
 
-/* ==========================================================================
-   6. Holiday Indicators
-   ========================================================================== */
+	#wec-event-list-container::-webkit-scrollbar {
+		width: 5px;
+	}
 
-/* Sel tanggal yang merupakan hari libur */
-.fc .fc-daygrid-day.wec-is-holiday .fc-daygrid-day-number {
-    color: #e03131 !important;
-    font-weight: 700;
-}
+	#wec-event-list-container::-webkit-scrollbar-track {
+		background: transparent;
+	}
 
-/* Badge kecil nama hari libur di bawah angka tanggal */
-.wec-holiday-badge {
-    display: block;
-    font-size: 9px;
-    font-weight: 600;
-    color: #e03131;
-    background: #fff0f0;
-    border: 1px solid #ffc9c9;
-    border-radius: 3px;
-    padding: 1px 4px;
-    margin: 1px 2px 0;
-    line-height: 1.3;
-    white-space: nowrap;
-    overflow: hidden;
-    text-overflow: ellipsis;
-    max-width: 100%;
-}
+	#wec-event-list-container::-webkit-scrollbar-thumb {
+		background-color: #c0c8e8;
+		border-radius: 10px;
+	}
 
-/* Header section holiday di sidebar */
-.wec-holiday-section-header {
-    font-family: 'Playfair Display', serif, 'Times New Roman';
-    font-size: 13px;
-    font-weight: 700;
-    text-transform: uppercase;
-    color: #e03131;
-    border-bottom: 2px solid #e03131;
-    padding-bottom: 4px;
-    margin: 16px 0 8px;
-    letter-spacing: 0.05em;
-}
+	/* Individual event row */
+	.wec-event-item {
+		display: flex;
+		align-items: baseline;
+		padding: 12px 0;
+		border-bottom: 1px solid #f0f0f0;
+		gap: 12px;
+		text-decoration: none;
+		color: inherit;
+		transition: background 0.2s ease;
+	}
 
-/* Baris holiday di sidebar */
-.wec-holiday-item {
-    display: flex;
-    align-items: center;
-    gap: 10px;
-    padding: 8px 0;
-    border-bottom: 1px solid #fff0f0;
-}
+	.wec-event-item:hover {
+		background: #fcfcfc;
+	}
 
-.wec-holiday-day {
-    min-width: 28px;
-    font-size: 12px;
-    font-weight: 700;
-    color: #e03131;
-}
+	.wec-event-item h4 {
+		margin: 0 0 5px;
+		font-size: 0.9rem;
+		font-weight: 600;
+		color: #1a1a2e;
+		line-height: 1.3;
+	}
 
-.wec-holiday-name {
-    font-size: 12px;
-    color: #5b567d;
-    flex: 1;
-}
+	.wec-event-item .wec-event-date {
+		font-size: 0.78rem;
+		color: #666;
+		display: flex;
+		align-items: center;
+		gap: 4px;
+	}
 
-/* Badge "Libur" merah kecil di sidebar */
-.wec-holiday-badge-inline {
-    font-size: 10px;
-    font-weight: 700;
-    background: #e03131;
-    color: #fff;
-    padding: 2px 7px;
-    border-radius: 10px;
-    white-space: nowrap;
-    flex-shrink: 0;
-}
+	.wec-event-item .wec-event-date::before {
+		content: "📅";
+		font-size: 0.75rem;
+	}
+
+	/* Empty / loading state */
+	#wec-event-list-container > p {
+		color: #999;
+		font-size: 0.88rem;
+		text-align: center;
+		padding: 20px 0;
+	}
+
+	/* --------------------------------------------------------------------------
+	4. Event Detail Modal
+	-------------------------------------------------------------------------- */
+	#wec-event-modal {
+		display: none;
+		position: fixed;
+		top: 0;
+		left: 0;
+		width: 100%;
+		height: 100%;
+		background: rgba(10, 10, 30, 0.55);
+		z-index: 9999;
+		backdrop-filter: blur(3px);
+		justify-content: center;
+		align-items: center;
+	}
+
+	#wec-event-modal.is-open {
+		display: flex;
+	}
+
+	.wec-modal-inner {
+		position: relative;
+		background: #fff;
+		padding: 28px;
+		border-radius: 12px;
+		max-width: 440px;
+		width: 90%;
+		box-shadow: 0 20px 60px rgba(0, 0, 0, 0.2);
+		animation: wecModalIn 0.25s ease;
+	}
+
+	@keyframes wecModalIn {
+		from {
+			opacity: 0;
+			transform: translateY(-16px) scale(0.97);
+		}
+		to {
+			opacity: 1;
+			transform: translateY(0) scale(1);
+		}
+	}
+
+	#wec-modal-close {
+		position: absolute;
+		top: 14px;
+		right: 18px;
+		cursor: pointer;
+		font-size: 22px;
+		font-weight: 700;
+		color: #999;
+		line-height: 1;
+		transition: color 0.2s;
+	}
+
+	#wec-modal-close:hover {
+		color: #333;
+	}
+
+	#wec-modal-title {
+		margin: 0 0 14px;
+		font-size: 1.1rem;
+		font-weight: 700;
+		color: #1a1a2e;
+		padding-right: 24px;
+		line-height: 1.4;
+	}
+
+	#wec-modal-image {
+		width: 100%;
+		max-width: 100%;
+		height: 180px;
+		object-fit: cover;
+		display: none;
+		margin-bottom: 16px;
+		border-radius: 8px;
+	}
+
+	.wec-modal-inner p {
+		margin: 6px 0;
+		font-size: 0.88rem;
+		color: #555;
+	}
+
+	.wec-modal-inner p strong {
+		color: #333;
+	}
+
+	#wec-modal-desc {
+		font-size: 0.88rem;
+		color: #555;
+		line-height: 1.6;
+		margin-top: 10px;
+		border-top: 1px solid #eee;
+		padding-top: 10px;
+	}
+
+	#wec-modal-link {
+		display: inline-block;
+		margin-top: 14px;
+		padding: 8px 18px;
+		background: #3b5bdb;
+		color: #fff;
+		border-radius: 6px;
+		text-decoration: none;
+		font-size: 0.85rem;
+		font-weight: 600;
+		transition: background 0.2s ease;
+	}
+
+	#wec-modal-link:hover {
+		background: #2f4ac0;
+		color: #fff;
+	}
+
+	/* --------------------------------------------------------------------------
+	5. Responsive
+	-------------------------------------------------------------------------- */
+	@media (max-width: 768px) {
+		.wec-wrapper {
+			flex-direction: column;
+			padding: 16px;
+			gap: 16px;
+		}
+
+		#wec-event-list-sidebar {
+			border-left: none;
+			border-top: 1px solid #e8eaf0;
+			padding-left: 0;
+			padding-top: 16px;
+		}
+
+		#wec-event-list-container {
+			max-height: 300px;
+		}
+	}
+
+	/* ==========================================================================
+	6. Holiday Indicators
+	========================================================================== */
+
+	/* Sel tanggal yang merupakan hari libur */
+
+	/* Sel tanggal yang merupakan hari libur */
+	.fc .fc-daygrid-day.wec-is-holiday {
+		position: relative;
+	}
+
+
+	.fc .fc-daygrid-day.wec-is-holiday .fc-daygrid-day-number {
+		color: #e03131 !important;
+		font-weight: 700;
+	}
+
+	/* day-top jadi flex column agar badge turun di bawah angka */
+	.fc .fc-daygrid-day.wec-is-holiday .fc-daygrid-day-top {
+		display: flex;
+		flex-direction: column;
+		align-items: flex-end; /* ikuti arah angka tanggal (kanan) */
+		gap: 2px;
+	}
+
+	/* Badge kecil nama hari libur di bawah angka tanggal */
+	.wec-holiday-badge {
+		display: block;
+		font-size: 9px;
+		font-weight: 600;
+		color: #fff0f0;
+		background: #e03131;
+		border: 1px solid #ffc9c9;
+		border-radius: 3px;
+		padding: 1px 4px;
+		margin: 1px 2px 0;
+		line-height: 1.3;
+		white-space: nowrap;
+		overflow: hidden;
+		text-overflow: ellipsis;
+		max-width: 96%;
+		margin: 0;
+	}
+
+	/* Header section holiday di sidebar */
+	.wec-holiday-section-header {
+		font-family: 'Playfair Display', serif, 'Times New Roman';
+		font-size: 13px;
+		font-weight: 700;
+		text-transform: uppercase;
+		color: #e03131;
+		border-bottom: 2px solid #e03131;
+		padding-bottom: 4px;
+		margin: 16px 0 8px;
+		letter-spacing: 0.05em;
+	}
+
+	/* Baris holiday di sidebar */
+	.wec-holiday-item {
+		display: flex;
+		align-items: center;
+		gap: 10px;
+		padding: 8px 0;
+		border-bottom: 1px solid #fff0f0;
+	}
+
+	.wec-holiday-day {
+		min-width: 28px;
+		font-size: 12px;
+		font-weight: 700;
+		color: #e03131;
+	}
+
+	.wec-holiday-name {
+		font-size: 12px;
+		color: #5b567d;
+		flex: 1;
+	}
+
+	/* Badge "Libur" merah kecil di sidebar */
+	.wec-holiday-badge-inline {
+		font-size: 10px;
+		font-weight: 700;
+		background: #e03131;
+		color: #fff;
+		padding: 2px 7px;
+		border-radius: 10px;
+		white-space: nowrap;
+		flex-shrink: 0;
+	}
